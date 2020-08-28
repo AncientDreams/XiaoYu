@@ -1,0 +1,19 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: service-config #@artifactId@
+  cloud:
+    # Nacos 配置中心 服务配置
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+
+# 日志
+#logging:
+#  config: classpath:logback/logback.xml
+#  file:
+#    #日志保存路径
+#    path: log
