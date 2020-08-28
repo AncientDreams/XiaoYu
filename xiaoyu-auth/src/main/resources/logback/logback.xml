@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 开发环境日志配置文件 -->
+<configuration>
+
+    <!--日志保存路径-->
+    <springProperty scope="context" name="log_home" source="logging.file.path"/>
+    <!--日志文件名称：这里spring.application.name表示工程名称-->
+    <springProperty scope="context" name="log_name" source="spring.application.name"/>
+
+    <!-- 导入模板 -->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>
+                <!-- 引用模板 -->
+                ${CONSOLE_LOG_PATTERN}
+            </pattern>
+            <!--设置编码-->
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>
+                ${log_home}//${log_name}//%d{yyyy-MM-dd-HH}.log
+            </FileNamePattern>
+            <!-- 日志存留时间（单位：小时） -->
+            <MaxHistory>720</MaxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>
+                ${FILE_LOG_PATTERN}
+            </pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="console"/>
+        <appender-ref ref="file"/>
+    </root>
+
+    <!-- SQL 日志输出 -->
+    <logger name="com.xiaoyu.auth.mapper" level="DEBUG"/>
+
+</configuration>
