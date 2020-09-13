@@ -4,12 +4,13 @@ server:
 spring:
   application:
     name: service-config #@artifactId@
-  cloud:
-    # Nacos 配置中心 服务配置
-    nacos:
-      config:
-        server-addr: localhost:8848
-        file-extension: yaml
+
+#  cloud:
+#    # Nacos 配置中心 服务配置
+#    nacos:
+#      config:
+#        server-addr: localhost:8848
+#        file-extension: yaml
 
 # 日志
 #logging:
