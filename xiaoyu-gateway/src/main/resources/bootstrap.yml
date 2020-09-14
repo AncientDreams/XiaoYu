@@ -1,0 +1,26 @@
+server:
+  port: 8887
+spring:
+  application:
+    name: gateway-service #@artifactId@
+  cloud:
+    # Nacos 配置中心 服务配置
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+      discovery:
+        server-addr: localhost:8848
+
+  profiles:
+    active: dev
+
+# 忽略 nocos 心跳日志
+logging:
+  level:
+    com:
+      alibaba:
+        nacos:
+          client:
+            naming: error
+
