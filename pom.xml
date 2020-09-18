@@ -9,8 +9,10 @@
     <packaging>pom</packaging>
 
     <properties>
+        <XiaoYu-version>1.0.1</XiaoYu-version>
         <spring.boot.version>2.3.3.RELEASE</spring.boot.version>
-        <nacos.version>2.2.1.RELEASE</nacos.version>
+        <spring.cloud.version>Hoxton.SR6</spring.cloud.version>
+        <alibaba.cloud.version>2.2.1.RELEASE</alibaba.cloud.version>
         <common.version>1.0.1</common.version>
         <oauth2.version>2.3.6.RELEASE</oauth2.version>
         <fastjson.version>1.2.73</fastjson.version>
@@ -21,6 +23,9 @@
     <modules>
         <module>xiaoyu-auth</module>
         <module>xiaoyu-common</module>
+        <module>xiaoyu-gateway</module>
+        <module>xiaoyu-service-api</module>
+        <module>xiaoyu-service</module>
     </modules>
 
     <dependencies>
@@ -36,6 +41,13 @@
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
         </dependency>
+
+        <!--热部署-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -48,24 +60,20 @@
                 <type>pom</type>
             </dependency>
 
-            <!--nacos配置中心-->
             <dependency>
-                <groupId>com.alibaba.cloud</groupId>
-                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-                <version>${nacos.version}</version>
-            </dependency>
-
-            <!--nacos服务发现-->
-            <dependency>
-                <groupId>com.alibaba.cloud</groupId>
-                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-                <version>${nacos.version}</version>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
 
             <dependency>
-                <groupId>com.quickstart</groupId>
-                <artifactId>xiaoyu-common</artifactId>
-                <version>${common.version}</version>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${alibaba.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
 
             <!--oauth2-->
@@ -101,6 +109,11 @@
                 <version>${druid.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.xiaoyu</groupId>
+                <artifactId>xiaoyu-common-core</artifactId>
+                <version>${common.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -113,6 +126,19 @@
                 <filtering>true</filtering>
             </resource>
         </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
 </project>

@@ -6,14 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="xiaoyu-gateway" />
+        <module name="xiaoyu-common-redis" />
+        <module name="xiaoyu-user-service" />
         <module name="xiaoyu-auth" />
-        <module name="xiaoyu-common" />
+        <module name="xiaoyu-user-api" />
+        <module name="xiaoyu-common-core" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client-user" target="1.8" />
+      <module name="gateway-cloud-client-route-example" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="client-user" options="" />
+      <module name="gateway-cloud-client-route-example" options="" />
       <module name="xiaoyu-auth" options="" />
+      <module name="xiaoyu-gateway" options="" />
+      <module name="xiaoyu-user-service" options="" />
     </option>
   </component>
 </project>

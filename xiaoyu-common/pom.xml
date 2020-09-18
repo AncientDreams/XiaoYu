@@ -10,6 +10,42 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>xiaoyu-common</artifactId>
+    <name>xiaoyu-common</name>
+    <version>1.0.1</version>
+    <packaging>pom</packaging>
 
+    <description>XiaoYu 微服务公共包集合</description>
+
+
+    <modules>
+        <module>xiaoyu-common-core</module>
+        <module>xiaoyu-common-redis</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-aop</artifactId>
+                <version>${spring.boot.version}</version>
+                <optional>true</optional>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-autoconfigure</artifactId>
+                <version>${spring.boot.version}</version>
+                <optional>true</optional>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-configuration-processor</artifactId>
+                <version>${spring.boot.version}</version>
+                <optional>true</optional>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
 </project>

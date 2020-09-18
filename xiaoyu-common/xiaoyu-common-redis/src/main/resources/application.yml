@@ -1,0 +1,20 @@
+spring:
+  # Redis 连接配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    #密码，没有不写
+    password:
+    jedis:
+      pool:
+        #最大连接个数
+        max-active: 10
+        #最大等待时间
+        max-wait: -1
+        #最大空闲
+        max-idle: 8
+        #初始化最小
+        min-idle: 5
+    lettuce:
+      shutdown-timeout: 0
+
