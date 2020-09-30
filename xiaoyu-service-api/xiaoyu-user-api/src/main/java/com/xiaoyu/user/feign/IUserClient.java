@@ -17,14 +17,17 @@
 package com.xiaoyu.user.feign;
 
 
-import bo.ResultBody;
-import com.xiaoyu.user.entity.SystemPermission;
+import com.xiaoyu.common.core.bo.R;
+import com.xiaoyu.common.core.constant.AppConstant;
+import com.xiaoyu.user.entity.SystemRole;
 import com.xiaoyu.user.entity.SystemUser;
-import com.xiaoyu.user.entity.SystemUserRole;
-import constant.AppConstant;
+import com.xiaoyu.user.fallback.UserFallbackFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
+
 
 /**
  * <p>
@@ -35,7 +38,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @since 2020/9/15 11:14
  */
 @FeignClient(
-        value = AppConstant.APPLICATION_USER_NAME
+        value = AppConstant.APPLICATION_USER_NAME,fallbackFactory = UserFallbackFactory.class
 )
 public interface IUserClient {
 
@@ -47,7 +50,7 @@ public interface IUserClient {
      * @return ResultBody<SystemUser>
      */
     @GetMapping("/user")
-    ResultBody<SystemUser> userByUsername(@RequestParam("username") String username);
+    R<SystemUser> userByUsername(@RequestParam("username") String username) throws Exception;
 
     /**
      * 根据账号获取用户所拥有权限信息
@@ -56,7 +59,7 @@ public interface IUserClient {
      * @return ResultBody<SystemPermission>
      */
     @GetMapping("/getSystemPermissions")
-    ResultBody<SystemPermission> getSystemPermissions(@RequestParam("userName") String userName);
+    R<List<String>> getSystemPermissions(@RequestParam("userName") String userName);
 
     /**
      * 根据账号获取用户角色信息
@@ -65,5 +68,5 @@ public interface IUserClient {
      * @return ResultBody<SystemUser>
      */
     @GetMapping("/getRoles")
-    ResultBody<SystemUserRole> queryUserRolesByUserId(@RequestParam("userName") String userName);
+    R<List<SystemRole>> queryUserRolesByUserId(@RequestParam("userName") String userName);
 }

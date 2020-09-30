@@ -42,7 +42,7 @@
         <appender-ref ref="file"/>
     </root>
 
-    <!-- SQL 日志输出 -->
-    <logger name="com.xiaoyu.auth.mapper" level="DEBUG"/>
+    <!-- 隐蔽nacos  日志输出 -->
+    <logger name="com.alibaba.nacos.client.config.impl.ClientWorker" level="error"/>
 
 </configuration>

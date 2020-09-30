@@ -16,4 +16,19 @@
     <description>XiaoYu 微服务核心公共包</description>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <!-- 依赖不传递 -->
+            <optional>true</optional>
+        </dependency>
+
+    </dependencies>
 </project>

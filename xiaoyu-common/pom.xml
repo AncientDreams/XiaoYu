@@ -20,6 +20,7 @@
     <modules>
         <module>xiaoyu-common-core</module>
         <module>xiaoyu-common-redis</module>
+        <module>xiaoyu-common-security</module>
     </modules>
 
     <dependencyManagement>

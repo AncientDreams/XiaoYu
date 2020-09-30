@@ -1,0 +1,29 @@
+2020-09-27 18:00:28.962  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:00:58.482  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:01:27.986  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:01:57.500  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:02:27.005  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:02:56.513  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:03:26.021  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:03:55.544  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:04:25.050  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:04:54.567  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:05:24.071  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:05:53.576  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:06:23.102  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:06:52.696  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:07:22.216  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:07:51.722  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:08:21.225  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:08:50.733  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:09:20.238  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:09:50.576  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:10:20.102  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 18:10:37.693  INFO 39720 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-27 18:10:37.869  INFO 39720 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2020-09-27 18:10:37.869  INFO 39720 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@user-service:192.168.2.212:8888 from beat map.
+2020-09-27 18:10:37.869  INFO 39720 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@user-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.2.212","ipDeleteTimeout":30000,"metadata":{},"port":8888,"weight":1.0}
+2020-09-27 18:10:37.873  INFO 39720 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2020-09-27 18:10:37.874  INFO 39720 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-27 18:10:37.877  INFO 39720 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-09-27 18:10:37.886  INFO 39720 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

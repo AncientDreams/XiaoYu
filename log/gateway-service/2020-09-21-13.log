@@ -1,0 +1,179 @@
+2020-09-21 13:32:44.797  INFO 9900 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Zhangxy\tools\apache-maven-3.6.3\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/Zhangxy/tools/apache-maven-3.6.3/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-09-21 13:32:44.803  INFO 9900 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Zhangxy\tools\apache-maven-3.6.3\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/Zhangxy/tools/apache-maven-3.6.3/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-core.jar
+2020-09-21 13:32:44.804  INFO 9900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-21 13:32:46.044  INFO 9900 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-21 13:32:46.072  INFO 9900 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-21 13:32:46.103  WARN 9900 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[gateway-service] & group[DEFAULT_GROUP]
+2020-09-21 13:32:46.150  INFO 9900 --- [restartedMain] c.a.nacos.client.config.utils.JVMUtil    : isMultiInstance:false
+2020-09-21 13:32:46.221  INFO 9900 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-gateway-service-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service,DEFAULT_GROUP'}]
+2020-09-21 13:32:46.240  INFO 9900 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : The following profiles are active: dev
+2020-09-21 13:32:48.472  INFO 9900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-21 13:32:48.474  INFO 9900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-21 13:32:48.503  INFO 9900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-09-21 13:32:48.615  WARN 9900 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-21 13:32:48.770  INFO 9900 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6e9d57ed-0621-3559-9880-0ac9e4d43233
+2020-09-21 13:32:48.907  INFO 9900 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$50d95376] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-21 13:32:48.950  INFO 9900 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-21 13:32:48.951  INFO 9900 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-21 13:32:48.953  INFO 9900 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-21 13:32:49.536  WARN 9900 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-21 13:32:49.667  INFO 9900 --- [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c5514e8f-c61b-4df5-a586-66657580016d
+
+2020-09-21 13:32:49.843  WARN 9900 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-21 13:32:49.844  INFO 9900 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-21 13:32:49.848  WARN 9900 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-21 13:32:49.848  INFO 9900 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-21 13:32:51.680  INFO 9900 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2020-09-21 13:32:51.681  INFO 9900 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2020-09-21 13:32:51.681  INFO 9900 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2020-09-21 13:32:51.681  INFO 9900 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2020-09-21 13:32:51.681  INFO 9900 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2020-09-21 13:32:51.681  INFO 9900 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2020-09-21 13:32:51.681  INFO 9900 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2020-09-21 13:32:51.681  INFO 9900 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2020-09-21 13:32:51.681  INFO 9900 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2020-09-21 13:32:51.681  INFO 9900 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-09-21 13:32:51.682  INFO 9900 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2020-09-21 13:32:51.682  INFO 9900 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2020-09-21 13:32:51.682  INFO 9900 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-09-21 13:32:51.985  WARN 9900 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-09-21 13:32:51.986  WARN 9900 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-09-21 13:32:52.391  INFO 9900 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-21 13:32:52.655  INFO 9900 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-21 13:32:52.953  WARN 9900 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-09-21 13:32:53.082  WARN 9900 --- [restartedMain] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-09-21 13:32:55.107  INFO 9900 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 8887
+2020-09-21 13:32:55.501  INFO 9900 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-service 192.168.20.223:8887 register finished
+2020-09-21 13:32:55.549  INFO 9900 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : Started XiaoyuGatewayApplication in 12.096 seconds (JVM running for 13.589)
+2020-09-21 13:32:55.553  INFO 9900 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service-dev.yaml+DEFAULT_GROUP
+2020-09-21 13:32:55.554  INFO 9900 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-21 13:32:55.554  INFO 9900 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service+DEFAULT_GROUP
+2020-09-21 13:32:55.555  INFO 9900 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service, group=DEFAULT_GROUP, cnt=1
+2020-09-21 13:32:55.555  INFO 9900 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service.yaml+DEFAULT_GROUP
+2020-09-21 13:32:55.555  INFO 9900 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-21 13:32:55.567  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:33:25.269  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:33:54.777  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:34:24.286  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:34:53.812  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:35:23.320  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:35:52.826  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:36:22.346  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:36:51.856  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:37:21.360  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:37:50.868  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:38:20.444  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:38:50.113  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:39:19.618  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:39:49.129  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:40:18.633  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:40:48.142  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:41:17.649  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:41:47.158  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:42:16.672  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:42:46.189  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:43:15.699  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:43:45.205  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:44:14.751  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:44:44.255  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:45:13.761  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:45:43.278  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:46:12.781  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:46:42.284  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:47:11.794  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:47:41.302  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:48:10.808  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:48:40.314  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:49:09.821  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:49:39.329  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:50:08.839  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:50:38.349  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:51:07.857  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:51:37.389  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:52:06.903  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:52:36.440  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:53:05.958  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:53:35.467  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:54:00.564  INFO 9900 --- [boundedElastic-2] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/auth/oauth/token
+2020-09-21 13:54:01.251  INFO 9900 --- [boundedElastic-2] c.netflix.config.ChainedDynamicProperty  : Flipping property: auth-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-21 13:54:01.268  INFO 9900 --- [boundedElastic-2] c.netflix.loadbalancer.BaseLoadBalancer  : Client: auth-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-09-21 13:54:01.276  INFO 9900 --- [boundedElastic-2] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-09-21 13:54:01.353  INFO 9900 --- [boundedElastic-2] c.netflix.config.ChainedDynamicProperty  : Flipping property: auth-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-21 13:54:01.355  INFO 9900 --- [boundedElastic-2] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client auth-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-service,current list of Servers=[192.168.20.223:8000],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.20.223:8000;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@24ea7dab
+2020-09-21 13:54:01.386  INFO 9900 --- [boundedElastic-2] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> POST: /auth/oauth/token
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [b268ffd2-aae3-4491-a9bb-41e2edb138f4]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  Content-Type: [application/x-www-form-urlencoded]
+===Headers===  Content-Length: [120]
+================  Gateway Request End  =================
+
+2020-09-21 13:54:02.279  INFO 9900 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: auth-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-21 13:54:03.880  INFO 9900 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 POST: /auth/oauth/token
+===Headers===  transfer-encoding: [chunked]
+===Headers===  Cache-Control: [no-store]
+===Headers===  Pragma: [no-cache]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Type: [application/json;charset=UTF-8]
+===Headers===  Date: [Mon, 21 Sep 2020 05:54:03 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 13:54:04.975  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:54:14.157  INFO 9900 --- [boundedElastic-2] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/auth/oauth/token
+2020-09-21 13:54:14.159  INFO 9900 --- [boundedElastic-2] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> POST: /auth/oauth/token
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [01abae07-90a3-4c85-9981-d241ddefd009]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  Content-Type: [application/x-www-form-urlencoded]
+===Headers===  Content-Length: [120]
+================  Gateway Request End  =================
+
+2020-09-21 13:54:14.475  INFO 9900 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 POST: /auth/oauth/token
+===Headers===  transfer-encoding: [chunked]
+===Headers===  Cache-Control: [no-store]
+===Headers===  Pragma: [no-cache]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Type: [application/json;charset=UTF-8]
+===Headers===  Date: [Mon, 21 Sep 2020 05:54:14 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 13:54:34.492  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:55:03.999  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:55:33.501  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:56:03.004  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:56:32.529  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:57:02.034  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:57:31.541  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:58:01.048  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:58:30.557  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:59:00.064  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:59:29.588  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 13:59:59.100  INFO 9900 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]

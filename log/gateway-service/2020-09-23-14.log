@@ -1,0 +1,116 @@
+2020-09-23 14:43:21.212  INFO 11936 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-23 14:43:21.801  INFO 11936 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-23 14:43:21.825  INFO 11936 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-23 14:43:21.850  WARN 11936 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[gateway-service] & group[DEFAULT_GROUP]
+2020-09-23 14:43:21.908  INFO 11936 --- [restartedMain] c.a.nacos.client.config.utils.JVMUtil    : isMultiInstance:false
+2020-09-23 14:43:21.924  INFO 11936 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-gateway-service-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service,DEFAULT_GROUP'}]
+2020-09-23 14:43:21.941  INFO 11936 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : The following profiles are active: dev
+2020-09-23 14:43:23.196  INFO 11936 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e294fcb0-a772-30d5-aa01-e04368e8f093
+2020-09-23 14:43:23.280  INFO 11936 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:43:23.281  INFO 11936 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:43:23.283  INFO 11936 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:43:23.607  WARN 11936 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-23 14:43:23.608  INFO 11936 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 14:43:23.615  WARN 11936 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-23 14:43:23.615  INFO 11936 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 14:43:24.653  INFO 11936 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2020-09-23 14:43:24.654  INFO 11936 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2020-09-23 14:43:24.654  INFO 11936 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2020-09-23 14:43:24.654  INFO 11936 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2020-09-23 14:43:24.654  INFO 11936 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2020-09-23 14:43:24.654  INFO 11936 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2020-09-23 14:43:24.654  INFO 11936 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2020-09-23 14:43:24.654  INFO 11936 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2020-09-23 14:43:24.654  INFO 11936 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2020-09-23 14:43:24.654  INFO 11936 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-09-23 14:43:24.655  INFO 11936 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2020-09-23 14:43:24.655  INFO 11936 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2020-09-23 14:43:24.655  INFO 11936 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-09-23 14:43:24.995  INFO 11936 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 14:43:25.159  INFO 11936 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-23 14:43:25.789  INFO 11936 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 8887
+2020-09-23 14:43:26.029  INFO 11936 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-service 192.168.2.212:8887 register finished
+2020-09-23 14:43:26.050  INFO 11936 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : Started XiaoyuGatewayApplication in 6.041 seconds (JVM running for 7.149)
+2020-09-23 14:43:26.055  INFO 11936 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service-dev.yaml+DEFAULT_GROUP
+2020-09-23 14:43:26.056  INFO 11936 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 14:43:26.056  INFO 11936 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service+DEFAULT_GROUP
+2020-09-23 14:43:26.057  INFO 11936 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service, group=DEFAULT_GROUP, cnt=1
+2020-09-23 14:43:26.057  INFO 11936 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service.yaml+DEFAULT_GROUP
+2020-09-23 14:43:26.057  INFO 11936 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 14:43:26.065  INFO 11936 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 14:43:55.806  INFO 11936 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 14:44:25.313  INFO 11936 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 14:44:54.824  INFO 11936 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 14:45:15.575  INFO 11936 --- [reactor-http-nio-3] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/auth/oauth/token
+2020-09-23 14:45:16.357  INFO 11936 --- [reactor-http-nio-3] c.netflix.config.ChainedDynamicProperty  : Flipping property: auth-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-23 14:45:16.374  INFO 11936 --- [reactor-http-nio-3] c.netflix.loadbalancer.BaseLoadBalancer  : Client: auth-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-09-23 14:45:16.382  INFO 11936 --- [reactor-http-nio-3] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-09-23 14:45:16.481  INFO 11936 --- [reactor-http-nio-3] c.netflix.config.ChainedDynamicProperty  : Flipping property: auth-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-23 14:45:16.483  INFO 11936 --- [reactor-http-nio-3] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client auth-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-service,current list of Servers=[192.168.2.212:8000],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.2.212:8000;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@3b4baab1
+2020-09-23 14:45:16.546  INFO 11936 --- [reactor-http-nio-3] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> POST: /auth/oauth/token
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [29451b34-632c-4817-84c2-ba75656b0990]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  Content-Type: [application/x-www-form-urlencoded]
+===Headers===  Content-Length: [120]
+================  Gateway Request End  =================
+
+2020-09-23 14:45:17.401  INFO 11936 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: auth-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-23 14:45:19.341  INFO 11936 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 POST: /auth/oauth/token
+===Headers===  transfer-encoding: [chunked]
+===Headers===  Cache-Control: [no-store]
+===Headers===  Pragma: [no-cache]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Type: [application/json;charset=UTF-8]
+===Headers===  Date: [Wed, 23 Sep 2020 06:45:19 GMT]
+================  Gateway Response End  =================
+
+2020-09-23 14:45:24.331  INFO 11936 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 14:45:24.443  INFO 11936 --- [reactor-http-nio-3] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/auth/oauth/token
+2020-09-23 14:45:24.445  INFO 11936 --- [reactor-http-nio-3] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> POST: /auth/oauth/token
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [12a8cf9b-9b1b-44ab-b935-6c17cb2ab964]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  Content-Type: [application/x-www-form-urlencoded]
+===Headers===  Content-Length: [120]
+================  Gateway Request End  =================
+
+2020-09-23 14:45:24.735  INFO 11936 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 POST: /auth/oauth/token
+===Headers===  transfer-encoding: [chunked]
+===Headers===  Cache-Control: [no-store]
+===Headers===  Pragma: [no-cache]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Type: [application/json;charset=UTF-8]
+===Headers===  Date: [Wed, 23 Sep 2020 06:45:24 GMT]
+================  Gateway Response End  =================
+
+2020-09-23 14:45:53.836  INFO 11936 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 14:46:23.341  INFO 11936 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 14:46:27.271  INFO 11936 --- [Thread-43] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2020-09-23 14:46:27.277  INFO 11936 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 14:46:27.280  INFO 11936 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2020-09-23 14:46:27.283  INFO 11936 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.

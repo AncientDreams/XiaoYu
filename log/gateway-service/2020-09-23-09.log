@@ -1,0 +1,587 @@
+2020-09-23 09:13:48.389  INFO 7996 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Zhangxy\tools\apache-maven-3.6.3\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/Zhangxy/tools/apache-maven-3.6.3/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-09-23 09:13:48.404  INFO 7996 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Zhangxy\tools\apache-maven-3.6.3\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/Zhangxy/tools/apache-maven-3.6.3/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-core.jar
+2020-09-23 09:13:48.404  INFO 7996 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-23 09:13:50.013  INFO 7996 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-23 09:13:50.154  INFO 7996 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-23 09:13:52.341 ERROR 7996 --- [restartedMain] c.a.n.c.config.http.ServerHttpAgent      : [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+2020-09-23 09:13:54.372 ERROR 7996 --- [restartedMain] c.a.n.c.config.http.ServerHttpAgent      : [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+2020-09-23 09:13:54.372 ERROR 7996 --- [restartedMain] c.a.n.c.config.http.ServerHttpAgent      : no available server
+2020-09-23 09:13:54.387 ERROR 7996 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [sub-server] get server config exception, dataId=gateway-service, group=DEFAULT_GROUP, tenant=
+
+java.net.ConnectException: no available server
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpGet(ServerHttpAgent.java:123)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpGet(MetricsHttpAgent.java:48)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:230)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:143)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:92)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:85)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:74)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosPropertySource(NacosPropertySourceLocator.java:204)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:191)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:142)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:103)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:52)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:47)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:98)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.xiaoyu.gateway.XiaoyuGatewayApplication.main(XiaoyuGatewayApplication.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2020-09-23 09:13:54.403  WARN 7996 --- [restartedMain] c.a.n.client.config.NacosConfigService   : [fixed-localhost_8848] [get-config] get from server error, dataId=gateway-service, group=DEFAULT_GROUP, tenant=, msg=ErrCode:500, ErrMsg:no available server
+2020-09-23 09:13:54.403  WARN 7996 --- [restartedMain] c.a.n.client.config.NacosConfigService   : [fixed-localhost_8848] [get-config] get snapshot ok, dataId=gateway-service, group=DEFAULT_GROUP, tenant=, config=
+2020-09-23 09:13:54.434  WARN 7996 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[gateway-service] & group[DEFAULT_GROUP]
+2020-09-23 09:13:56.480 ERROR 7996 --- [restartedMain] c.a.n.c.config.http.ServerHttpAgent      : [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+2020-09-23 09:13:58.511 ERROR 7996 --- [restartedMain] c.a.n.c.config.http.ServerHttpAgent      : [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+2020-09-23 09:13:58.511 ERROR 7996 --- [restartedMain] c.a.n.c.config.http.ServerHttpAgent      : no available server
+2020-09-23 09:13:58.511 ERROR 7996 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [sub-server] get server config exception, dataId=gateway-service.yaml, group=DEFAULT_GROUP, tenant=
+
+java.net.ConnectException: no available server
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpGet(ServerHttpAgent.java:123)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpGet(MetricsHttpAgent.java:48)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:230)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:143)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:92)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:85)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:74)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosPropertySource(NacosPropertySourceLocator.java:204)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:191)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:145)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:103)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:52)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:47)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:98)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.xiaoyu.gateway.XiaoyuGatewayApplication.main(XiaoyuGatewayApplication.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2020-09-23 09:13:58.511  WARN 7996 --- [restartedMain] c.a.n.client.config.NacosConfigService   : [fixed-localhost_8848] [get-config] get from server error, dataId=gateway-service.yaml, group=DEFAULT_GROUP, tenant=, msg=ErrCode:500, ErrMsg:no available server
+2020-09-23 09:13:58.511  WARN 7996 --- [restartedMain] c.a.n.client.config.NacosConfigService   : [fixed-localhost_8848] [get-config] get snapshot ok, dataId=gateway-service.yaml, group=DEFAULT_GROUP, tenant=, config=
+2020-09-23 09:13:58.511  INFO 7996 --- [restartedMain] c.a.nacos.client.config.utils.JVMUtil    : isMultiInstance:false
+2020-09-23 09:14:37.859  INFO 9348 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Zhangxy\tools\apache-maven-3.6.3\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/Zhangxy/tools/apache-maven-3.6.3/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-09-23 09:14:37.859  INFO 9348 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Zhangxy\tools\apache-maven-3.6.3\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/Zhangxy/tools/apache-maven-3.6.3/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-core.jar
+2020-09-23 09:14:37.859  INFO 9348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-23 09:14:38.578  INFO 9348 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-23 09:14:38.609  INFO 9348 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-23 09:14:40.671 ERROR 9348 --- [restartedMain] c.a.n.c.config.http.ServerHttpAgent      : [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+2020-09-23 09:14:42.702 ERROR 9348 --- [restartedMain] c.a.n.c.config.http.ServerHttpAgent      : [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+2020-09-23 09:14:42.702 ERROR 9348 --- [restartedMain] c.a.n.c.config.http.ServerHttpAgent      : no available server
+2020-09-23 09:14:42.702 ERROR 9348 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [sub-server] get server config exception, dataId=gateway-service, group=DEFAULT_GROUP, tenant=
+
+java.net.ConnectException: no available server
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpGet(ServerHttpAgent.java:123)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpGet(MetricsHttpAgent.java:48)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:230)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:143)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:92)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:85)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:74)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosPropertySource(NacosPropertySourceLocator.java:204)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:191)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:142)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:103)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:52)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:47)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:98)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.xiaoyu.gateway.XiaoyuGatewayApplication.main(XiaoyuGatewayApplication.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2020-09-23 09:14:42.702  WARN 9348 --- [restartedMain] c.a.n.client.config.NacosConfigService   : [fixed-localhost_8848] [get-config] get from server error, dataId=gateway-service, group=DEFAULT_GROUP, tenant=, msg=ErrCode:500, ErrMsg:no available server
+2020-09-23 09:14:42.702  WARN 9348 --- [restartedMain] c.a.n.client.config.NacosConfigService   : [fixed-localhost_8848] [get-config] get snapshot ok, dataId=gateway-service, group=DEFAULT_GROUP, tenant=, config=
+2020-09-23 09:14:42.702  WARN 9348 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[gateway-service] & group[DEFAULT_GROUP]
+2020-09-23 09:14:43.483  INFO 9348 --- [restartedMain] c.a.nacos.client.config.utils.JVMUtil    : isMultiInstance:false
+2020-09-23 09:14:43.561  INFO 9348 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-gateway-service-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service,DEFAULT_GROUP'}]
+2020-09-23 09:14:43.608  INFO 9348 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : The following profiles are active: dev
+2020-09-23 09:14:48.451  INFO 9348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 09:14:48.482  INFO 9348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-23 09:14:48.685  INFO 9348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 0 Redis repository interfaces.
+2020-09-23 09:14:48.919  WARN 9348 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-23 09:14:49.247  INFO 9348 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6e9d57ed-0621-3559-9880-0ac9e4d43233
+2020-09-23 09:14:49.403  INFO 9348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$b41bea9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:14:49.450  INFO 9348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:14:49.450  INFO 9348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:14:49.450  INFO 9348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:14:54.227  INFO 1388 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Zhangxy\tools\apache-maven-3.6.3\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/Zhangxy/tools/apache-maven-3.6.3/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-09-23 09:14:54.227  INFO 1388 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Zhangxy\tools\apache-maven-3.6.3\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/Zhangxy/tools/apache-maven-3.6.3/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-core.jar
+2020-09-23 09:14:54.227  INFO 1388 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-23 09:14:54.758  INFO 1388 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-23 09:14:54.789  INFO 1388 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-23 09:14:54.821  WARN 1388 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[gateway-service] & group[DEFAULT_GROUP]
+2020-09-23 09:14:54.836  INFO 1388 --- [restartedMain] c.a.nacos.client.config.utils.JVMUtil    : isMultiInstance:false
+2020-09-23 09:14:54.852  INFO 1388 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-gateway-service-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service,DEFAULT_GROUP'}]
+2020-09-23 09:14:54.867  INFO 1388 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : The following profiles are active: dev
+2020-09-23 09:14:55.867  INFO 1388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 09:14:55.867  INFO 1388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-23 09:14:55.898  INFO 1388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-23 09:14:55.976  WARN 1388 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-23 09:14:56.117  INFO 1388 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6e9d57ed-0621-3559-9880-0ac9e4d43233
+2020-09-23 09:14:56.211  INFO 1388 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$cae1a9c7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:14:56.258  INFO 1388 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:14:56.258  INFO 1388 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:14:56.258  INFO 1388 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:14:56.992  WARN 1388 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-23 09:14:57.133  INFO 1388 --- [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9756875d-db3c-4a74-8686-c3775593694c
+
+2020-09-23 09:14:57.601  WARN 1388 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-23 09:14:57.601  INFO 1388 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 09:14:57.648  WARN 1388 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-23 09:14:57.648  INFO 1388 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 09:15:01.116  INFO 1388 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2020-09-23 09:15:01.116  INFO 1388 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2020-09-23 09:15:01.116  INFO 1388 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2020-09-23 09:15:01.116  INFO 1388 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2020-09-23 09:15:01.116  INFO 1388 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2020-09-23 09:15:01.116  INFO 1388 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2020-09-23 09:15:01.116  INFO 1388 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2020-09-23 09:15:01.116  INFO 1388 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2020-09-23 09:15:01.116  INFO 1388 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2020-09-23 09:15:01.116  INFO 1388 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-09-23 09:15:01.116  INFO 1388 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2020-09-23 09:15:01.116  INFO 1388 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2020-09-23 09:15:01.116  INFO 1388 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-09-23 09:15:01.506  WARN 1388 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-09-23 09:15:01.506  WARN 1388 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-09-23 09:15:01.959  INFO 1388 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-23 09:15:02.038  INFO 1388 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 09:15:02.569  INFO 1388 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-23 09:15:02.819  WARN 1388 --- [restartedMain] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-09-23 09:15:03.393  INFO 1388 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 8887
+2020-09-23 09:15:03.862  INFO 1388 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-service 192.168.20.223:8887 register finished
+2020-09-23 09:15:03.878  INFO 1388 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : Started XiaoyuGatewayApplication in 10.502 seconds (JVM running for 11.927)
+2020-09-23 09:15:03.878  INFO 1388 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service-dev.yaml+DEFAULT_GROUP
+2020-09-23 09:15:03.878  INFO 1388 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 09:15:03.878  INFO 1388 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service+DEFAULT_GROUP
+2020-09-23 09:15:03.878  INFO 1388 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service, group=DEFAULT_GROUP, cnt=1
+2020-09-23 09:15:03.878  INFO 1388 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service.yaml+DEFAULT_GROUP
+2020-09-23 09:15:03.878  INFO 1388 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 09:15:03.925  INFO 1388 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:15:33.622  INFO 1388 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:16:03.146  INFO 1388 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:16:32.656  INFO 1388 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:16:33.838  INFO 1388 --- [boundedElastic-1] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-23 09:16:35.125  INFO 1388 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  Content-Type: [application/json;charset=UTF-8]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  X-XSS-Protection: [1 ; mode=block]
+===Headers===  Referrer-Policy: [no-referrer]
+===Headers===  content-length: [127]
+================  Gateway Response End  =================
+
+2020-09-23 09:16:59.325  INFO 1388 --- [boundedElastic-1] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-23 09:17:02.310  INFO 1388 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:22:06.753  INFO 1388 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:22:06.758  INFO 1388 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  Content-Type: [application/json;charset=UTF-8]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  X-XSS-Protection: [1 ; mode=block]
+===Headers===  Referrer-Policy: [no-referrer]
+===Headers===  content-length: [127]
+================  Gateway Response End  =================
+
+2020-09-23 09:22:08.948  INFO 1388 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 09:22:08.948  INFO 1388 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2020-09-23 09:22:08.964  INFO 1388 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2020-09-23 09:24:31.340  INFO 7688 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Zhangxy\tools\apache-maven-3.6.3\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/Zhangxy/tools/apache-maven-3.6.3/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-09-23 09:24:31.340  INFO 7688 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Zhangxy\tools\apache-maven-3.6.3\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/Zhangxy/tools/apache-maven-3.6.3/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-core.jar
+2020-09-23 09:24:31.340  INFO 7688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-23 09:24:31.855  INFO 7688 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-23 09:24:31.886  INFO 7688 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-23 09:24:31.902  WARN 7688 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[gateway-service] & group[DEFAULT_GROUP]
+2020-09-23 09:24:31.918  INFO 7688 --- [restartedMain] c.a.nacos.client.config.utils.JVMUtil    : isMultiInstance:false
+2020-09-23 09:24:31.933  INFO 7688 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-gateway-service-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service,DEFAULT_GROUP'}]
+2020-09-23 09:24:31.949  INFO 7688 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : The following profiles are active: dev
+2020-09-23 09:24:32.902  INFO 7688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 09:24:32.902  INFO 7688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-23 09:24:32.933  INFO 7688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-09-23 09:24:33.011  WARN 7688 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-23 09:24:33.167  INFO 7688 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6e9d57ed-0621-3559-9880-0ac9e4d43233
+2020-09-23 09:24:33.261  INFO 7688 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$5edc04ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:24:33.308  INFO 7688 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:24:33.308  INFO 7688 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:24:33.308  INFO 7688 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:24:33.558  WARN 7688 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-23 09:24:33.620  INFO 7688 --- [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 64156ad1-38b9-4b5d-b5ce-a7af200afdfd
+
+2020-09-23 09:24:33.714  WARN 7688 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-23 09:24:33.714  INFO 7688 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 09:24:33.714  WARN 7688 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-23 09:24:33.714  INFO 7688 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 09:24:34.792  INFO 7688 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2020-09-23 09:24:34.792  INFO 7688 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2020-09-23 09:24:34.792  INFO 7688 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2020-09-23 09:24:34.792  INFO 7688 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2020-09-23 09:24:34.792  INFO 7688 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2020-09-23 09:24:34.792  INFO 7688 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2020-09-23 09:24:34.792  INFO 7688 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2020-09-23 09:24:34.792  INFO 7688 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2020-09-23 09:24:34.792  INFO 7688 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2020-09-23 09:24:34.792  INFO 7688 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-09-23 09:24:34.792  INFO 7688 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2020-09-23 09:24:34.792  INFO 7688 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2020-09-23 09:24:34.792  INFO 7688 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-09-23 09:24:34.917  WARN 7688 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-09-23 09:24:34.917  WARN 7688 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-09-23 09:24:35.183  INFO 7688 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-23 09:24:35.245  INFO 7688 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 09:24:35.417  INFO 7688 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-23 09:24:35.542  WARN 7688 --- [restartedMain] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-09-23 09:24:35.776  INFO 7688 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 8887
+2020-09-23 09:24:36.011  INFO 7688 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-service 192.168.20.223:8887 register finished
+2020-09-23 09:24:36.026  INFO 7688 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : Started XiaoyuGatewayApplication in 5.686 seconds (JVM running for 6.941)
+2020-09-23 09:24:36.042  INFO 7688 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service-dev.yaml+DEFAULT_GROUP
+2020-09-23 09:24:36.042  INFO 7688 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 09:24:36.042  INFO 7688 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service+DEFAULT_GROUP
+2020-09-23 09:24:36.042  INFO 7688 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service, group=DEFAULT_GROUP, cnt=1
+2020-09-23 09:24:36.042  INFO 7688 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service.yaml+DEFAULT_GROUP
+2020-09-23 09:24:36.042  INFO 7688 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 09:24:36.057  INFO 7688 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:25:05.768  INFO 7688 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:25:35.292  INFO 7688 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:25:38.938  INFO 7688 --- [boundedElastic-1] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-23 09:27:44.010  INFO 7688 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:27:44.229  INFO 7688 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  Content-Type: [application/json;charset=UTF-8]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  X-XSS-Protection: [1 ; mode=block]
+===Headers===  Referrer-Policy: [no-referrer]
+===Headers===  content-length: [160]
+================  Gateway Response End  =================
+
+2020-09-23 09:27:47.072  INFO 7688 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 09:27:47.078  INFO 7688 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2020-09-23 09:27:47.082  INFO 7688 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2020-09-23 09:28:28.088  INFO 9332 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Zhangxy\tools\apache-maven-3.6.3\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/Zhangxy/tools/apache-maven-3.6.3/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-09-23 09:28:28.088  INFO 9332 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Zhangxy\tools\apache-maven-3.6.3\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/Zhangxy/tools/apache-maven-3.6.3/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-core.jar
+2020-09-23 09:28:28.088  INFO 9332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-23 09:28:28.556  INFO 9332 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-23 09:28:28.572  INFO 9332 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-23 09:28:28.603  WARN 9332 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[gateway-service] & group[DEFAULT_GROUP]
+2020-09-23 09:28:28.603  INFO 9332 --- [restartedMain] c.a.nacos.client.config.utils.JVMUtil    : isMultiInstance:false
+2020-09-23 09:28:28.619  INFO 9332 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-gateway-service-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service,DEFAULT_GROUP'}]
+2020-09-23 09:28:28.650  INFO 9332 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : The following profiles are active: dev
+2020-09-23 09:28:29.572  INFO 9332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 09:28:29.572  INFO 9332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-23 09:28:29.603  INFO 9332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-23 09:28:29.681  WARN 9332 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-23 09:28:29.837  INFO 9332 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6e9d57ed-0621-3559-9880-0ac9e4d43233
+2020-09-23 09:28:29.931  INFO 9332 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$9fc2226f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:28:29.962  INFO 9332 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:28:29.962  INFO 9332 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:28:29.962  INFO 9332 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:28:30.196  WARN 9332 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-23 09:28:30.243  INFO 9332 --- [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 20af29cb-8222-4d19-a354-5e34628d34aa
+
+2020-09-23 09:28:30.353  WARN 9332 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-23 09:28:30.353  INFO 9332 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 09:28:30.368  WARN 9332 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-23 09:28:30.368  INFO 9332 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 09:28:31.399  INFO 9332 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2020-09-23 09:28:31.399  INFO 9332 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2020-09-23 09:28:31.399  INFO 9332 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2020-09-23 09:28:31.399  INFO 9332 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2020-09-23 09:28:31.399  INFO 9332 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2020-09-23 09:28:31.399  INFO 9332 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2020-09-23 09:28:31.399  INFO 9332 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2020-09-23 09:28:31.399  INFO 9332 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2020-09-23 09:28:31.399  INFO 9332 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2020-09-23 09:28:31.399  INFO 9332 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-09-23 09:28:31.399  INFO 9332 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2020-09-23 09:28:31.399  INFO 9332 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2020-09-23 09:28:31.399  INFO 9332 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-09-23 09:28:31.524  WARN 9332 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-09-23 09:28:31.524  WARN 9332 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-09-23 09:28:31.774  INFO 9332 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-23 09:28:31.837  INFO 9332 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 09:28:32.008  INFO 9332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-23 09:28:32.102  WARN 9332 --- [restartedMain] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-09-23 09:28:32.321  INFO 9332 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 8887
+2020-09-23 09:28:32.524  INFO 9332 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-service 192.168.2.212:8887 register finished
+2020-09-23 09:28:32.555  INFO 9332 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : Started XiaoyuGatewayApplication in 5.239 seconds (JVM running for 6.585)
+2020-09-23 09:28:32.555  INFO 9332 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service-dev.yaml+DEFAULT_GROUP
+2020-09-23 09:28:32.555  INFO 9332 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 09:28:32.555  INFO 9332 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service+DEFAULT_GROUP
+2020-09-23 09:28:32.555  INFO 9332 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service, group=DEFAULT_GROUP, cnt=1
+2020-09-23 09:28:32.555  INFO 9332 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service.yaml+DEFAULT_GROUP
+2020-09-23 09:28:32.555  INFO 9332 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 09:28:32.571  INFO 9332 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:29:02.282  INFO 9332 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:29:31.388  INFO 9332 --- [boundedElastic-1] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-23 09:29:33.415  INFO 9332 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:29:56.096  INFO 9332 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  Content-Type: [application/json;charset=UTF-8]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  X-XSS-Protection: [1 ; mode=block]
+===Headers===  Referrer-Policy: [no-referrer]
+===Headers===  content-length: [160]
+================  Gateway Response End  =================
+
+2020-09-23 09:29:57.687  INFO 9332 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 09:29:57.687  INFO 9332 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2020-09-23 09:29:57.687  INFO 9332 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2020-09-23 09:30:07.178  INFO 7112 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Zhangxy\tools\apache-maven-3.6.3\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/Zhangxy/tools/apache-maven-3.6.3/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-09-23 09:30:07.194  INFO 7112 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Zhangxy\tools\apache-maven-3.6.3\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/Zhangxy/tools/apache-maven-3.6.3/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-core.jar
+2020-09-23 09:30:07.194  INFO 7112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-23 09:30:07.709  INFO 7112 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-23 09:30:07.725  INFO 7112 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-23 09:30:07.756  WARN 7112 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[gateway-service] & group[DEFAULT_GROUP]
+2020-09-23 09:30:07.756  INFO 7112 --- [restartedMain] c.a.nacos.client.config.utils.JVMUtil    : isMultiInstance:false
+2020-09-23 09:30:07.772  INFO 7112 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-gateway-service-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service,DEFAULT_GROUP'}]
+2020-09-23 09:30:07.788  INFO 7112 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : The following profiles are active: dev
+2020-09-23 09:30:08.803  INFO 7112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 09:30:08.803  INFO 7112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-23 09:30:08.819  INFO 7112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-23 09:30:08.912  WARN 7112 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-23 09:30:09.037  INFO 7112 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6e9d57ed-0621-3559-9880-0ac9e4d43233
+2020-09-23 09:30:09.147  INFO 7112 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$7fd8d068] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:30:09.178  INFO 7112 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:30:09.178  INFO 7112 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:30:09.178  INFO 7112 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:30:09.412  WARN 7112 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-23 09:30:09.475  INFO 7112 --- [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: dc67ab19-0856-4a5f-b335-0f062dde4249
+
+2020-09-23 09:30:09.568  WARN 7112 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-23 09:30:09.568  INFO 7112 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 09:30:09.568  WARN 7112 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-23 09:30:09.568  INFO 7112 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 09:30:10.615  INFO 7112 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2020-09-23 09:30:10.615  INFO 7112 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2020-09-23 09:30:10.615  INFO 7112 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2020-09-23 09:30:10.615  INFO 7112 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2020-09-23 09:30:10.615  INFO 7112 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2020-09-23 09:30:10.615  INFO 7112 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2020-09-23 09:30:10.615  INFO 7112 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2020-09-23 09:30:10.615  INFO 7112 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2020-09-23 09:30:10.615  INFO 7112 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2020-09-23 09:30:10.615  INFO 7112 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-09-23 09:30:10.615  INFO 7112 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2020-09-23 09:30:10.615  INFO 7112 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2020-09-23 09:30:10.615  INFO 7112 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-09-23 09:30:10.756  WARN 7112 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-09-23 09:30:10.756  WARN 7112 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-09-23 09:30:11.006  INFO 7112 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-23 09:30:11.084  INFO 7112 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 09:30:11.256  INFO 7112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-23 09:30:11.365  WARN 7112 --- [restartedMain] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-09-23 09:30:11.615  INFO 7112 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 8887
+2020-09-23 09:30:11.818  INFO 7112 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-service 192.168.2.212:8887 register finished
+2020-09-23 09:30:11.849  INFO 7112 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : Started XiaoyuGatewayApplication in 5.502 seconds (JVM running for 6.856)
+2020-09-23 09:30:11.865  INFO 7112 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service-dev.yaml+DEFAULT_GROUP
+2020-09-23 09:30:11.865  INFO 7112 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 09:30:11.865  INFO 7112 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service+DEFAULT_GROUP
+2020-09-23 09:30:11.865  INFO 7112 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service, group=DEFAULT_GROUP, cnt=1
+2020-09-23 09:30:11.865  INFO 7112 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service.yaml+DEFAULT_GROUP
+2020-09-23 09:30:11.865  INFO 7112 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 09:30:11.880  INFO 7112 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:30:19.471  INFO 7112 --- [boundedElastic-1] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-23 09:30:31.314  INFO 7112 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  Content-Type: [application/json;charset=UTF-8]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  X-XSS-Protection: [1 ; mode=block]
+===Headers===  Referrer-Policy: [no-referrer]
+===Headers===  content-length: [160]
+================  Gateway Response End  =================
+
+2020-09-23 09:30:31.324  INFO 7112 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 09:30:31.329  INFO 7112 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2020-09-23 09:42:33.142  INFO 5232 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-23 09:42:33.751  INFO 5232 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-23 09:42:33.783  INFO 5232 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-23 09:42:33.829  WARN 5232 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[gateway-service] & group[DEFAULT_GROUP]
+2020-09-23 09:42:33.845  INFO 5232 --- [restartedMain] c.a.nacos.client.config.utils.JVMUtil    : isMultiInstance:false
+2020-09-23 09:42:33.861  INFO 5232 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-gateway-service-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service,DEFAULT_GROUP'}]
+2020-09-23 09:42:33.876  INFO 5232 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : The following profiles are active: dev
+2020-09-23 09:42:34.818  INFO 5232 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e294fcb0-a772-30d5-aa01-e04368e8f093
+2020-09-23 09:42:34.896  INFO 5232 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:42:34.896  INFO 5232 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:42:34.896  INFO 5232 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 09:42:35.130  WARN 5232 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-23 09:42:35.146  INFO 5232 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 09:42:35.146  WARN 5232 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-23 09:42:35.146  INFO 5232 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 09:42:36.036  INFO 5232 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2020-09-23 09:42:36.036  INFO 5232 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2020-09-23 09:42:36.036  INFO 5232 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2020-09-23 09:42:36.036  INFO 5232 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2020-09-23 09:42:36.036  INFO 5232 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2020-09-23 09:42:36.036  INFO 5232 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2020-09-23 09:42:36.036  INFO 5232 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2020-09-23 09:42:36.036  INFO 5232 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2020-09-23 09:42:36.036  INFO 5232 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2020-09-23 09:42:36.036  INFO 5232 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-09-23 09:42:36.036  INFO 5232 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2020-09-23 09:42:36.036  INFO 5232 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2020-09-23 09:42:36.036  INFO 5232 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-09-23 09:42:36.396  INFO 5232 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 09:42:36.661  INFO 5232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-23 09:42:36.989  INFO 5232 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 8887
+2020-09-23 09:42:37.192  INFO 5232 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-service 192.168.2.212:8887 register finished
+2020-09-23 09:42:37.208  INFO 5232 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : Started XiaoyuGatewayApplication in 5.048 seconds (JVM running for 6.044)
+2020-09-23 09:42:37.208  INFO 5232 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service-dev.yaml+DEFAULT_GROUP
+2020-09-23 09:42:37.224  INFO 5232 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 09:42:37.224  INFO 5232 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service+DEFAULT_GROUP
+2020-09-23 09:42:37.224  INFO 5232 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service, group=DEFAULT_GROUP, cnt=1
+2020-09-23 09:42:37.224  INFO 5232 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service.yaml+DEFAULT_GROUP
+2020-09-23 09:42:37.224  INFO 5232 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 09:42:37.224  INFO 5232 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:42:37.224  INFO 5232 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:42:58.346  INFO 5232 --- [reactor-http-nio-3] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-23 09:42:58.849  INFO 5232 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  Content-Type: [application/json;charset=UTF-8]
+===Headers===  content-length: [33]
+================  Gateway Response End  =================
+
+2020-09-23 09:43:04.117  INFO 5232 --- [reactor-http-nio-3] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/auth/oauth/token
+2020-09-23 09:43:04.774  INFO 5232 --- [reactor-http-nio-3] c.netflix.config.ChainedDynamicProperty  : Flipping property: auth-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-23 09:43:04.821  INFO 5232 --- [reactor-http-nio-3] c.netflix.loadbalancer.BaseLoadBalancer  : Client: auth-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-09-23 09:43:04.837  INFO 5232 --- [reactor-http-nio-3] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-09-23 09:43:05.140  INFO 5232 --- [reactor-http-nio-3] c.netflix.config.ChainedDynamicProperty  : Flipping property: auth-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-23 09:43:05.141  INFO 5232 --- [reactor-http-nio-3] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client auth-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-service,current list of Servers=[192.168.2.212:8000],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.2.212:8000;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@1aa45e82
+2020-09-23 09:43:05.206  INFO 5232 --- [reactor-http-nio-3] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> POST: /auth/oauth/token
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [dc719ab5-852c-43c2-aee1-fb344e1ba76a]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  Content-Type: [application/x-www-form-urlencoded]
+===Headers===  Content-Length: [120]
+================  Gateway Request End  =================
+
+2020-09-23 09:43:06.021  INFO 5232 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: auth-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-23 09:43:06.937  INFO 5232 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:43:08.076  INFO 5232 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 POST: /auth/oauth/token
+===Headers===  transfer-encoding: [chunked]
+===Headers===  Cache-Control: [no-store]
+===Headers===  Pragma: [no-cache]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Type: [application/json;charset=UTF-8]
+===Headers===  Date: [Wed, 23 Sep 2020 01:43:08 GMT]
+================  Gateway Response End  =================
+
+2020-09-23 09:43:19.306  INFO 5232 --- [reactor-http-nio-3] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-23 09:43:19.351  INFO 5232 --- [reactor-http-nio-3] c.netflix.config.ChainedDynamicProperty  : Flipping property: user-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-23 09:43:19.355  INFO 5232 --- [reactor-http-nio-3] c.netflix.loadbalancer.BaseLoadBalancer  : Client: user-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=user-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-09-23 09:43:19.358  INFO 5232 --- [reactor-http-nio-3] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-09-23 09:43:19.373  INFO 5232 --- [reactor-http-nio-3] c.netflix.config.ChainedDynamicProperty  : Flipping property: user-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-23 09:43:19.374  INFO 5232 --- [reactor-http-nio-3] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client user-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=user-service,current list of Servers=[192.168.2.212:8888],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.2.212:8888;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@593e8a8c
+2020-09-23 09:43:19.384  INFO 5232 --- [reactor-http-nio-3] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDgyNTQ4NywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImRiMzZmYmI0LTFiODgtNGM2Ni05MWI5LTdlNDMwYzFlYTJiNSIsImNsaWVudF9pZCI6ImMxIn0.OweMPTQM5hP8wpHqe1floBxutdMCpqR_Wr0c7g4X7MI]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [6d74349e-d76d-4470-9ba2-17a1645766d6]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+================  Gateway Request End  =================
+
+2020-09-23 09:43:20.361  INFO 5232 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: user-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-23 09:43:20.477  INFO 5232 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  transfer-encoding: [chunked]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Type: [application/json]
+===Headers===  Date: [Wed, 23 Sep 2020 01:43:20 GMT]
+================  Gateway Response End  =================
+
+2020-09-23 09:43:36.446  INFO 5232 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:44:05.958  INFO 5232 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:44:35.472  INFO 5232 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:45:04.980  INFO 5232 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:45:34.496  INFO 5232 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:46:04.005  INFO 5232 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 09:46:12.674  INFO 5232 --- [Thread-40] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2020-09-23 09:46:12.674  INFO 5232 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 09:46:12.690  INFO 5232 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2020-09-23 09:46:12.690  INFO 5232 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.

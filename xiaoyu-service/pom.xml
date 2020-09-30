@@ -32,6 +32,10 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-nacos</artifactId>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter -->
         <dependency>
@@ -50,6 +54,16 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.xiaoyu</groupId>
+            <artifactId>xiaoyu-common-security</artifactId>
+            <version>${XiaoYu-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
     </dependencies>
 
 

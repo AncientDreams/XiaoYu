@@ -24,7 +24,7 @@ public class SystemPermissionServiceImpl extends ServiceImpl<SystemPermissionMap
     final SystemPermissionMapper systemPermissionMapper;
 
     @Override
-    public List<SystemPermission> findByUerName(String userName) {
+    public List<String> findByUerName(String userName) {
         return systemPermissionMapper.findByUerName(userName, "01");
     }
 

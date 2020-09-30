@@ -1,0 +1,198 @@
+2020-09-21 17:00:28.321  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:00:57.935  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:01:27.457  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:01:57.172  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:02:26.701  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:02:56.244  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:03:25.771  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:03:55.276  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:04:24.782  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:04:54.288  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:05:23.795  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:05:53.301  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:05:57.666 DEBUG 17028 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-21 17:05:57.668 DEBUG 17028 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-21 17:05:57.679 DEBUG 17028 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-21 17:05:58.371 DEBUG 17028 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-21 17:05:58.371 DEBUG 17028 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-21 17:05:58.382 DEBUG 17028 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-21 17:05:59.090 DEBUG 17028 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-21 17:05:59.090 DEBUG 17028 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-21 17:05:59.104 DEBUG 17028 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-21 17:05:59.661 DEBUG 17028 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-21 17:05:59.661 DEBUG 17028 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-21 17:05:59.671 DEBUG 17028 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-21 17:06:00.295 DEBUG 17028 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-21 17:06:00.295 DEBUG 17028 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-21 17:06:00.305 DEBUG 17028 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-21 17:06:00.713 DEBUG 17028 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-21 17:06:00.713 DEBUG 17028 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-21 17:06:00.723 DEBUG 17028 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-21 17:06:22.807  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:06:52.314  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:07:21.819  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:07:51.327  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:08:20.833  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:08:50.344  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:09:19.850  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:09:49.356  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:10:18.860  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:10:48.459  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:10:51.918 DEBUG 17028 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-21 17:10:51.918 DEBUG 17028 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-21 17:10:51.928 DEBUG 17028 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-21 17:11:17.997  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:11:47.507  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:12:17.043  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:12:46.548  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:13:16.067  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:13:45.571  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:14:15.077  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:14:44.583  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:15:14.087  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:15:43.590  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:16:13.093  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:16:42.598  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:17:12.101  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:17:41.604  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:18:11.109  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:18:40.618  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:19:10.131  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:19:39.683  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:20:09.186  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:20:38.692  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:21:08.197  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:21:37.721  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:22:07.235  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:22:36.738  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:23:06.245  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:23:35.766  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:24:05.271  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:24:34.779  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:25:04.286  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:25:33.793  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:26:03.297  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:26:05.112 DEBUG 17028 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-21 17:26:05.175 DEBUG 17028 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-21 17:26:05.232 DEBUG 17028 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-21 17:26:32.867  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:27:02.371  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:27:31.894  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:28:01.419  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:28:30.921  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:29:00.427  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:29:29.931  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:29:59.435  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:30:28.940  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:30:58.453  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:31:27.958  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:31:57.476  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:32:26.983  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:32:56.486  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:33:25.991  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:33:55.497  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:34:25.014  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:34:54.518  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:35:24.024  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:35:53.532  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:36:23.047  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:36:52.568  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:37:22.072  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:37:51.577  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:38:21.081  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:38:50.586  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:39:20.095  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:39:49.603  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:40:19.107  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:40:48.610  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:41:18.119  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:41:47.635  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:42:17.145  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:42:46.650  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:43:16.154  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:43:45.676  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:44:15.182  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:44:44.693  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:45:14.195  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:45:43.700  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:46:13.206  INFO 17028 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:46:36.936  INFO 17028 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-21 17:46:37.521  INFO 17028 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2020-09-21 17:46:37.522  INFO 17028 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@user-service:192.168.20.223:8888 from beat map.
+2020-09-21 17:46:37.535  INFO 17028 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@user-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.20.223","ipDeleteTimeout":30000,"metadata":{},"port":8888,"weight":1.0}
+2020-09-21 17:46:37.677  INFO 17028 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2020-09-21 17:46:37.678  INFO 17028 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 17:46:37.770  INFO 17028 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-09-21 17:46:37.782  INFO 17028 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-09-21 17:47:05.460  INFO 9184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-21 17:47:06.827  INFO 9184 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-21 17:47:07.025  INFO 9184 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-21 17:47:07.192  WARN 9184 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service] & group[DEFAULT_GROUP]
+2020-09-21 17:47:07.214  WARN 9184 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service.properties] & group[DEFAULT_GROUP]
+2020-09-21 17:47:07.215  INFO 9184 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-service.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-service,DEFAULT_GROUP'}]
+2020-09-21 17:47:07.234  INFO 9184 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : No active profile set, falling back to default profiles: default
+2020-09-21 17:47:09.037  INFO 9184 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-21 17:47:09.040  INFO 9184 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-21 17:47:09.116  INFO 9184 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2020-09-21 17:47:09.538  INFO 9184 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=285f9205-99ed-3d1f-af3e-8d27a2f944b5
+2020-09-21 17:47:09.682  INFO 9184 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$943af721] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-21 17:47:09.740  INFO 9184 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3f607fe9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-21 17:47:09.756  INFO 9184 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-21 17:47:10.509  INFO 9184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-09-21 17:47:10.526  INFO 9184 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 17:47:10.526  INFO 9184 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 17:47:10.678  INFO 9184 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 17:47:10.678  INFO 9184 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3373 ms
+2020-09-21 17:47:11.012  INFO 9184 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-09-21 17:47:12.043  INFO 9184 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-21 17:47:12.755  WARN 9184 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-21 17:47:12.756  INFO 9184 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-21 17:47:12.776  WARN 9184 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-21 17:47:12.776  INFO 9184 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-21 17:47:13.084  INFO 9184 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 17:47:13.399  INFO 9184 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-21 17:47:13.412  INFO 9184 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-21 17:47:13.412  INFO 9184 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2020-09-21 17:47:13.413  INFO 9184 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-21 17:47:13.565  WARN 9184 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-21 17:47:14.515  INFO 9184 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ed56086f-adb5-4e4e-b885-f52856cbec98
+
+2020-09-21 17:47:14.770  INFO 9184 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5553e803, org.springframework.security.web.context.SecurityContextPersistenceFilter@30248d74, org.springframework.security.web.header.HeaderWriterFilter@f879fe0, org.springframework.security.web.authentication.logout.LogoutFilter@2f660c3a, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@3a2e6160, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18255eb2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@335b1a63, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66b08472, org.springframework.security.web.session.SessionManagementFilter@435905d7, org.springframework.security.web.access.ExceptionTranslationFilter@797419d8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d823fac]
+2020-09-21 17:47:14.827  WARN 9184 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-09-21 17:47:15.274  INFO 9184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-09-21 17:47:15.278  INFO 9184 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.20.223","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8888,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-service","stopped":false,"weight":1.0} to beat map.
+2020-09-21 17:47:15.422  INFO 9184 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@user-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.20.223","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8888,"weight":1.0}
+2020-09-21 17:47:15.446  INFO 9184 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.20.223:8888 register finished
+2020-09-21 17:47:15.563  INFO 9184 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : Started XiaoYuUserServiceApplication in 12.422 seconds (JVM running for 16.007)
+2020-09-21 17:47:15.567  INFO 9184 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service.properties+DEFAULT_GROUP
+2020-09-21 17:47:15.568  INFO 9184 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service.properties, group=DEFAULT_GROUP, cnt=1
+2020-09-21 17:47:15.569  INFO 9184 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service+DEFAULT_GROUP
+2020-09-21 17:47:15.569  INFO 9184 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service, group=DEFAULT_GROUP, cnt=1
+2020-09-21 17:47:15.580  INFO 9184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:47:45.296  INFO 9184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:48:14.801  INFO 9184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:48:44.307  INFO 9184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:49:13.811  INFO 9184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:49:43.315  INFO 9184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:50:12.819  INFO 9184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:50:42.326  INFO 9184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:51:11.833  INFO 9184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:51:41.340  INFO 9184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:52:10.845  INFO 9184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:52:30.338  INFO 9184 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-21 17:52:30.339  INFO 9184 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-21 17:52:30.351  INFO 9184 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-09-21 17:52:30.738 DEBUG 9184 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-21 17:52:31.179 DEBUG 9184 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-21 17:52:31.250 DEBUG 9184 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-21 17:52:40.357  INFO 9184 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 17:52:44.845  INFO 9184 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-21 17:52:44.866  INFO 9184 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2020-09-21 17:52:44.867  INFO 9184 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@user-service:192.168.20.223:8888 from beat map.
+2020-09-21 17:52:44.867  INFO 9184 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@user-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.20.223","ipDeleteTimeout":30000,"metadata":{},"port":8888,"weight":1.0}
+2020-09-21 17:52:44.872  INFO 9184 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2020-09-21 17:52:44.872  INFO 9184 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 17:52:44.874  INFO 9184 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-09-21 17:52:44.876  INFO 9184 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

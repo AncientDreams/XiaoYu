@@ -35,7 +35,7 @@ import java.util.Collections;
 @EnableAuthorizationServer
 public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
 
-//    ClientDetailsServiceConfigurer：用来配置客户端详情服务（ClientDetailsService），
+//    ClientDetailsServiceConfigurer：用AuthorizationServerEndpointsConfigurer来配置客户端详情服务（ClientDetailsService），
 //    客户端详情信息在 这里进行初始化，你能够把客户端详情信息写死在这里或者是通过数据库来存储调取详情信息。
 
 //    AuthorizationServerEndpointsConfigurer：用来配置令牌（token）的访问端点和  令牌服务(token services)。
@@ -74,27 +74,11 @@ public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
 
 
     /**
-     * 客户端详情服务
+     * 客户端详情服务，基于数据库
      */
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.withClientDetails(jdbcClientDetailsService);
-        // 使用in‐memory存储
-//        clients.inMemory()
-//                // client_id
-//                .withClient("c1")
-//                //客户端密钥
-//                .secret(new BCryptPasswordEncoder().encode("secret"))
-//                //资源列表
-//                .resourceIds("res1")
-//                // 该client允许的授权类型authorization_code, password, refresh_token, implicit, client_credentials
-//                .authorizedGrantTypes("authorization_code", "password", "client_credentials", "implicit", "refresh_token")
-//                // 允许的授权范围，允许的授权范围(如果是all，则请求中可以不要scope参数，否则必须加上scopes中配置的)
-//                .scopes("all")
-                    //自动审核 ,如果不配置autoApprove，那获取授权码时，需要手动点一下授权
-//                .autoApprove(false)
-//                //加上验证回调地址
-//                .redirectUris("http://www.baidu.com");
     }
 
 
@@ -114,10 +98,6 @@ public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
         TokenEnhancerChain tokenEnhancerChain = new TokenEnhancerChain();
         tokenEnhancerChain.setTokenEnhancers(Collections.singletonList(accessTokenConverter));
         service.setTokenEnhancer(tokenEnhancerChain);
-        // 令牌默认有效期2小时
-        service.setAccessTokenValiditySeconds(7200);
-        // 刷新令牌默认有效期3天
-        service.setRefreshTokenValiditySeconds(259200);
         return service;
     }
 
@@ -133,7 +113,7 @@ public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
                 //设置令牌管理模式
                 .tokenServices(tokenService()).
                 //允许POST方式提交
-                        allowedTokenEndpointRequestMethods(HttpMethod.POST);
+                allowedTokenEndpointRequestMethods(HttpMethod.POST);
 
         /*
          * pathMapping用来配置端点URL链接，有两个参数，都将以 "/" 字符为开始的字符串

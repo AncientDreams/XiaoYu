@@ -42,8 +42,6 @@ import java.util.List;
  */
 @Slf4j
 @Configuration
-@RequiredArgsConstructor
-@ConditionalOnProperty(value = "blade.log.request.enabled", havingValue = "true", matchIfMissing = true)
 public class GlobalResponseLogFilter implements GlobalFilter, Ordered {
 
 	@Override

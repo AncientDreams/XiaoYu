@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/client-user/pom.xml" />
         <option value="$PROJECT_DIR$/xiaoyu-user-service/pom.xml" />
         <option value="$PROJECT_DIR$/xiaoyu-service/xiaoyu-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/xiaoyu-common/xiaoyu-common-security/pom.xml" />
       </list>
     </option>
   </component>

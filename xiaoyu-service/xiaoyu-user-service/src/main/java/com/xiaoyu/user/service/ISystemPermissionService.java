@@ -16,10 +16,10 @@ import java.util.List;
 public interface ISystemPermissionService extends IService<SystemPermission> {
 
     /**
-     * 通过用户名查询拥有的权限
+     * 通过用户名查询拥有的权限URL
      *
      * @param userName 用户名
      * @return List<SystemPermission>
      */
-    List<SystemPermission> findByUerName(String userName);
+    List<String> findByUerName(String userName);
 }

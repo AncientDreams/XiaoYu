@@ -1,0 +1,697 @@
+2020-09-21 15:00:08.427  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:00:38.245  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:01:07.748  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:01:37.269  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:02:06.787  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:02:36.292  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:03:05.797  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:03:35.302  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:04:04.807  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:04:34.314  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:05:03.818  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:05:33.323  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:06:02.840  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:06:32.346  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:07:01.849  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:07:31.354  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:08:00.859  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:08:30.364  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:08:59.875  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:09:24.626  INFO 2464 --- [boundedElastic-2] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/user/list
+2020-09-21 15:09:24.923  INFO 2464 --- [boundedElastic-2] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /user/list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDY3NDg0MywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImQ2NWEyMjI0LTQ5YjItNDYxMy1iYjQ1LWNlZmU3Mzg2NWYyZiIsImNsaWVudF9pZCI6ImMxIn0.Sei97wmJf775swAqHPVtYiKlzuBXc74La9EqQdxmwAE]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [7088900e-1193-4ab3-8d68-4f018acdbe2d]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  json-token: [[-90, -72, -89, 114, 42, 90, -106, 70, -85, -107, -85, -83, -122, -118, -30, -74, 39, -84, 14, -69, -94, 116, -54, 39, -118, -38, 43, 69, -25, 98]]
+================  Gateway Request End  =================
+
+2020-09-21 15:09:25.704  INFO 2464 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 500 GET: /user/list
+===Headers===  transfer-encoding: [chunked]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Type: [application/json]
+===Headers===  Date: [Mon, 21 Sep 2020 07:09:25 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 15:09:29.397  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:09:46.480  INFO 2464 --- [boundedElastic-2] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/user/list
+2020-09-21 15:09:46.481  INFO 2464 --- [boundedElastic-2] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /user/list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDY3NDg0MywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImQ2NWEyMjI0LTQ5YjItNDYxMy1iYjQ1LWNlZmU3Mzg2NWYyZiIsImNsaWVudF9pZCI6ImMxIn0.Sei97wmJf775swAqHPVtYiKlzuBXc74La9EqQdxmwAE]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [f9d6ece9-c20a-40fc-ba3b-8c371dec3c3c]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  json-token: [[-90, -72, -89, 114, 42, 90, -106, 70, -85, -107, -85, -83, -122, -118, -30, -74, 39, -84, 14, -69, -94, 116, -54, 39, -118, -38, 43, 69, -25, 98]]
+================  Gateway Request End  =================
+
+2020-09-21 15:09:58.909  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:09:59.265  INFO 2464 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 500 GET: /user/list
+===Headers===  transfer-encoding: [chunked]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Type: [application/json]
+===Headers===  Date: [Mon, 21 Sep 2020 07:09:59 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 15:10:05.549  INFO 2464 --- [boundedElastic-2] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/user/list
+2020-09-21 15:10:05.550  INFO 2464 --- [boundedElastic-2] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /user/list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDY3NDg0MywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImQ2NWEyMjI0LTQ5YjItNDYxMy1iYjQ1LWNlZmU3Mzg2NWYyZiIsImNsaWVudF9pZCI6ImMxIn0.Sei97wmJf775swAqHPVtYiKlzuBXc74La9EqQdxmwAE]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [980ed6c4-0472-4cb6-94ec-57541973f76b]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  json-token: [[-90, -72, -89, 114, 42, 90, -106, 70, -85, -107, -85, -83, -122, -118, -30, -74, 39, -84, 14, -69, -94, 116, -54, 39, -118, -38, 43, 69, -25, 98]]
+================  Gateway Request End  =================
+
+2020-09-21 15:10:28.412  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:10:44.455  INFO 2464 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 500 GET: /user/list
+===Headers===  transfer-encoding: [chunked]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Type: [application/json]
+===Headers===  Date: [Mon, 21 Sep 2020 07:10:44 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 15:10:58.858  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:11:01.441  INFO 2464 --- [boundedElastic-2] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/user/list
+2020-09-21 15:13:27.746  INFO 2464 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:13:27.749  INFO 2464 --- [boundedElastic-2] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /user/list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDY3NDg0MywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImQ2NWEyMjI0LTQ5YjItNDYxMy1iYjQ1LWNlZmU3Mzg2NWYyZiIsImNsaWVudF9pZCI6ImMxIn0.Sei97wmJf775swAqHPVtYiKlzuBXc74La9EqQdxmwAE]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [9800fadd-1f34-40c8-a0a2-3824c7f975a2]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  json-token: [[-90, -72, -89, 114, 42, 90, -106, 70, -85, -107, -85, -83, -122, -118, -30, -74, 39, -84, 14, -69, -94, 116, -54, 39, -118, -38, 43, 69, -25, 98]]
+================  Gateway Request End  =================
+
+2020-09-21 15:15:59.958  INFO 14316 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Zhangxy\tools\apache-maven-3.6.3\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/Zhangxy/tools/apache-maven-3.6.3/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-09-21 15:15:59.963  INFO 14316 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Zhangxy\tools\apache-maven-3.6.3\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/Zhangxy/tools/apache-maven-3.6.3/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-core.jar
+2020-09-21 15:15:59.963  INFO 14316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-21 15:16:00.816  INFO 14316 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-21 15:16:00.841  INFO 14316 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-21 15:16:01.033  WARN 14316 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[gateway-service] & group[DEFAULT_GROUP]
+2020-09-21 15:16:01.065  INFO 14316 --- [restartedMain] c.a.nacos.client.config.utils.JVMUtil    : isMultiInstance:false
+2020-09-21 15:16:01.095  INFO 14316 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-gateway-service-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service,DEFAULT_GROUP'}]
+2020-09-21 15:16:01.139  INFO 14316 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : The following profiles are active: dev
+2020-09-21 15:16:03.079  INFO 14316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-21 15:16:03.083  INFO 14316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-21 15:16:03.122  INFO 14316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2020-09-21 15:16:03.226  WARN 14316 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-21 15:16:03.388  INFO 14316 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6e9d57ed-0621-3559-9880-0ac9e4d43233
+2020-09-21 15:16:03.493  INFO 14316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$4f29b720] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-21 15:16:03.539  INFO 14316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-21 15:16:03.541  INFO 14316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-21 15:16:03.542  INFO 14316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-21 15:16:03.837  WARN 14316 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-21 15:16:03.897  INFO 14316 --- [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 063ff0fa-5d88-48f7-a698-9691541ed15b
+
+2020-09-21 15:16:04.076  WARN 14316 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-21 15:16:04.076  INFO 14316 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-21 15:16:04.081  WARN 14316 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-21 15:16:04.082  INFO 14316 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-21 15:16:05.428  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2020-09-21 15:16:05.428  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2020-09-21 15:16:05.428  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2020-09-21 15:16:05.428  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2020-09-21 15:16:05.428  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2020-09-21 15:16:05.428  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2020-09-21 15:16:05.428  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2020-09-21 15:16:05.428  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2020-09-21 15:16:05.429  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2020-09-21 15:16:05.429  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-09-21 15:16:05.429  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2020-09-21 15:16:05.429  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2020-09-21 15:16:05.429  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-09-21 15:16:05.578  WARN 14316 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-09-21 15:16:05.579  WARN 14316 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-09-21 15:16:05.880  INFO 14316 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-21 15:16:05.951  INFO 14316 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-21 15:16:06.149  WARN 14316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-09-21 15:16:06.286  WARN 14316 --- [restartedMain] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-09-21 15:16:06.726  INFO 14316 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 8887
+2020-09-21 15:16:06.987  INFO 14316 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-service 192.168.20.223:8887 register finished
+2020-09-21 15:16:07.012  INFO 14316 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : Started XiaoyuGatewayApplication in 8.287 seconds (JVM running for 9.633)
+2020-09-21 15:16:07.017  INFO 14316 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service-dev.yaml+DEFAULT_GROUP
+2020-09-21 15:16:07.018  INFO 14316 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-21 15:16:07.018  INFO 14316 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service+DEFAULT_GROUP
+2020-09-21 15:16:07.018  INFO 14316 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service, group=DEFAULT_GROUP, cnt=1
+2020-09-21 15:16:07.019  INFO 14316 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] gateway-service.yaml+DEFAULT_GROUP
+2020-09-21 15:16:07.019  INFO 14316 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-21 15:16:07.035  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:16:24.928  INFO 14316 --- [boundedElastic-1] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/user/list
+2020-09-21 15:16:34.538  INFO 14316 --- [boundedElastic-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: user-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-21 15:16:34.554  INFO 14316 --- [boundedElastic-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: user-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=user-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-09-21 15:16:34.560  INFO 14316 --- [boundedElastic-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-09-21 15:16:34.595  INFO 14316 --- [boundedElastic-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: user-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-21 15:16:34.597  INFO 14316 --- [boundedElastic-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client user-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=user-service,current list of Servers=[192.168.20.223:8888],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.20.223:8888;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@546abf51
+2020-09-21 15:16:34.628  INFO 14316 --- [boundedElastic-1] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /user/list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDY3NDg0MywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImQ2NWEyMjI0LTQ5YjItNDYxMy1iYjQ1LWNlZmU3Mzg2NWYyZiIsImNsaWVudF9pZCI6ImMxIn0.Sei97wmJf775swAqHPVtYiKlzuBXc74La9EqQdxmwAE]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [6f35458e-a8c4-4eb5-8dae-51e9067d1a93]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  json-token: [{"principal":"karl","authorities":["日志监控","Druid Monitor","Redis操作工具","权限管理","反馈意见","操作日志","测试自动注册","参数管理","系统日志","系统管理","数据库控制台","用户管理","开发工具","角色管理"]}]
+================  Gateway Request End  =================
+
+2020-09-21 15:16:35.566  INFO 14316 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: user-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-21 15:16:36.732  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:16:41.159  INFO 14316 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 404 GET: /user/list
+===Headers===  transfer-encoding: [chunked]
+===Headers===  Vary: [Origin, Access-Control-Request-Method, Access-Control-Request-Headers]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Type: [application/json]
+===Headers===  Date: [Mon, 21 Sep 2020 07:16:41 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 15:17:06.239  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:17:35.745  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:17:58.020  INFO 14316 --- [boundedElastic-1] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-21 15:17:58.023  INFO 14316 --- [boundedElastic-1] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDY3NDg0MywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImQ2NWEyMjI0LTQ5YjItNDYxMy1iYjQ1LWNlZmU3Mzg2NWYyZiIsImNsaWVudF9pZCI6ImMxIn0.Sei97wmJf775swAqHPVtYiKlzuBXc74La9EqQdxmwAE]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [63af7a1d-2fa1-41f7-8be4-2c76b25933f9]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  json-token: [{"principal":"karl","authorities":["日志监控","Druid Monitor","Redis操作工具","权限管理","反馈意见","操作日志","测试自动注册","参数管理","系统日志","系统管理","数据库控制台","用户管理","开发工具","角色管理"]}]
+================  Gateway Request End  =================
+
+2020-09-21 15:17:58.056  INFO 14316 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  transfer-encoding: [chunked]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Type: [application/json]
+===Headers===  Date: [Mon, 21 Sep 2020 07:17:58 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 15:18:04.545  INFO 14316 --- [boundedElastic-1] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-21 15:18:04.546  INFO 14316 --- [boundedElastic-1] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDY3NDg0MywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImQ2NWEyMjI0LTQ5YjItNDYxMy1iYjQ1LWNlZmU3Mzg2NWYyZiIsImNsaWVudF9pZCI6ImMxIn0.Sei97wmJf775swAqHPVtYiKlzuBXc74La9EqQdxmwAE]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [a56f7566-a808-4d12-9480-313b96ec9a9d]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  json-token: [{"principal":"karl","authorities":["日志监控","Druid Monitor","Redis操作工具","权限管理","反馈意见","操作日志","测试自动注册","参数管理","系统日志","系统管理","数据库控制台","用户管理","开发工具","角色管理"]}]
+================  Gateway Request End  =================
+
+2020-09-21 15:18:04.572  INFO 14316 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  transfer-encoding: [chunked]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Type: [application/json]
+===Headers===  Date: [Mon, 21 Sep 2020 07:18:04 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 15:18:05.251  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:18:34.756  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:19:04.265  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:19:33.787  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:20:03.305  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:20:32.814  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:21:02.326  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:21:31.834  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:22:01.337  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:22:30.851  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:23:00.362  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:23:29.868  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:23:59.375  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:24:28.880  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:24:54.686  INFO 14316 --- [boundedElastic-2] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-21 15:24:58.393  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:25:27.901  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:25:57.405  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:26:26.923  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:26:56.429  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:27:25.964  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:27:55.574  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:28:25.079  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:28:54.592  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:29:24.098  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:29:53.603  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:30:04.478  INFO 14316 --- [boundedElastic-3] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-21 15:30:04.490  INFO 14316 --- [boundedElastic-3] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDY3NDg0MywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImQ2NWEyMjI0LTQ5YjItNDYxMy1iYjQ1LWNlZmU3Mzg2NWYyZiIsImNsaWVudF9pZCI6ImMxIn0.Sei97wmJf775swAqHPVtYiKlzuBXc74La9EqQdxmwAE]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [d383dbee-1284-47dd-9219-1a7ee725155b]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  json-token: [{"principal":"karl","authorities":["日志监控","Druid Monitor","Redis操作工具","权限管理","反馈意见","操作日志","测试自动注册","参数管理","系统日志","系统管理","数据库控制台","用户管理","开发工具","角色管理"]}]
+================  Gateway Request End  =================
+
+2020-09-21 15:30:20.950  INFO 14316 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 403 GET: /list
+===Headers===  transfer-encoding: [chunked]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Type: [application/json]
+===Headers===  Date: [Mon, 21 Sep 2020 07:30:20 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 15:30:23.107  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:30:52.614  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:31:22.121  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:31:51.635  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:32:21.139  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:32:50.648  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:33:20.353  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:33:50.220  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:34:19.723  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:34:49.227  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:35:18.730  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:35:48.236  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:36:17.742  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:36:47.247  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:37:16.752  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:37:46.257  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:38:08.969  INFO 14316 --- [Thread-2] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-21 15:38:08.981  INFO 14316 --- [Thread-2] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2020-09-21 15:38:08.984  INFO 14316 --- [Thread-2] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2020-09-21 15:38:12.085  WARN 14316 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[gateway-service] & group[DEFAULT_GROUP]
+2020-09-21 15:38:12.116  INFO 14316 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-gateway-service-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-gateway-service,DEFAULT_GROUP'}]
+2020-09-21 15:38:12.128  INFO 14316 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : The following profiles are active: dev
+2020-09-21 15:38:13.275  INFO 14316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-21 15:38:13.276  INFO 14316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-21 15:38:13.303  INFO 14316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2020-09-21 15:38:13.449  INFO 14316 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6e9d57ed-0621-3559-9880-0ac9e4d43233
+2020-09-21 15:38:13.470  INFO 14316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$4f29b720] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-21 15:38:13.474  INFO 14316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-21 15:38:13.475  INFO 14316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-21 15:38:13.475  INFO 14316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-21 15:38:13.534  WARN 14316 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-21 15:38:13.562  INFO 14316 --- [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 92c63ffc-beea-48d9-81aa-63eb3b76e05a
+
+2020-09-21 15:38:13.600  WARN 14316 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-21 15:38:13.601  INFO 14316 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-21 15:38:14.617  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2020-09-21 15:38:14.618  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2020-09-21 15:38:14.618  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2020-09-21 15:38:14.618  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2020-09-21 15:38:14.618  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2020-09-21 15:38:14.618  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2020-09-21 15:38:14.618  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2020-09-21 15:38:14.618  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2020-09-21 15:38:14.618  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2020-09-21 15:38:14.618  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-09-21 15:38:14.618  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2020-09-21 15:38:14.618  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2020-09-21 15:38:14.618  INFO 14316 --- [restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-09-21 15:38:15.591  INFO 14316 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-21 15:38:15.625  INFO 14316 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-21 15:38:15.765  WARN 14316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-09-21 15:38:15.786  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:38:16.195  WARN 14316 --- [restartedMain] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-09-21 15:38:16.429  INFO 14316 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 8887
+2020-09-21 15:38:16.907  INFO 14316 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-service 192.168.20.223:8887 register finished
+2020-09-21 15:38:16.939  INFO 14316 --- [restartedMain] c.x.gateway.XiaoyuGatewayApplication     : Started XiaoyuGatewayApplication in 5.285 seconds (JVM running for 1339.559)
+2020-09-21 15:38:16.942  INFO 14316 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service-dev.yaml, group=DEFAULT_GROUP, cnt=2
+2020-09-21 15:38:16.942  INFO 14316 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service, group=DEFAULT_GROUP, cnt=2
+2020-09-21 15:38:16.942  INFO 14316 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=gateway-service.yaml, group=DEFAULT_GROUP, cnt=2
+2020-09-21 15:38:16.947  INFO 14316 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-21 15:38:29.739  INFO 14316 --- [boundedElastic-4] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-21 15:38:31.622  INFO 14316 --- [boundedElastic-4] c.netflix.config.ChainedDynamicProperty  : Flipping property: user-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-21 15:38:31.627  INFO 14316 --- [boundedElastic-4] c.netflix.loadbalancer.BaseLoadBalancer  : Client: user-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=user-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-09-21 15:38:31.632  INFO 14316 --- [boundedElastic-4] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-09-21 15:38:31.635  INFO 14316 --- [boundedElastic-4] c.netflix.config.ChainedDynamicProperty  : Flipping property: user-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-21 15:38:31.637  INFO 14316 --- [boundedElastic-4] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client user-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=user-service,current list of Servers=[192.168.20.223:8888],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.20.223:8888;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@101da36c
+2020-09-21 15:38:31.655  INFO 14316 --- [boundedElastic-4] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDY3NDg0MywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImQ2NWEyMjI0LTQ5YjItNDYxMy1iYjQ1LWNlZmU3Mzg2NWYyZiIsImNsaWVudF9pZCI6ImMxIn0.Sei97wmJf775swAqHPVtYiKlzuBXc74La9EqQdxmwAE]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [91593a5e-a527-4046-8eb3-f85b3f96b28b]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  json-token: [{"principal":"karl","authorities":["日志监控","Druid Monitor","Redis操作工具","权限管理","反馈意见","操作日志","测试自动注册","参数管理","系统日志","系统管理","数据库控制台","用户管理","开发工具","角色管理"]}]
+================  Gateway Request End  =================
+
+2020-09-21 15:38:31.876  INFO 14316 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Length: [80]
+===Headers===  Date: [Mon, 21 Sep 2020 07:38:31 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 15:38:32.634  INFO 14316 --- [PollingServerListUpdater-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: user-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-21 15:38:45.296  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:39:14.798  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:39:44.321  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:40:13.909  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:40:43.413  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:40:57.851  INFO 14316 --- [boundedElastic-5] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-21 15:41:04.524  INFO 14316 --- [boundedElastic-5] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-21 15:41:04.525  INFO 14316 --- [boundedElastic-5] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDY3NDg0MywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImQ2NWEyMjI0LTQ5YjItNDYxMy1iYjQ1LWNlZmU3Mzg2NWYyZiIsImNsaWVudF9pZCI6ImMxIn0.Sei97wmJf775swAqHPVtYiKlzuBXc74La9EqQdxmwAE]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [7d7ebb0d-abee-43b7-9f92-61ca2dfd769e]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  json-token: [{"principal":"karl","authorities":["日志监控","Druid Monitor","Redis操作工具","权限管理","反馈意见","操作日志","测试自动注册","参数管理","系统日志","系统管理","数据库控制台","用户管理","开发工具","角色管理"]}]
+================  Gateway Request End  =================
+
+2020-09-21 15:41:04.708  INFO 14316 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Length: [33]
+===Headers===  Date: [Mon, 21 Sep 2020 07:41:04 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 15:41:05.799  INFO 14316 --- [boundedElastic-5] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-21 15:41:05.800  INFO 14316 --- [boundedElastic-5] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDY3NDg0MywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImQ2NWEyMjI0LTQ5YjItNDYxMy1iYjQ1LWNlZmU3Mzg2NWYyZiIsImNsaWVudF9pZCI6ImMxIn0.Sei97wmJf775swAqHPVtYiKlzuBXc74La9EqQdxmwAE]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [aa56cf77-dc99-43ea-b78c-a188a0c5c578]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  json-token: [{"principal":"karl","authorities":["日志监控","Druid Monitor","Redis操作工具","权限管理","反馈意见","操作日志","测试自动注册","参数管理","系统日志","系统管理","数据库控制台","用户管理","开发工具","角色管理"]}]
+================  Gateway Request End  =================
+
+2020-09-21 15:41:05.812  INFO 14316 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Length: [33]
+===Headers===  Date: [Mon, 21 Sep 2020 07:41:05 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 15:41:11.262  INFO 14316 --- [boundedElastic-5] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-21 15:41:11.263  INFO 14316 --- [boundedElastic-5] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDY3NDg0MywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImQ2NWEyMjI0LTQ5YjItNDYxMy1iYjQ1LWNlZmU3Mzg2NWYyZiIsImNsaWVudF9pZCI6ImMxIn0.Sei97wmJf775swAqHPVtYiKlzuBXc74La9EqQdxmwAE]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [a6eb2008-bf79-4789-b413-5378693f4c25]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  json-token: [{"principal":"karl","authorities":["日志监控","Druid Monitor","Redis操作工具","权限管理","反馈意见","操作日志","测试自动注册","参数管理","系统日志","系统管理","数据库控制台","用户管理","开发工具","角色管理"]}]
+================  Gateway Request End  =================
+
+2020-09-21 15:41:11.273  INFO 14316 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Length: [33]
+===Headers===  Date: [Mon, 21 Sep 2020 07:41:11 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 15:41:12.927  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:41:42.431  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:42:11.948  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:42:41.455  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:43:10.973  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:43:40.478  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:44:09.981  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:44:39.498  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:45:09.003  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:45:38.511  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:46:08.015  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:46:37.518  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:47:07.027  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:47:30.517  INFO 14316 --- [boundedElastic-6] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-21 15:47:30.524  INFO 14316 --- [boundedElastic-6] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDY3NDg0MywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImQ2NWEyMjI0LTQ5YjItNDYxMy1iYjQ1LWNlZmU3Mzg2NWYyZiIsImNsaWVudF9pZCI6ImMxIn0.Sei97wmJf775swAqHPVtYiKlzuBXc74La9EqQdxmwAE]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [d7336092-4e89-46c1-a289-c41cbf3d9dae]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  json-token: [{"principal":"karl","authorities":["日志监控","Druid Monitor","Redis操作工具","权限管理","反馈意见","操作日志","测试自动注册","参数管理","系统日志","系统管理","数据库控制台","用户管理","开发工具","角色管理"]}]
+================  Gateway Request End  =================
+
+2020-09-21 15:47:30.744  INFO 14316 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Length: [33]
+===Headers===  Date: [Mon, 21 Sep 2020 07:47:30 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 15:47:32.241  INFO 14316 --- [boundedElastic-6] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-21 15:47:32.242  INFO 14316 --- [boundedElastic-6] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDY3NDg0MywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImQ2NWEyMjI0LTQ5YjItNDYxMy1iYjQ1LWNlZmU3Mzg2NWYyZiIsImNsaWVudF9pZCI6ImMxIn0.Sei97wmJf775swAqHPVtYiKlzuBXc74La9EqQdxmwAE]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [2c60a8f5-de82-4c97-bf44-14716e1dbf6b]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  json-token: [{"principal":"karl","authorities":["日志监控","Druid Monitor","Redis操作工具","权限管理","反馈意见","操作日志","测试自动注册","参数管理","系统日志","系统管理","数据库控制台","用户管理","开发工具","角色管理"]}]
+================  Gateway Request End  =================
+
+2020-09-21 15:47:32.270  INFO 14316 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Length: [33]
+===Headers===  Date: [Mon, 21 Sep 2020 07:47:32 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 15:47:32.993  INFO 14316 --- [boundedElastic-6] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-21 15:47:32.994  INFO 14316 --- [boundedElastic-6] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDY3NDg0MywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImQ2NWEyMjI0LTQ5YjItNDYxMy1iYjQ1LWNlZmU3Mzg2NWYyZiIsImNsaWVudF9pZCI6ImMxIn0.Sei97wmJf775swAqHPVtYiKlzuBXc74La9EqQdxmwAE]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [b7097eed-fe8e-49af-8cc0-114d1881480f]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  json-token: [{"principal":"karl","authorities":["日志监控","Druid Monitor","Redis操作工具","权限管理","反馈意见","操作日志","测试自动注册","参数管理","系统日志","系统管理","数据库控制台","用户管理","开发工具","角色管理"]}]
+================  Gateway Request End  =================
+
+2020-09-21 15:47:33.003  INFO 14316 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Length: [33]
+===Headers===  Date: [Mon, 21 Sep 2020 07:47:32 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 15:47:36.531  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:48:06.045  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:48:35.548  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:48:36.458  INFO 14316 --- [boundedElastic-6] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-21 15:48:36.460  INFO 14316 --- [boundedElastic-6] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sImV4cCI6MTYwMDY3NDg0MywiYXV0aG9yaXRpZXMiOlsi5pel5b-X55uR5o6nIiwiRHJ1aWQgTW9uaXRvciIsIlJlZGlz5pON5L2c5bel5YW3Iiwi5p2D6ZmQ566h55CGIiwi5Y-N6aaI5oSP6KeBIiwi5pON5L2c5pel5b-XIiwi5rWL6K-V6Ieq5Yqo5rOo5YaMIiwi5Y-C5pWw566h55CGIiwi57O757uf5pel5b-XIiwi57O757uf566h55CGIiwi5pWw5o2u5bqT5o6n5Yi25Y-wIiwi55So5oi3566h55CGIiwi5byA5Y-R5bel5YW3Iiwi6KeS6Imy566h55CGIl0sImp0aSI6ImQ2NWEyMjI0LTQ5YjItNDYxMy1iYjQ1LWNlZmU3Mzg2NWYyZiIsImNsaWVudF9pZCI6ImMxIn0.Sei97wmJf775swAqHPVtYiKlzuBXc74La9EqQdxmwAE]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [01a60524-9d6f-44c3-8dbb-cbc5ec312453]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+===Headers===  json-token: [{"principal":"karl","authorities":["日志监控","Druid Monitor","Redis操作工具","权限管理","反馈意见","操作日志","测试自动注册","参数管理","系统日志","系统管理","数据库控制台","用户管理","开发工具","角色管理"]}]
+================  Gateway Request End  =================
+
+2020-09-21 15:49:05.054  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:49:34.569  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:50:04.072  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:50:33.577  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:51:03.083  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:51:31.349  INFO 14316 --- [reactor-http-nio-3] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Length: [33]
+===Headers===  Date: [Mon, 21 Sep 2020 07:51:31 GMT]
+===Headers===  Referrer-Policy: [no-referrer]
+================  Gateway Response End  =================
+
+2020-09-21 15:51:32.587  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:52:02.090  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:52:31.593  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:53:01.099  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:53:30.603  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:54:00.105  INFO 14316 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-21 15:54:00.564  INFO 14316 --- [Thread-52] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2020-09-21 15:54:00.581  INFO 14316 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-21 15:54:00.585  INFO 14316 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2020-09-21 15:54:00.589  INFO 14316 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.

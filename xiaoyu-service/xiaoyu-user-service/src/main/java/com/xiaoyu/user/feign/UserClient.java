@@ -17,17 +17,19 @@
 package com.xiaoyu.user.feign;
 
 
-import bo.ResultBody;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.xiaoyu.user.entity.SystemPermission;
+import com.xiaoyu.common.core.bo.R;
+import com.xiaoyu.user.entity.SystemRole;
 import com.xiaoyu.user.entity.SystemUser;
-import com.xiaoyu.user.entity.SystemUserRole;
 import com.xiaoyu.user.service.ISystemPermissionService;
+import com.xiaoyu.user.service.ISystemRoleService;
 import com.xiaoyu.user.service.ISystemUserService;
 import lombok.AllArgsConstructor;
 
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 
 /**
@@ -46,23 +48,25 @@ public class UserClient implements IUserClient {
 
     private final ISystemPermissionService iSystemPermissionService;
 
+    private final ISystemRoleService iSystemRoleService;
+
     @Override
     @Cacheable(value = "userName", key = "#username")
-    public ResultBody<SystemUser> userByUsername(String username) {
-        return ResultBody.success(iSystemUserService.getOne(Wrappers.<SystemUser>lambdaQuery()
+    public R<SystemUser> userByUsername(String username) throws Exception {
+        return R.success(iSystemUserService.getOne(Wrappers.<SystemUser>lambdaQuery()
                 .select(SystemUser::getUserId, SystemUser::getUserName, SystemUser::getPassword).eq(SystemUser::getUserName, username)));
     }
 
     @Override
     @Cacheable(value = "systemPermission",key = "#userName")
-    public ResultBody<SystemPermission> getSystemPermissions(String userName) {
-        return ResultBody.success(iSystemPermissionService.findByUerName(userName));
+    public R<List<String>> getSystemPermissions(String userName) {
+        return R.success(iSystemPermissionService.findByUerName(userName));
     }
 
     @Override
     @Cacheable(value = "userRoles", key = "#userName")
-    public ResultBody<SystemUserRole> queryUserRolesByUserId(String userName) {
-        return null;
+    public R<List<SystemRole>> queryUserRolesByUserId(String userName) {
+        return R.success(iSystemRoleService.list());
     }
 
 

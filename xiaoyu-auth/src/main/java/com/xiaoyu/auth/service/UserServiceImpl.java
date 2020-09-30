@@ -1,9 +1,10 @@
 package com.xiaoyu.auth.service;
 
-import bo.ResultBody;
+import com.xiaoyu.common.core.bo.R;
 import com.xiaoyu.user.entity.SystemUser;
 import com.xiaoyu.user.feign.IUserClient;
 import lombok.AllArgsConstructor;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.Cache;
 import org.springframework.data.redis.cache.RedisCacheManager;
@@ -33,17 +34,17 @@ public class UserServiceImpl implements UserDetailsService {
 
     private RedisCacheManager redisCacheManager;
 
+    @SneakyThrows
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        log.info("------------- 登录人 : {}", username);
-
         SystemUser systemUser = null;
-        final String userNameCache = "userName";
+        final String userCacheName = "userName";
+
         //先查询缓存
-        Cache cache = redisCacheManager.getCache(userNameCache);
+        Cache cache = redisCacheManager.getCache(userCacheName);
         if (cache != null) {
             try {
-                systemUser = (SystemUser) Objects.requireNonNull(cache.get(username, ResultBody.class)).getData();
+                systemUser = (SystemUser) Objects.requireNonNull(cache.get(username, R.class)).getData();
             } catch (Exception ignored) {
             }
         }
@@ -59,7 +60,7 @@ public class UserServiceImpl implements UserDetailsService {
         //如果需要扩展信息，将 信息转为json保存到withUsername  JSONObject.toJSONString(systemUser)
         return User.withUsername(systemUser.getUserName()).
                 password(systemUser.getPassword())
-                //关于权限的话，是用传入一个url 地址的数组，此处 不传，到网关后统一鉴权
-                .authorities("1").build();
+                //关于权限的话，是用传入一个url 地址的数组，此处 不传，到微服务后通过redis获取,保证权限的实时性
+                .authorities("null").build();
     }
 }

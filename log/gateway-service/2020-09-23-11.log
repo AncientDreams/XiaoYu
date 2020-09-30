@@ -1,0 +1,105 @@
+2020-09-23 11:00:10.999  INFO 9000 --- [reactor-http-nio-2] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-23 11:00:11.017  INFO 9000 --- [reactor-http-nio-2] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sIlVzZXJJbmZvIjoie1wicmVhbE5hbWVcIjpcIuWHr1wiLFwicGhvbmVcIjpcIjE3Njc0NzAxMjQ4XCIsXCJ1c2VySWRcIjoxNSxcImVtYWlsXCI6XCIxNjExODE4Njk4QHFxLmNvbVwiLFwic3RhdHVzXCI6XCIwXCJ9IiwiZXhwIjoxNjAwODQ5MzM5LCJhdXRob3JpdGllcyI6WyLml6Xlv5fnm5HmjqciLCJEcnVpZCBNb25pdG9yIiwiUmVkaXPmk43kvZzlt6XlhbciLCLmnYPpmZDnrqHnkIYiLCLlj43ppojmhI_op4EiLCLmk43kvZzml6Xlv5ciLCLmtYvor5Xoh6rliqjms6jlhowiLCLlj4LmlbDnrqHnkIYiLCLns7vnu5_ml6Xlv5ciLCLns7vnu5_nrqHnkIYiLCLmlbDmja7lupPmjqfliLblj7AiLCLnlKjmiLfnrqHnkIYiLCLlvIDlj5Hlt6XlhbciLCLop5LoibLnrqHnkIYiXSwianRpIjoiMDAzYzVjNTItY2FjYi00MzNjLWI2N2ItMzFiNjg2Y2Q5MWM0IiwiY2xpZW50X2lkIjoiYzEifQ.9LxwGVdCq5w3GNswmOSdHLNgAzfgVqLRKUPlfXsIwqg]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [cc093868-8931-498f-8da9-4d753e4ede2d]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+================  Gateway Request End  =================
+
+2020-09-23 11:00:19.111  INFO 9000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 11:00:32.455  INFO 9000 --- [reactor-http-nio-2] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 500 GET: /list
+===Headers===  transfer-encoding: [chunked]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Type: [application/json]
+===Headers===  Date: [Wed, 23 Sep 2020 03:00:32 GMT]
+================  Gateway Response End  =================
+
+2020-09-23 11:00:48.613  INFO 9000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 11:01:18.117  INFO 9000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 11:01:47.621  INFO 9000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 11:02:17.127  INFO 9000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 11:02:46.633  INFO 9000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 11:03:16.137  INFO 9000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 11:03:45.645  INFO 9000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 11:04:15.151  INFO 9000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 11:04:44.660  INFO 9000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 11:05:14.165  INFO 9000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 11:05:43.670  INFO 9000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 11:05:59.920  INFO 9000 --- [reactor-http-nio-2] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-23 11:05:59.924  INFO 9000 --- [reactor-http-nio-2] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sIlVzZXJJbmZvIjoie1wicmVhbE5hbWVcIjpcIuWHr1wiLFwicGhvbmVcIjpcIjE3Njc0NzAxMjQ4XCIsXCJ1c2VySWRcIjoxNSxcImVtYWlsXCI6XCIxNjExODE4Njk4QHFxLmNvbVwiLFwic3RhdHVzXCI6XCIwXCJ9IiwiZXhwIjoxNjAwODQ5MzM5LCJhdXRob3JpdGllcyI6WyLml6Xlv5fnm5HmjqciLCJEcnVpZCBNb25pdG9yIiwiUmVkaXPmk43kvZzlt6XlhbciLCLmnYPpmZDnrqHnkIYiLCLlj43ppojmhI_op4EiLCLmk43kvZzml6Xlv5ciLCLmtYvor5Xoh6rliqjms6jlhowiLCLlj4LmlbDnrqHnkIYiLCLns7vnu5_ml6Xlv5ciLCLns7vnu5_nrqHnkIYiLCLmlbDmja7lupPmjqfliLblj7AiLCLnlKjmiLfnrqHnkIYiLCLlvIDlj5Hlt6XlhbciLCLop5LoibLnrqHnkIYiXSwianRpIjoiMDAzYzVjNTItY2FjYi00MzNjLWI2N2ItMzFiNjg2Y2Q5MWM0IiwiY2xpZW50X2lkIjoiYzEifQ.9LxwGVdCq5w3GNswmOSdHLNgAzfgVqLRKUPlfXsIwqg]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [ec2b35a7-fb14-4665-8987-2f7511ca735e]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+================  Gateway Request End  =================
+
+2020-09-23 11:06:13.175  INFO 9000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 11:06:27.991  INFO 9000 --- [reactor-http-nio-2] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 500 GET: /list
+===Headers===  transfer-encoding: [chunked]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Type: [application/json]
+===Headers===  Date: [Wed, 23 Sep 2020 03:06:27 GMT]
+================  Gateway Response End  =================
+
+2020-09-23 11:06:42.685  INFO 9000 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-23 11:06:52.792  INFO 9000 --- [reactor-http-nio-2] c.x.gateway.filter.AuthGlobalFilter      : 【网关认证服务】请求地址：/list
+2020-09-23 11:06:52.795  INFO 9000 --- [reactor-http-nio-2] c.x.g.filter.GlobalRequestLogFilter      : 
+
+================ Gateway Request Start  ================
+===> GET: /list
+===Headers===  Authorization: [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzMSJdLCJ1c2VyX25hbWUiOiJrYXJsIiwic2NvcGUiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiIsIlJPTEVfQVBJIl0sIlVzZXJJbmZvIjoie1wicmVhbE5hbWVcIjpcIuWHr1wiLFwicGhvbmVcIjpcIjE3Njc0NzAxMjQ4XCIsXCJ1c2VySWRcIjoxNSxcImVtYWlsXCI6XCIxNjExODE4Njk4QHFxLmNvbVwiLFwic3RhdHVzXCI6XCIwXCJ9IiwiZXhwIjoxNjAwODQ5MzM5LCJhdXRob3JpdGllcyI6WyLml6Xlv5fnm5HmjqciLCJEcnVpZCBNb25pdG9yIiwiUmVkaXPmk43kvZzlt6XlhbciLCLmnYPpmZDnrqHnkIYiLCLlj43ppojmhI_op4EiLCLmk43kvZzml6Xlv5ciLCLmtYvor5Xoh6rliqjms6jlhowiLCLlj4LmlbDnrqHnkIYiLCLns7vnu5_ml6Xlv5ciLCLns7vnu5_nrqHnkIYiLCLmlbDmja7lupPmjqfliLblj7AiLCLnlKjmiLfnrqHnkIYiLCLlvIDlj5Hlt6XlhbciLCLop5LoibLnrqHnkIYiXSwianRpIjoiMDAzYzVjNTItY2FjYi00MzNjLWI2N2ItMzFiNjg2Y2Q5MWM0IiwiY2xpZW50X2lkIjoiYzEifQ.9LxwGVdCq5w3GNswmOSdHLNgAzfgVqLRKUPlfXsIwqg]
+===Headers===  User-Agent: [PostmanRuntime/7.26.5]
+===Headers===  Accept: [*/*]
+===Headers===  Postman-Token: [1e2af086-7255-46ad-8381-be1dab9c99f5]
+===Headers===  Host: [localhost:8887]
+===Headers===  Accept-Encoding: [gzip, deflate, br]
+===Headers===  Connection: [keep-alive]
+================  Gateway Request End  =================
+
+2020-09-23 11:06:53.698  INFO 9000 --- [reactor-http-nio-2] c.x.g.filter.GlobalResponseLogFilter     : 
+
+================ Gateway Response Start  ================
+<=== 200 GET: /list
+===Headers===  transfer-encoding: [chunked]
+===Headers===  X-Content-Type-Options: [nosniff]
+===Headers===  X-XSS-Protection: [1; mode=block]
+===Headers===  Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+===Headers===  Pragma: [no-cache]
+===Headers===  Expires: [0]
+===Headers===  X-Frame-Options: [DENY]
+===Headers===  Content-Type: [application/json]
+===Headers===  Date: [Wed, 23 Sep 2020 03:06:53 GMT]
+================  Gateway Response End  =================
+
+2020-09-23 11:07:04.259  INFO 9000 --- [Thread-36] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2020-09-23 11:07:04.272  INFO 9000 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 11:07:04.275  INFO 9000 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2020-09-23 11:07:04.277  INFO 9000 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.

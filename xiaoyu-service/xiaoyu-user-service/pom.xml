@@ -18,16 +18,15 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>com.xiaoyu</groupId>
-            <artifactId>xiaoyu-user-api</artifactId>
+            <artifactId>xiaoyu-common-redis</artifactId>
             <version>${XiaoYu-version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.xiaoyu</groupId>
-            <artifactId>xiaoyu-common-redis</artifactId>
+            <artifactId>xiaoyu-user-api</artifactId>
             <version>${XiaoYu-version}</version>
         </dependency>
 

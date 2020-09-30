@@ -1,0 +1,784 @@
+2020-09-27 17:16:18.359  INFO 32864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 17:16:18.830  INFO 32864 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-27 17:16:18.856  INFO 32864 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-27 17:16:18.899  WARN 32864 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service] & group[DEFAULT_GROUP]
+2020-09-27 17:16:18.902  WARN 32864 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service.properties] & group[DEFAULT_GROUP]
+2020-09-27 17:16:18.903  INFO 32864 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-service.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-service,DEFAULT_GROUP'}]
+2020-09-27 17:16:18.918  INFO 32864 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : No active profile set, falling back to default profiles: default
+2020-09-27 17:16:19.720  INFO 32864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-27 17:16:19.722  INFO 32864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-27 17:16:19.752  INFO 32864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2020-09-27 17:16:20.049  INFO 32864 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=73bed18d-9296-346a-8ab5-f3332a071899
+2020-09-27 17:16:20.314  INFO 32864 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$c308ece7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:16:20.375  INFO 32864 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@eed07c5' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:16:20.385  INFO 32864 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:16:20.416  INFO 32864 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:16:20.421  INFO 32864 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:16:20.929  INFO 32864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-09-27 17:16:20.940  INFO 32864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 17:16:20.940  INFO 32864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-27 17:16:21.083  INFO 32864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 17:16:21.083  INFO 32864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2146 ms
+2020-09-27 17:16:21.127  WARN 32864 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-27 17:16:21.252  INFO 32864 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-09-27 17:16:21.946  INFO 32864 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-27 17:16:22.542  WARN 32864 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:16:22.543  INFO 32864 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:16:22.547  WARN 32864 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:16:22.547  INFO 32864 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:16:22.831  INFO 32864 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 17:16:22.888  INFO 32864 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-09-27 17:16:23.116  INFO 32864 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-27 17:16:23.123  INFO 32864 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:16:23.124  INFO 32864 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2020-09-27 17:16:23.124  INFO 32864 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:16:23.837  INFO 32864 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c4b440b2-74ac-449b-a3c5-00e2d1809a87
+
+2020-09-27 17:16:24.018  INFO 32864 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b9beb0, org.springframework.security.web.context.SecurityContextPersistenceFilter@6419fd11, org.springframework.security.web.header.HeaderWriterFilter@76b6fd28, org.springframework.security.web.authentication.logout.LogoutFilter@1c02e154, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@19df90eb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68253fe3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@277241f1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47070601, org.springframework.security.web.session.SessionManagementFilter@34d9a70e, org.springframework.security.web.access.ExceptionTranslationFilter@6e40988a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41508c7a]
+2020-09-27 17:16:24.096  INFO 32864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 17:16:24.384  INFO 32864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-09-27 17:16:24.402  INFO 32864 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.2.212","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8888,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-service","stopped":false,"weight":1.0} to beat map.
+2020-09-27 17:16:24.486  INFO 32864 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@user-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.2.212","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8888,"weight":1.0}
+2020-09-27 17:16:24.556  INFO 32864 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.2.212:8888 register finished
+2020-09-27 17:16:24.645  INFO 32864 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : Started XiaoYuUserServiceApplication in 6.989 seconds (JVM running for 8.654)
+2020-09-27 17:16:24.649  INFO 32864 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service.properties+DEFAULT_GROUP
+2020-09-27 17:16:24.650  INFO 32864 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service.properties, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:16:24.651  INFO 32864 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service+DEFAULT_GROUP
+2020-09-27 17:16:24.651  INFO 32864 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:16:24.664  INFO 32864 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:16:42.690  INFO 32864 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 17:16:42.690  INFO 32864 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 17:16:42.702  INFO 32864 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-09-27 17:16:43.743 DEBUG 32864 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:16:43.870 DEBUG 32864 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:16:43.905 DEBUG 32864 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:16:54.377  INFO 32864 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:17:23.914  INFO 32864 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:18:02.533  INFO 32864 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:18:22.284 DEBUG 32864 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:18:22.284 DEBUG 32864 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:18:22.294 DEBUG 32864 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:19:57.775  INFO 36952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 17:19:58.318  INFO 36952 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-27 17:19:58.347  INFO 36952 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-27 17:19:58.372  WARN 36952 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service] & group[DEFAULT_GROUP]
+2020-09-27 17:19:58.409  WARN 36952 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service.properties] & group[DEFAULT_GROUP]
+2020-09-27 17:19:58.410  INFO 36952 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-service.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-service,DEFAULT_GROUP'}]
+2020-09-27 17:19:58.424  INFO 36952 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : No active profile set, falling back to default profiles: default
+2020-09-27 17:19:59.232  INFO 36952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-27 17:19:59.234  INFO 36952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-27 17:19:59.262  INFO 36952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2020-09-27 17:19:59.537  INFO 36952 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=73bed18d-9296-346a-8ab5-f3332a071899
+2020-09-27 17:19:59.838  INFO 36952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$db20bd53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:19:59.900  INFO 36952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3b269424' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:19:59.910  INFO 36952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:19:59.931  INFO 36952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:19:59.936  INFO 36952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:20:00.481  INFO 36952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-09-27 17:20:00.492  INFO 36952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 17:20:00.492  INFO 36952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-27 17:20:00.622  INFO 36952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 17:20:00.622  INFO 36952 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2179 ms
+2020-09-27 17:20:00.669  WARN 36952 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-27 17:20:00.826  INFO 36952 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-09-27 17:20:01.499  INFO 36952 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-27 17:20:02.673  WARN 36952 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:20:02.673  INFO 36952 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:20:02.677  WARN 36952 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:20:02.678  INFO 36952 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:20:02.976  INFO 36952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 17:20:03.037  INFO 36952 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-09-27 17:20:03.263  INFO 36952 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-27 17:20:03.270  INFO 36952 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:20:03.270  INFO 36952 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2020-09-27 17:20:03.271  INFO 36952 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:20:04.871  INFO 36952 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ac727e7b-ed29-4f78-8aa6-7aaa79bf4af3
+
+2020-09-27 17:20:05.219  INFO 36952 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@746a2ab1, org.springframework.security.web.context.SecurityContextPersistenceFilter@567681e, org.springframework.security.web.header.HeaderWriterFilter@2ca33f51, org.springframework.security.web.authentication.logout.LogoutFilter@98fdf32, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@f4a223e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6dc3ec6c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5790dbc0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@298a9e61, org.springframework.security.web.session.SessionManagementFilter@7055fbcb, org.springframework.security.web.access.ExceptionTranslationFilter@2fb29523, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e023824]
+2020-09-27 17:20:05.301  INFO 36952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 17:20:05.655  INFO 36952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-09-27 17:20:05.659  INFO 36952 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.2.212","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8888,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-service","stopped":false,"weight":1.0} to beat map.
+2020-09-27 17:20:05.752  INFO 36952 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@user-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.2.212","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8888,"weight":1.0}
+2020-09-27 17:20:05.763  INFO 36952 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.2.212:8888 register finished
+2020-09-27 17:20:05.870  INFO 36952 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : Started XiaoYuUserServiceApplication in 9.335 seconds (JVM running for 11.179)
+2020-09-27 17:20:05.875  INFO 36952 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service.properties+DEFAULT_GROUP
+2020-09-27 17:20:05.876  INFO 36952 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service.properties, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:20:05.877  INFO 36952 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service+DEFAULT_GROUP
+2020-09-27 17:20:05.877  INFO 36952 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:20:05.889  INFO 36952 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:20:22.201  INFO 36952 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-27 17:20:50.345  INFO 39304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 17:20:50.854  INFO 39304 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-27 17:20:50.881  INFO 39304 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-27 17:20:50.908  WARN 39304 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service] & group[DEFAULT_GROUP]
+2020-09-27 17:20:50.912  WARN 39304 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service.properties] & group[DEFAULT_GROUP]
+2020-09-27 17:20:50.913  INFO 39304 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-service.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-service,DEFAULT_GROUP'}]
+2020-09-27 17:20:50.929  INFO 39304 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : No active profile set, falling back to default profiles: default
+2020-09-27 17:20:51.774  INFO 39304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-27 17:20:51.777  INFO 39304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-27 17:20:51.807  INFO 39304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2020-09-27 17:20:52.102  INFO 39304 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=73bed18d-9296-346a-8ab5-f3332a071899
+2020-09-27 17:20:52.389  INFO 39304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$d6de09a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:20:52.450  INFO 39304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@47e88b74' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:20:52.460  INFO 39304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:20:52.492  INFO 39304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:20:52.496  INFO 39304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:20:53.022  INFO 39304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-09-27 17:20:53.033  INFO 39304 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 17:20:53.033  INFO 39304 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-27 17:20:53.161  INFO 39304 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 17:20:53.161  INFO 39304 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2212 ms
+2020-09-27 17:20:53.203  WARN 39304 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-27 17:20:53.338  INFO 39304 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-09-27 17:20:54.113  INFO 39304 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-27 17:20:54.765  WARN 39304 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:20:54.766  INFO 39304 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:20:54.771  WARN 39304 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:20:54.772  INFO 39304 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:20:55.070  INFO 39304 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 17:20:55.127  INFO 39304 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-09-27 17:20:55.356  INFO 39304 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-27 17:20:55.363  INFO 39304 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:20:55.364  INFO 39304 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2020-09-27 17:20:55.364  INFO 39304 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:20:56.069  INFO 39304 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5b2d3e62-62dc-4971-98e6-f5a0ebb05ea4
+
+2020-09-27 17:20:56.249  INFO 39304 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46bd7bad, org.springframework.security.web.context.SecurityContextPersistenceFilter@123799e5, org.springframework.security.web.header.HeaderWriterFilter@438f2a35, org.springframework.security.web.authentication.logout.LogoutFilter@1aef96d, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@2dcd4017, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ed8c2b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d9d84db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45e87adf, org.springframework.security.web.session.SessionManagementFilter@625d76f7, org.springframework.security.web.access.ExceptionTranslationFilter@210d27db, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@be0baa8]
+2020-09-27 17:20:56.325  INFO 39304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 17:20:56.616  INFO 39304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-09-27 17:20:56.620  INFO 39304 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.2.212","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8888,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-service","stopped":false,"weight":1.0} to beat map.
+2020-09-27 17:20:56.707  INFO 39304 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@user-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.2.212","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8888,"weight":1.0}
+2020-09-27 17:20:56.723  INFO 39304 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.2.212:8888 register finished
+2020-09-27 17:20:56.812  INFO 39304 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : Started XiaoYuUserServiceApplication in 7.526 seconds (JVM running for 9.402)
+2020-09-27 17:20:56.816  INFO 39304 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service.properties+DEFAULT_GROUP
+2020-09-27 17:20:56.817  INFO 39304 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service.properties, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:20:56.817  INFO 39304 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service+DEFAULT_GROUP
+2020-09-27 17:20:56.830  INFO 39304 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:20:56.832  INFO 39304 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:21:04.622  INFO 39304 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 17:21:04.622  INFO 39304 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 17:21:04.634  INFO 39304 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-09-27 17:21:05.696 DEBUG 39304 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:21:05.834 DEBUG 39304 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:21:05.871 DEBUG 39304 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:21:26.532  INFO 39304 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:21:56.036  INFO 39304 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:22:25.565  INFO 39304 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:22:42.401 DEBUG 39304 --- [http-nio-8888-exec-5] c.x.u.m.SystemRoleMapper.selectList      : ==>  Preparing: SELECT role_no,role_code,role_name,role_describe FROM system_role 
+2020-09-27 17:22:42.402 DEBUG 39304 --- [http-nio-8888-exec-5] c.x.u.m.SystemRoleMapper.selectList      : ==> Parameters: 
+2020-09-27 17:22:42.413 DEBUG 39304 --- [http-nio-8888-exec-5] c.x.u.m.SystemRoleMapper.selectList      : <==      Total: 5
+2020-09-27 17:22:42.578 DEBUG 39304 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:22:42.579 DEBUG 39304 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:22:42.588 DEBUG 39304 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:22:55.196  INFO 39304 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:22:55.256 DEBUG 39304 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:22:55.256 DEBUG 39304 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:22:55.266 DEBUG 39304 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:22:56.545 DEBUG 39304 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:22:56.545 DEBUG 39304 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:22:56.555 DEBUG 39304 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:23:25.640  INFO 39304 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:23:46.981 DEBUG 39304 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:23:46.982 DEBUG 39304 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:23:46.990 DEBUG 39304 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:24:16.581  INFO 39304 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:24:42.652  INFO 39304 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-27 17:24:50.362  INFO 39536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 17:24:50.872  INFO 39536 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-27 17:24:50.899  INFO 39536 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-27 17:24:50.946  WARN 39536 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service] & group[DEFAULT_GROUP]
+2020-09-27 17:24:50.955  WARN 39536 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service.properties] & group[DEFAULT_GROUP]
+2020-09-27 17:24:50.956  INFO 39536 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-service.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-service,DEFAULT_GROUP'}]
+2020-09-27 17:24:50.971  INFO 39536 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : No active profile set, falling back to default profiles: default
+2020-09-27 17:24:51.782  INFO 39536 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-27 17:24:51.784  INFO 39536 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-27 17:24:51.812  INFO 39536 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2020-09-27 17:24:52.099  INFO 39536 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=73bed18d-9296-346a-8ab5-f3332a071899
+2020-09-27 17:24:52.417  INFO 39536 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$2a18e936] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:24:52.546  INFO 39536 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1259a5f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:24:52.557  INFO 39536 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:24:52.580  INFO 39536 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:24:52.585  INFO 39536 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:24:53.146  INFO 39536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-09-27 17:24:53.158  INFO 39536 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 17:24:53.159  INFO 39536 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-27 17:24:53.298  INFO 39536 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 17:24:53.298  INFO 39536 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2305 ms
+2020-09-27 17:24:53.340  WARN 39536 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-27 17:24:53.478  INFO 39536 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-09-27 17:24:54.220  INFO 39536 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-27 17:24:54.877  WARN 39536 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:24:54.878  INFO 39536 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:24:54.883  WARN 39536 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:24:54.884  INFO 39536 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:24:55.182  INFO 39536 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 17:24:55.246  INFO 39536 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-09-27 17:24:55.506  INFO 39536 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-27 17:24:55.514  INFO 39536 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:24:55.515  INFO 39536 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2020-09-27 17:24:55.515  INFO 39536 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:24:56.262  INFO 39536 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 05760bae-c03d-42cb-a17b-924219e11931
+
+2020-09-27 17:24:56.456  INFO 39536 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48c0bb5c, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a39f837, org.springframework.security.web.header.HeaderWriterFilter@6dc660eb, org.springframework.security.web.authentication.logout.LogoutFilter@3eaf2749, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@2aa2d112, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51eeb52c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56b605e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26276545, org.springframework.security.web.session.SessionManagementFilter@1aa54f23, org.springframework.security.web.access.ExceptionTranslationFilter@2cce0c5b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4df354f8]
+2020-09-27 17:24:56.554  INFO 39536 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 17:24:56.896  INFO 39536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-09-27 17:24:56.899  INFO 39536 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.2.212","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8888,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-service","stopped":false,"weight":1.0} to beat map.
+2020-09-27 17:24:56.987  INFO 39536 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@user-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.2.212","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8888,"weight":1.0}
+2020-09-27 17:24:56.996  INFO 39536 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.2.212:8888 register finished
+2020-09-27 17:24:57.085  INFO 39536 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : Started XiaoYuUserServiceApplication in 7.808 seconds (JVM running for 9.409)
+2020-09-27 17:24:57.089  INFO 39536 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service.properties+DEFAULT_GROUP
+2020-09-27 17:24:57.091  INFO 39536 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service.properties, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:24:57.091  INFO 39536 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service+DEFAULT_GROUP
+2020-09-27 17:24:57.091  INFO 39536 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:24:57.095  INFO 39536 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:24:57.097  INFO 39536 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:24:59.032  INFO 39536 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 17:24:59.032  INFO 39536 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 17:24:59.042  INFO 39536 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-09-27 17:25:00.063 DEBUG 39536 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:25:00.200 DEBUG 39536 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:25:00.239 DEBUG 39536 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:25:26.800  INFO 39536 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:25:56.306  INFO 39536 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:26:25.829  INFO 39536 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:26:55.334  INFO 39536 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:27:24.844  INFO 39536 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:27:54.350  INFO 39536 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:28:23.856  INFO 39536 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:28:58.187  INFO 38096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 17:28:58.651  INFO 38096 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-27 17:28:58.677  INFO 38096 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-27 17:28:58.702  WARN 38096 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service] & group[DEFAULT_GROUP]
+2020-09-27 17:28:58.704  WARN 38096 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service.properties] & group[DEFAULT_GROUP]
+2020-09-27 17:28:58.705  INFO 38096 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-service.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-service,DEFAULT_GROUP'}]
+2020-09-27 17:28:58.720  INFO 38096 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : No active profile set, falling back to default profiles: default
+2020-09-27 17:28:59.516  INFO 38096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-27 17:28:59.519  INFO 38096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-27 17:28:59.548  INFO 38096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2020-09-27 17:28:59.804  INFO 38096 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=73bed18d-9296-346a-8ab5-f3332a071899
+2020-09-27 17:29:00.088  INFO 38096 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$8e81658a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:29:00.165  INFO 38096 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4d3a9812' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:29:00.175  INFO 38096 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:29:00.195  INFO 38096 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:29:00.199  INFO 38096 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:29:00.721  INFO 38096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-09-27 17:29:00.732  INFO 38096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 17:29:00.732  INFO 38096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-27 17:29:00.849  INFO 38096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 17:29:00.849  INFO 38096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2110 ms
+2020-09-27 17:29:00.891  WARN 38096 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-27 17:29:01.029  INFO 38096 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-09-27 17:29:01.717  INFO 38096 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-27 17:29:02.345  WARN 38096 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:29:02.345  INFO 38096 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:29:02.348  WARN 38096 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:29:02.348  INFO 38096 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:29:02.634  INFO 38096 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 17:29:02.695  INFO 38096 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-09-27 17:29:02.939  INFO 38096 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-27 17:29:02.946  INFO 38096 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:29:02.946  INFO 38096 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2020-09-27 17:29:02.947  INFO 38096 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:29:03.654  INFO 38096 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3953e5f2-244a-46dd-b910-03bed37ce701
+
+2020-09-27 17:29:03.829  INFO 38096 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52c708e9, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c681394, org.springframework.security.web.header.HeaderWriterFilter@315df7fe, org.springframework.security.web.authentication.logout.LogoutFilter@75f481bc, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@64a43282, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@115a4d98, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42bdb6b2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@89d2d33, org.springframework.security.web.session.SessionManagementFilter@735a4e26, org.springframework.security.web.access.ExceptionTranslationFilter@2c7ea747, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3aa4002e]
+2020-09-27 17:29:03.898  INFO 38096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 17:29:04.212  INFO 38096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-09-27 17:29:04.215  INFO 38096 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.2.212","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8888,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-service","stopped":false,"weight":1.0} to beat map.
+2020-09-27 17:29:04.292  INFO 38096 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@user-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.2.212","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8888,"weight":1.0}
+2020-09-27 17:29:04.300  INFO 38096 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.2.212:8888 register finished
+2020-09-27 17:29:04.387  INFO 38096 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : Started XiaoYuUserServiceApplication in 7.1 seconds (JVM running for 8.148)
+2020-09-27 17:29:04.390  INFO 38096 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service.properties+DEFAULT_GROUP
+2020-09-27 17:29:04.392  INFO 38096 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service.properties, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:29:04.392  INFO 38096 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service+DEFAULT_GROUP
+2020-09-27 17:29:04.392  INFO 38096 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:29:04.404  INFO 38096 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:29:34.105  INFO 38096 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:30:03.625  INFO 38096 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:30:25.180  INFO 38096 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 17:30:25.180  INFO 38096 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 17:30:25.190  INFO 38096 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-09-27 17:30:29.243 DEBUG 38096 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:30:29.838 DEBUG 38096 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:30:30.078 DEBUG 38096 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:30:38.355  INFO 38096 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:30:38.365 DEBUG 38096 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:30:38.369 DEBUG 38096 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:30:38.388 DEBUG 38096 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:31:07.996  INFO 38096 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:31:38.682  INFO 38096 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:32:08.371  INFO 38096 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:32:38.038  INFO 38096 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:33:07.543  INFO 38096 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:33:19.023  INFO 38096 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-27 17:33:25.285  INFO 37704 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 17:33:25.774  INFO 37704 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-27 17:33:25.800  INFO 37704 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-27 17:33:25.825  WARN 37704 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service] & group[DEFAULT_GROUP]
+2020-09-27 17:33:25.834  WARN 37704 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service.properties] & group[DEFAULT_GROUP]
+2020-09-27 17:33:25.835  INFO 37704 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-service.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-service,DEFAULT_GROUP'}]
+2020-09-27 17:33:25.849  INFO 37704 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : No active profile set, falling back to default profiles: default
+2020-09-27 17:33:26.634  INFO 37704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-27 17:33:26.636  INFO 37704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-27 17:33:26.670  INFO 37704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 Redis repository interfaces.
+2020-09-27 17:33:26.944  INFO 37704 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=73bed18d-9296-346a-8ab5-f3332a071899
+2020-09-27 17:33:27.195  INFO 37704 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$b4bace36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:33:27.272  INFO 37704 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5ae8d8d0' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:33:27.282  INFO 37704 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:33:27.301  INFO 37704 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:33:27.305  INFO 37704 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:33:27.879  INFO 37704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-09-27 17:33:27.896  INFO 37704 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 17:33:27.896  INFO 37704 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-27 17:33:28.023  INFO 37704 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 17:33:28.023  INFO 37704 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2154 ms
+2020-09-27 17:33:28.070  WARN 37704 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-27 17:33:28.208  INFO 37704 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-09-27 17:33:28.871  INFO 37704 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-27 17:33:29.526  WARN 37704 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:33:29.526  INFO 37704 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:33:29.531  WARN 37704 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:33:29.531  INFO 37704 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:33:29.847  INFO 37704 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 17:33:30.100  INFO 37704 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-09-27 17:33:30.347  INFO 37704 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-27 17:33:30.354  INFO 37704 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:33:30.355  INFO 37704 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2020-09-27 17:33:30.357  INFO 37704 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:33:31.340  INFO 37704 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1842ef0b-cb82-409f-aa3f-5677f5b8127d
+
+2020-09-27 17:33:31.576  INFO 37704 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10cba9ff, org.springframework.security.web.context.SecurityContextPersistenceFilter@4fcbc5e3, org.springframework.security.web.header.HeaderWriterFilter@273d0c68, org.springframework.security.web.authentication.logout.LogoutFilter@47492d8f, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@24ab04be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22af52e0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1970ad48, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76e21d39, org.springframework.security.web.session.SessionManagementFilter@2315364a, org.springframework.security.web.access.ExceptionTranslationFilter@58deb5e8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54aecf00]
+2020-09-27 17:33:31.681  INFO 37704 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 17:33:32.051  INFO 37704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-09-27 17:33:32.054  INFO 37704 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.2.212","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8888,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-service","stopped":false,"weight":1.0} to beat map.
+2020-09-27 17:33:32.152  INFO 37704 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@user-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.2.212","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8888,"weight":1.0}
+2020-09-27 17:33:32.163  INFO 37704 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.2.212:8888 register finished
+2020-09-27 17:33:32.258  INFO 37704 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : Started XiaoYuUserServiceApplication in 7.938 seconds (JVM running for 9.183)
+2020-09-27 17:33:32.264  INFO 37704 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service.properties+DEFAULT_GROUP
+2020-09-27 17:33:32.266  INFO 37704 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service.properties, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:33:32.267  INFO 37704 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service+DEFAULT_GROUP
+2020-09-27 17:33:32.268  INFO 37704 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:33:32.276  INFO 37704 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:33:32.360  INFO 37704 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 17:33:32.360  INFO 37704 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 17:33:32.369  INFO 37704 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-09-27 17:33:36.254 DEBUG 37704 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:33:36.400 DEBUG 37704 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:33:36.448 DEBUG 37704 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:33:36.452 DEBUG 37704 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:33:36.453 DEBUG 37704 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:33:36.463 DEBUG 37704 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:34:02.052  INFO 37704 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:34:31.560  INFO 37704 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:35:01.063  INFO 37704 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:35:03.362  INFO 37704 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-27 17:35:03.505  INFO 37704 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2020-09-27 17:35:03.507  INFO 37704 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@user-service:192.168.2.212:8888 from beat map.
+2020-09-27 17:35:03.508  INFO 37704 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@user-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.2.212","ipDeleteTimeout":30000,"metadata":{},"port":8888,"weight":1.0}
+2020-09-27 17:35:03.539  INFO 37704 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2020-09-27 17:35:03.540  INFO 37704 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-27 17:35:03.586  INFO 37704 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-09-27 17:35:03.589  INFO 37704 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-09-27 17:35:08.274  INFO 36976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 17:35:08.827  INFO 36976 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-27 17:35:08.854  INFO 36976 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-27 17:35:08.879  WARN 36976 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service] & group[DEFAULT_GROUP]
+2020-09-27 17:35:08.893  WARN 36976 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service.properties] & group[DEFAULT_GROUP]
+2020-09-27 17:35:08.894  INFO 36976 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-service.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-service,DEFAULT_GROUP'}]
+2020-09-27 17:35:08.908  INFO 36976 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : No active profile set, falling back to default profiles: default
+2020-09-27 17:35:09.751  INFO 36976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-27 17:35:09.753  INFO 36976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-27 17:35:09.786  INFO 36976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2020-09-27 17:35:10.097  INFO 36976 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=73bed18d-9296-346a-8ab5-f3332a071899
+2020-09-27 17:35:10.371  INFO 36976 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$ee113ac8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:35:10.444  INFO 36976 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1f61d9b3' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:35:10.454  INFO 36976 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:35:10.474  INFO 36976 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:35:10.479  INFO 36976 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:35:11.049  INFO 36976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-09-27 17:35:11.060  INFO 36976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 17:35:11.061  INFO 36976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-27 17:35:11.203  INFO 36976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 17:35:11.204  INFO 36976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2276 ms
+2020-09-27 17:35:11.248  WARN 36976 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-27 17:35:11.385  INFO 36976 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-09-27 17:35:12.092  INFO 36976 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-27 17:35:12.744  WARN 36976 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:35:12.745  INFO 36976 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:35:12.750  WARN 36976 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:35:12.750  INFO 36976 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:35:13.068  INFO 36976 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 17:35:13.133  INFO 36976 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-09-27 17:35:13.397  INFO 36976 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-27 17:35:13.404  INFO 36976 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:35:13.405  INFO 36976 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2020-09-27 17:35:13.405  INFO 36976 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:35:14.124  INFO 36976 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d81df359-a910-4051-a284-101e24b08813
+
+2020-09-27 17:35:14.315  INFO 36976 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d2c1731, org.springframework.security.web.context.SecurityContextPersistenceFilter@68a8dea6, org.springframework.security.web.header.HeaderWriterFilter@24e54e63, org.springframework.security.web.authentication.logout.LogoutFilter@7815ecb2, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@6a8c1110, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@636819ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48514855, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@aeb3fdd, org.springframework.security.web.session.SessionManagementFilter@738a6fd8, org.springframework.security.web.access.ExceptionTranslationFilter@6bcaafb0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e0604df]
+2020-09-27 17:35:14.392  INFO 36976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 17:35:14.686  INFO 36976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-09-27 17:35:14.690  INFO 36976 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.2.212","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8888,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-service","stopped":false,"weight":1.0} to beat map.
+2020-09-27 17:35:14.812  INFO 36976 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@user-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.2.212","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8888,"weight":1.0}
+2020-09-27 17:35:14.821  INFO 36976 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.2.212:8888 register finished
+2020-09-27 17:35:14.914  INFO 36976 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : Started XiaoYuUserServiceApplication in 7.889 seconds (JVM running for 9.113)
+2020-09-27 17:35:14.918  INFO 36976 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service.properties+DEFAULT_GROUP
+2020-09-27 17:35:14.919  INFO 36976 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service.properties, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:35:14.920  INFO 36976 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service+DEFAULT_GROUP
+2020-09-27 17:35:14.920  INFO 36976 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:35:14.925  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:35:22.128  INFO 36976 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 17:35:22.128  INFO 36976 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 17:35:22.138  INFO 36976 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-09-27 17:35:27.082 DEBUG 36976 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:35:27.239 DEBUG 36976 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:35:27.278 DEBUG 36976 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:35:27.282 DEBUG 36976 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:35:27.282 DEBUG 36976 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:35:27.291 DEBUG 36976 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:35:44.643  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:35:51.462 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:35:51.463 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:35:51.474 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:35:51.475 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:35:51.475 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:35:51.486 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:35:52.187 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:35:52.187 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:35:52.204 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:35:52.205 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:35:52.205 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:35:52.216 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:35:54.118 DEBUG 36976 --- [http-nio-8888-exec-4] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:35:54.118 DEBUG 36976 --- [http-nio-8888-exec-4] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:35:54.128 DEBUG 36976 --- [http-nio-8888-exec-4] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:35:54.130 DEBUG 36976 --- [http-nio-8888-exec-4] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:35:54.130 DEBUG 36976 --- [http-nio-8888-exec-4] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:35:54.140 DEBUG 36976 --- [http-nio-8888-exec-4] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:35:54.708 DEBUG 36976 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:35:54.708 DEBUG 36976 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:35:54.719 DEBUG 36976 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:35:54.720 DEBUG 36976 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:35:54.720 DEBUG 36976 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:35:54.731 DEBUG 36976 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:35:55.256 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:35:55.256 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:35:55.266 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:35:55.267 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:35:55.267 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:35:55.280 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:36:14.462  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:36:23.314 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:36:23.314 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:36:23.325 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:36:23.326 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:36:23.326 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:36:23.335 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:36:23.778 DEBUG 36976 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:36:23.778 DEBUG 36976 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:36:23.788 DEBUG 36976 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:36:23.790 DEBUG 36976 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:36:23.791 DEBUG 36976 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:36:23.803 DEBUG 36976 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:36:24.129 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:36:24.130 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:36:24.139 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:36:24.140 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:36:24.140 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:36:24.149 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:36:43.977  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:37:13.485  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:37:24.695 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:24.696 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:24.706 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:24.707 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:24.753 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:24.763 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:25.102 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:25.102 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:25.113 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:25.114 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:25.114 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:25.125 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:26.956 DEBUG 36976 --- [http-nio-8888-exec-4] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:26.956 DEBUG 36976 --- [http-nio-8888-exec-4] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:26.967 DEBUG 36976 --- [http-nio-8888-exec-4] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:26.968 DEBUG 36976 --- [http-nio-8888-exec-4] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:26.968 DEBUG 36976 --- [http-nio-8888-exec-4] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:26.980 DEBUG 36976 --- [http-nio-8888-exec-4] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:27.588 DEBUG 36976 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:27.588 DEBUG 36976 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:27.598 DEBUG 36976 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:27.598 DEBUG 36976 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:27.598 DEBUG 36976 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:27.609 DEBUG 36976 --- [http-nio-8888-exec-6] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:28.092 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:28.092 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:28.103 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:28.106 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:28.107 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:28.117 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:29.090 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:29.091 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:29.101 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:29.102 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:29.102 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:29.112 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:29.884 DEBUG 36976 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:29.885 DEBUG 36976 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:29.895 DEBUG 36976 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:29.896 DEBUG 36976 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:29.896 DEBUG 36976 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:29.906 DEBUG 36976 --- [http-nio-8888-exec-9] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:31.213 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:31.213 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:31.223 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:31.223 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:31.223 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:31.233 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:31.689 DEBUG 36976 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:31.690 DEBUG 36976 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:31.699 DEBUG 36976 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:31.700 DEBUG 36976 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:31.700 DEBUG 36976 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:31.709 DEBUG 36976 --- [http-nio-8888-exec-1] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:32.545 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:32.545 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:32.556 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:32.556 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:32.556 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:32.565 DEBUG 36976 --- [http-nio-8888-exec-3] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:33.505 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:33.505 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:33.515 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:33.515 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:37:33.516 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:37:33.525 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:37:43.013  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:38:12.520  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:38:37.383 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:38:37.383 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:38:37.393 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:38:37.394 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:38:37.394 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:38:37.404 DEBUG 36976 --- [http-nio-8888-exec-7] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:38:37.850 ERROR 36976 --- [http-nio-8888-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.reflect.UndeclaredThrowableException] with root cause
+
+com.alibaba.csp.sentinel.slots.block.flow.FlowException: null
+
+2020-09-27 17:38:38.251 DEBUG 36976 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:38:38.252 DEBUG 36976 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:38:38.262 DEBUG 36976 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:38:38.262 DEBUG 36976 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:38:38.263 DEBUG 36976 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:38:38.272 DEBUG 36976 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:38:38.961 ERROR 36976 --- [http-nio-8888-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.reflect.UndeclaredThrowableException] with root cause
+
+com.alibaba.csp.sentinel.slots.block.flow.FlowException: null
+
+2020-09-27 17:38:39.402 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:38:39.402 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:38:39.411 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:38:39.412 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:38:39.412 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:38:39.421 DEBUG 36976 --- [http-nio-8888-exec-5] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:38:39.677 ERROR 36976 --- [http-nio-8888-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.reflect.UndeclaredThrowableException] with root cause
+
+com.alibaba.csp.sentinel.slots.block.flow.FlowException: null
+
+2020-09-27 17:38:40.072 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:38:40.072 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:38:40.082 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:38:40.083 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:38:40.083 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:38:40.092 DEBUG 36976 --- [http-nio-8888-exec-8] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:38:40.770 ERROR 36976 --- [http-nio-8888-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.reflect.UndeclaredThrowableException] with root cause
+
+com.alibaba.csp.sentinel.slots.block.flow.FlowException: null
+
+2020-09-27 17:38:41.625 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:38:41.625 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:38:41.641 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:38:41.642 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:38:41.642 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:38:41.651 DEBUG 36976 --- [http-nio-8888-exec-10] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:38:42.027  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:38:42.766 DEBUG 36976 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:38:42.766 DEBUG 36976 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:38:42.776 DEBUG 36976 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:38:42.776 DEBUG 36976 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==>  Preparing: SELECT user_id,user_name,password,salt,real_name,email,phone,status,flag FROM system_user WHERE flag=0 
+2020-09-27 17:38:42.776 DEBUG 36976 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : ==> Parameters: 
+2020-09-27 17:38:42.786 DEBUG 36976 --- [http-nio-8888-exec-2] c.x.u.m.SystemUserMapper.selectList      : <==      Total: 3
+2020-09-27 17:38:43.088 ERROR 36976 --- [http-nio-8888-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.reflect.UndeclaredThrowableException] with root cause
+
+com.alibaba.csp.sentinel.slots.block.flow.FlowException: null
+
+2020-09-27 17:39:11.537  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:39:41.044  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:40:10.552  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:40:40.108  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:41:09.623  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:41:39.148  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:42:08.651  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:42:38.154  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:43:07.719  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:43:37.248  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:44:06.807  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:44:36.311  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:45:05.820  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:45:35.334  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:46:04.837  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:46:34.343  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:47:03.852  INFO 36976 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:47:29.533  INFO 33560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 17:47:30.433  INFO 33560 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-27 17:47:31.093  INFO 33560 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-27 17:47:31.162  WARN 33560 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service] & group[DEFAULT_GROUP]
+2020-09-27 17:47:31.205  WARN 33560 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service.properties] & group[DEFAULT_GROUP]
+2020-09-27 17:47:31.206  INFO 33560 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-service.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-service,DEFAULT_GROUP'}]
+2020-09-27 17:47:31.251  INFO 33560 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : No active profile set, falling back to default profiles: default
+2020-09-27 17:47:34.795  INFO 33560 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-27 17:47:34.798  INFO 33560 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-27 17:47:34.879  INFO 33560 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 0 Redis repository interfaces.
+2020-09-27 17:47:35.276  INFO 33560 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=73bed18d-9296-346a-8ab5-f3332a071899
+2020-09-27 17:47:35.918  INFO 33560 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$3a480b6f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:47:36.034  INFO 33560 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3ba33ac1' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:47:36.044  INFO 33560 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:47:36.066  INFO 33560 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:47:36.071  INFO 33560 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:47:38.517  INFO 33560 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-09-27 17:47:38.549  INFO 33560 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 17:47:38.550  INFO 33560 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-27 17:47:38.716  INFO 33560 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 17:47:38.716  INFO 33560 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7353 ms
+2020-09-27 17:47:38.802  WARN 33560 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-27 17:47:39.151  INFO 33560 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-09-27 17:47:40.605  INFO 33560 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-27 17:47:41.867  WARN 33560 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:47:41.867  INFO 33560 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:47:41.874  WARN 33560 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:47:41.874  INFO 33560 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:47:42.219  INFO 33560 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 17:47:42.307  INFO 33560 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-09-27 17:47:42.632  INFO 33560 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-27 17:47:42.663  INFO 33560 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:47:42.663  INFO 33560 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2020-09-27 17:47:42.664  INFO 33560 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:47:43.901  INFO 33560 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 15dc8280-ca3e-4ab0-a10c-bf0c711d505b
+
+2020-09-27 17:47:44.202  INFO 33560 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4430db97, org.springframework.security.web.context.SecurityContextPersistenceFilter@557dc173, org.springframework.security.web.header.HeaderWriterFilter@107a86aa, org.springframework.security.web.authentication.logout.LogoutFilter@6f2c8998, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@15880fa8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18605779, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33e663c3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71e102c, org.springframework.security.web.session.SessionManagementFilter@4d527b2, org.springframework.security.web.access.ExceptionTranslationFilter@2b6d6d1e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7606a00d]
+2020-09-27 17:47:44.286  INFO 33560 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 17:47:44.811  INFO 33560 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-09-27 17:47:44.968  INFO 33560 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 17:47:44.970  INFO 33560 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 17:47:44.984  INFO 33560 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-09-27 17:47:44.814  INFO 33560 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.2.212","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8888,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-service","stopped":false,"weight":1.0} to beat map.
+2020-09-27 17:47:45.031  INFO 33560 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@user-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.2.212","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8888,"weight":1.0}
+2020-09-27 17:47:45.273  INFO 33560 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.2.212:8888 register finished
+2020-09-27 17:47:45.373  INFO 33560 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : Started XiaoYuUserServiceApplication in 17.444 seconds (JVM running for 19.411)
+2020-09-27 17:47:45.379  INFO 33560 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service.properties+DEFAULT_GROUP
+2020-09-27 17:47:45.380  INFO 33560 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service.properties, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:47:45.381  INFO 33560 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service+DEFAULT_GROUP
+2020-09-27 17:47:45.381  INFO 33560 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:47:45.385  INFO 33560 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:48:15.084  INFO 33560 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:48:44.587  INFO 33560 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:49:14.092  INFO 33560 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:49:43.608  INFO 33560 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:50:13.118  INFO 33560 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:50:42.626  INFO 33560 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:51:12.135  INFO 33560 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:51:41.641  INFO 33560 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:52:11.151  INFO 33560 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:52:40.657  INFO 33560 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:53:10.161  INFO 33560 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:53:39.665  INFO 33560 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:53:49.287  INFO 33560 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-27 17:53:49.560  INFO 33560 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2020-09-27 17:53:49.562  INFO 33560 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@user-service:192.168.2.212:8888 from beat map.
+2020-09-27 17:53:49.563  INFO 33560 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@user-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.2.212","ipDeleteTimeout":30000,"metadata":{},"port":8888,"weight":1.0}
+2020-09-27 17:53:49.591  INFO 33560 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2020-09-27 17:53:49.593  INFO 33560 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-27 17:53:49.621  INFO 33560 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-09-27 17:53:49.640  INFO 33560 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-09-27 17:53:58.395  INFO 39720 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 17:53:58.886  INFO 39720 --- [restartedMain] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2020-09-27 17:53:58.912  INFO 39720 --- [restartedMain] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2020-09-27 17:53:58.945  WARN 39720 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service] & group[DEFAULT_GROUP]
+2020-09-27 17:53:58.964  WARN 39720 --- [restartedMain] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[user-service.properties] & group[DEFAULT_GROUP]
+2020-09-27 17:53:58.965  INFO 39720 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-service.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-service,DEFAULT_GROUP'}]
+2020-09-27 17:53:58.981  INFO 39720 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : No active profile set, falling back to default profiles: default
+2020-09-27 17:53:59.849  INFO 39720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-27 17:53:59.851  INFO 39720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-27 17:53:59.882  INFO 39720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2020-09-27 17:54:00.162  INFO 39720 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=73bed18d-9296-346a-8ab5-f3332a071899
+2020-09-27 17:54:00.427  INFO 39720 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'RedisConfig' of type [RedisConfig$$EnhancerBySpringCGLIB$$cc85e0d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:54:00.502  INFO 39720 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@27d51249' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:54:00.510  INFO 39720 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:54:00.530  INFO 39720 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:54:00.535  INFO 39720 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-27 17:54:01.068  INFO 39720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-09-27 17:54:01.080  INFO 39720 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 17:54:01.081  INFO 39720 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-27 17:54:01.204  INFO 39720 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 17:54:01.204  INFO 39720 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2202 ms
+2020-09-27 17:54:01.248  WARN 39720 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-27 17:54:01.389  INFO 39720 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-09-27 17:54:02.096  INFO 39720 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-27 17:54:02.739  WARN 39720 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:54:02.740  INFO 39720 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:54:02.744  WARN 39720 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-27 17:54:02.745  INFO 39720 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-27 17:54:03.050  INFO 39720 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 17:54:03.111  INFO 39720 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-09-27 17:54:03.353  INFO 39720 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-27 17:54:03.360  INFO 39720 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:54:03.360  INFO 39720 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2020-09-27 17:54:03.361  INFO 39720 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-27 17:54:04.103  INFO 39720 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 49c5ab54-56b3-4ee9-b800-29dfe370d3cb
+
+2020-09-27 17:54:04.310  INFO 39720 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4358309a, org.springframework.security.web.context.SecurityContextPersistenceFilter@64715a09, org.springframework.security.web.header.HeaderWriterFilter@364d2694, org.springframework.security.web.authentication.logout.LogoutFilter@3d35c0ee, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@2c0bee66, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50771f76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58224581, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b45c905, org.springframework.security.web.session.SessionManagementFilter@67678cc0, org.springframework.security.web.access.ExceptionTranslationFilter@7c37123c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4976cf59]
+2020-09-27 17:54:04.396  INFO 39720 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 17:54:04.709  INFO 39720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-09-27 17:54:04.713  INFO 39720 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.2.212","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8888,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-service","stopped":false,"weight":1.0} to beat map.
+2020-09-27 17:54:04.805  INFO 39720 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@user-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.2.212","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8888,"weight":1.0}
+2020-09-27 17:54:04.832  INFO 39720 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.2.212:8888 register finished
+2020-09-27 17:54:04.923  INFO 39720 --- [restartedMain] c.x.user.XiaoYuUserServiceApplication    : Started XiaoYuUserServiceApplication in 7.338 seconds (JVM running for 9.116)
+2020-09-27 17:54:04.927  INFO 39720 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service.properties+DEFAULT_GROUP
+2020-09-27 17:54:04.928  INFO 39720 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service.properties, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:54:04.928  INFO 39720 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] user-service+DEFAULT_GROUP
+2020-09-27 17:54:04.928  INFO 39720 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=user-service, group=DEFAULT_GROUP, cnt=1
+2020-09-27 17:54:04.942  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:54:34.643  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:54:42.041  INFO 39720 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 17:54:42.041  INFO 39720 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 17:54:42.051  INFO 39720 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-09-27 17:55:04.148  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:55:33.651  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:56:03.286  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:56:32.793  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:57:02.352  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:57:31.882  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:58:01.407  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:58:30.922  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:59:00.430  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:59:29.932  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-27 17:59:59.454  INFO 39720 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]

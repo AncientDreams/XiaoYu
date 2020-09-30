@@ -1,6 +1,6 @@
 package com.xiaoyu.auth.config;
 
-import constant.AuthConstant;
+import com.xiaoyu.common.core.constant.AuthConstant;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.oauth2.provider.token.TokenStore;

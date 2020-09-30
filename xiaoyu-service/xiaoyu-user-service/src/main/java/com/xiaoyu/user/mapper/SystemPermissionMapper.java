@@ -17,12 +17,12 @@ import java.util.List;
 public interface SystemPermissionMapper extends BaseMapper<SystemPermission> {
 
     /**
-     * 通过用户名查询拥有的权
+     * 通过用户名查询拥有的权限url
      *
      * @param userName   用户名
      * @param exhibition 侧边栏是否显示
      * @return List<SystemPermission>
      */
-    List<SystemPermission> findByUerName(@Param("userName") String userName, @Param("exhibition") String exhibition);
+    List<String> findByUerName(@Param("userName") String userName, @Param("exhibition") String exhibition);
 
 }

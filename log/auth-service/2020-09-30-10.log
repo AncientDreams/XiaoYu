@@ -1,0 +1,722 @@
+2020-09-30 10:30:12.965  INFO 71712 --- [restartedMain] com.xiaoyu.auth.XiaoYuAuthApplication    : No active profile set, falling back to default profiles: default
+2020-09-30 10:30:13.912  INFO 71712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-30 10:30:13.915  INFO 71712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-30 10:30:13.941  INFO 71712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-09-30 10:30:14.134  WARN 71712 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xiaoyu.auth]' package. Please check your configuration.
+2020-09-30 10:30:14.225  INFO 71712 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=374eb055-d507-3779-8212-a450197af42a
+2020-09-30 10:30:14.370  INFO 71712 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.xiaoyu.common.redis.config.RedisConfig' of type [com.xiaoyu.common.redis.config.RedisConfig$$EnhancerBySpringCGLIB$$8b922e08] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 10:30:14.424  INFO 71712 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@51ce461b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 10:30:14.461  INFO 71712 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-30 10:30:14.923  INFO 71712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-09-30 10:30:15.008  INFO 71712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-30 10:30:15.009  INFO 71712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-30 10:30:15.129  INFO 71712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/auth]   : Initializing Spring embedded WebApplicationContext
+2020-09-30 10:30:15.130  INFO 71712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2136 ms
+2020-09-30 10:30:15.219  WARN 71712 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-09-30 10:30:15.228  INFO 71712 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-09-30 10:30:15.893  INFO 71712 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-30 10:30:16.457  WARN 71712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-09-30 10:30:17.042  WARN 71712 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-30 10:30:17.042  INFO 71712 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-30 10:30:17.047  WARN 71712 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-30 10:30:17.048  INFO 71712 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-30 10:30:17.193  INFO 71712 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-30 10:30:17.441  INFO 71712 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-30 10:30:17.446  INFO 71712 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-30 10:30:17.447  INFO 71712 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2020-09-30 10:30:17.447  INFO 71712 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2020-09-30 10:30:18.779  INFO 71712 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17f1ca1b, org.springframework.security.web.context.SecurityContextPersistenceFilter@530aa8e8, org.springframework.security.web.header.HeaderWriterFilter@67d24391, org.springframework.security.web.authentication.logout.LogoutFilter@2330719a, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@4b733615, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@459a3f21, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46e850f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ef183ff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b7804dc, org.springframework.security.web.session.SessionManagementFilter@4162478d, org.springframework.security.web.access.ExceptionTranslationFilter@45f718e7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31a1b530]
+2020-09-30 10:30:18.788  INFO 71712 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63f763c2, org.springframework.security.web.context.SecurityContextPersistenceFilter@1562a68a, org.springframework.security.web.header.HeaderWriterFilter@4fe12af6, org.springframework.security.web.authentication.logout.LogoutFilter@5332670a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@425dbcec, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7904775, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@539a1db2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f617829, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19914fa9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7468461c, org.springframework.security.web.session.SessionManagementFilter@783cd46a, org.springframework.security.web.access.ExceptionTranslationFilter@64e5d58a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1937dc49]
+2020-09-30 10:30:19.222  INFO 71712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path '/auth'
+2020-09-30 10:30:19.225  INFO 71712 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.2.212","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8000,"scheduled":false,"serviceName":"DEFAULT_GROUP@@auth-service","stopped":false,"weight":1.0} to beat map.
+2020-09-30 10:30:19.314  INFO 71712 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@auth-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.2.212","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8000,"weight":1.0}
+2020-09-30 10:30:19.378  INFO 71712 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP auth-service 192.168.2.212:8000 register finished
+2020-09-30 10:30:19.477  INFO 71712 --- [restartedMain] com.xiaoyu.auth.XiaoYuAuthApplication    : Started XiaoYuAuthApplication in 8.193 seconds (JVM running for 9.502)
+2020-09-30 10:30:19.503  INFO 71712 --- [restartedMain] c.x.c.core.handler.NacosConfigHandler    : 
+##############################   Nacos 配置参数打印开始   ##############################
+
+
+spring:
+  #####  Druid 连接池配置 #####
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      #JDBC四要素
+      url: jdbc:mysql://47.113.97.132/testquistart?useUnicode=true&useSSL=false&characterEncoding=utf8
+      #用户名
+      username: root
+      #加密后的密码
+      password: zxy123!@
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+      #数据源配置
+      #初始化连接数
+      initial-size: 5
+      #最大连接数量
+      max-active: 50
+      #获取连接时最大等待时间
+      max-wait: 10000
+      #最小连接数量
+      min-idle: 3
+      #配置间隔多久才进行一次检测，检测需要关闭的空闲连接
+      time-between-eviction-runs-millis: 60000
+      #用来检测连接是否有效的SQL，解决数据库断开连接的问题
+      validation-query: select 1
+      # 配置一个连接在池中最小生存的时间，单位是毫秒
+      minEvictableIdleTimeMillis: 30000
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      filters: stat,wall,slf4j
+      # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 6000
+        #日志等级 NONE,BASIC,HEADERS,FULL;
+        loggerLevel: basic
+
+# 日志
+logging:
+  config: classpath:logback/logback.xml
+  file:
+    #日志保存路径
+    path: log
+##############################   Nacos 配置参数打印结束   ##############################
+
+2020-09-30 10:30:19.507  INFO 71712 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] auth-service+DEFAULT_GROUP
+2020-09-30 10:30:19.508  INFO 71712 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=auth-service, group=DEFAULT_GROUP, cnt=1
+2020-09-30 10:30:19.509  INFO 71712 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] auth-service.yaml+DEFAULT_GROUP
+2020-09-30 10:30:19.510  INFO 71712 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=auth-service.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-30 10:30:19.553  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:30:49.228  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:31:18.752  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:31:24.285  INFO 71712 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/auth]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-30 10:31:24.285  INFO 71712 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-30 10:31:24.314  INFO 71712 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 29 ms
+2020-09-30 10:31:25.142  WARN 71712 --- [http-nio-8000-exec-1] o.s.s.o.provider.endpoint.TokenEndpoint  : Handling error: InvalidRequestException, An authorization code must be supplied.
+2020-09-30 10:31:25.404  WARN 71712 --- [http-nio-8000-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [error="invalid_request", error_description="An authorization code must be supplied."]
+2020-09-30 10:31:34.196  WARN 71712 --- [http-nio-8000-exec-3] o.s.s.o.provider.endpoint.TokenEndpoint  : Handling error: InvalidRequestException, An authorization code must be supplied.
+2020-09-30 10:31:34.198  WARN 71712 --- [http-nio-8000-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [error="invalid_request", error_description="An authorization code must be supplied."]
+2020-09-30 10:31:48.257  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:32:17.764  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:32:47.272  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:33:16.777  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:33:46.285  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:34:01.013  INFO 71712 --- [http-nio-8000-exec-4] c.netflix.config.ChainedDynamicProperty  : Flipping property: user-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-30 10:34:01.034  INFO 71712 --- [http-nio-8000-exec-4] c.netflix.loadbalancer.BaseLoadBalancer  : Client: user-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=user-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-09-30 10:34:01.042  INFO 71712 --- [http-nio-8000-exec-4] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-09-30 10:34:01.836  INFO 71712 --- [http-nio-8000-exec-4] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@user-service -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.2.212#8888#DEFAULT#DEFAULT_GROUP@@user-service","ip":"192.168.2.212","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8888,"serviceName":"DEFAULT_GROUP@@user-service","weight":1.0}]
+2020-09-30 10:34:01.867  INFO 71712 --- [http-nio-8000-exec-4] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@user-service -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.2.212#8888#DEFAULT#DEFAULT_GROUP@@user-service","ip":"192.168.2.212","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8888,"serviceName":"DEFAULT_GROUP@@user-service","weight":1.0}]
+2020-09-30 10:34:01.905  INFO 71712 --- [http-nio-8000-exec-4] c.netflix.config.ChainedDynamicProperty  : Flipping property: user-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-30 10:34:01.915  INFO 71712 --- [http-nio-8000-exec-4] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client user-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=user-service,current list of Servers=[192.168.2.212:8888],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.2.212:8888;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@324da8c5
+2020-09-30 10:34:02.072  INFO 71712 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: user-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-09-30 10:34:03.517 ERROR 71712 --- [http-nio-8000-exec-4] o.s.s.o.provider.endpoint.TokenEndpoint  : Handling error: InternalAuthenticationServiceException, [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:34:03.377+00:00","status":500,"error":"Internal Server Error","trace":"org.springframework.data.redis.serializer.SerializationException: Could not read JSON: Could not reso... (15530 bytes)]
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:34:03.377+00:00","status":500,"error":"Internal Server Error","trace":"org.springframework.data.redis.serializer.SerializationException: Could not read JSON: Could not reso... (15530 bytes)]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$AuthenticationManagerDelegator.authenticate(WebSecurityConfigurerAdapter.java:534)
+	at org.springframework.security.oauth2.provider.password.ResourceOwnerPasswordTokenGranter.getOAuth2Authentication(ResourceOwnerPasswordTokenGranter.java:71)
+	at org.springframework.security.oauth2.provider.token.AbstractTokenGranter.getAccessToken(AbstractTokenGranter.java:72)
+	at org.springframework.security.oauth2.provider.token.AbstractTokenGranter.grant(AbstractTokenGranter.java:67)
+	at org.springframework.security.oauth2.provider.CompositeTokenGranter.grant(CompositeTokenGranter.java:38)
+	at org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer$4.grant(AuthorizationServerEndpointsConfigurer.java:583)
+	at org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(TokenEndpoint.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:155)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter.successfulAuthentication(ClientCredentialsTokenEndpointFilter.java:131)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:240)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: feign.FeignException$InternalServerError: [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:34:03.377+00:00","status":500,"error":"Internal Server Error","trace":"org.springframework.data.redis.serializer.SerializationException: Could not read JSON: Could not reso... (15530 bytes)]
+	at feign.FeignException.serverErrorStatus(FeignException.java:231)
+	at feign.FeignException.errorStatus(FeignException.java:180)
+	at feign.FeignException.errorStatus(FeignException.java:169)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at com.sun.proxy.$Proxy92.userByUsername(Unknown Source)
+	at com.xiaoyu.auth.service.UserServiceImpl.loadUserByUsername(UserServiceImpl.java:54)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 97 common frames omitted
+
+2020-09-30 10:34:03.521  WARN 71712 --- [http-nio-8000-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.InternalAuthenticationServiceException: [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:34:03.377+00:00","status":500,"error":"Internal Server Error","trace":"org.springframework.data.redis.serializer.SerializationException: Could not read JSON: Could not reso... (15530 bytes)]]
+2020-09-30 10:34:15.789  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:34:17.013 ERROR 71712 --- [http-nio-8000-exec-7] o.s.s.o.provider.endpoint.TokenEndpoint  : Handling error: InternalAuthenticationServiceException, [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:34:17.008+00:00","status":500,"error":"Internal Server Error","trace":"org.springframework.data.redis.serializer.SerializationException: Could not read JSON: Could not reso... (15530 bytes)]
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:34:17.008+00:00","status":500,"error":"Internal Server Error","trace":"org.springframework.data.redis.serializer.SerializationException: Could not read JSON: Could not reso... (15530 bytes)]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$AuthenticationManagerDelegator.authenticate(WebSecurityConfigurerAdapter.java:524)
+	at org.springframework.security.oauth2.provider.password.ResourceOwnerPasswordTokenGranter.getOAuth2Authentication(ResourceOwnerPasswordTokenGranter.java:71)
+	at org.springframework.security.oauth2.provider.token.AbstractTokenGranter.getAccessToken(AbstractTokenGranter.java:72)
+	at org.springframework.security.oauth2.provider.token.AbstractTokenGranter.grant(AbstractTokenGranter.java:67)
+	at org.springframework.security.oauth2.provider.CompositeTokenGranter.grant(CompositeTokenGranter.java:38)
+	at org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer$4.grant(AuthorizationServerEndpointsConfigurer.java:583)
+	at org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(TokenEndpoint.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:155)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter.successfulAuthentication(ClientCredentialsTokenEndpointFilter.java:131)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:240)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: feign.FeignException$InternalServerError: [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:34:17.008+00:00","status":500,"error":"Internal Server Error","trace":"org.springframework.data.redis.serializer.SerializationException: Could not read JSON: Could not reso... (15530 bytes)]
+	at feign.FeignException.serverErrorStatus(FeignException.java:231)
+	at feign.FeignException.errorStatus(FeignException.java:180)
+	at feign.FeignException.errorStatus(FeignException.java:169)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at com.sun.proxy.$Proxy92.userByUsername(Unknown Source)
+	at com.xiaoyu.auth.service.UserServiceImpl.loadUserByUsername(UserServiceImpl.java:54)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 97 common frames omitted
+
+2020-09-30 10:34:17.016  WARN 71712 --- [http-nio-8000-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.InternalAuthenticationServiceException: [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:34:17.008+00:00","status":500,"error":"Internal Server Error","trace":"org.springframework.data.redis.serializer.SerializationException: Could not read JSON: Could not reso... (15530 bytes)]]
+2020-09-30 10:34:45.292  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:35:14.796  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:35:44.302  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:36:13.806  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:36:40.428 ERROR 71712 --- [http-nio-8000-exec-10] o.s.s.o.provider.endpoint.TokenEndpoint  : Handling error: InternalAuthenticationServiceException, [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:36:40.424+00:00","status":500,"error":"Internal Server Error","trace":"java.lang.Exception: 服务熔断\r\n\tat com.xiaoyu.user.feign.UserClient.userByUsername(UserClient.java:56)... (10811 bytes)]
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:36:40.424+00:00","status":500,"error":"Internal Server Error","trace":"java.lang.Exception: 服务熔断\r\n\tat com.xiaoyu.user.feign.UserClient.userByUsername(UserClient.java:56)... (10811 bytes)]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$AuthenticationManagerDelegator.authenticate(WebSecurityConfigurerAdapter.java:524)
+	at org.springframework.security.oauth2.provider.password.ResourceOwnerPasswordTokenGranter.getOAuth2Authentication(ResourceOwnerPasswordTokenGranter.java:71)
+	at org.springframework.security.oauth2.provider.token.AbstractTokenGranter.getAccessToken(AbstractTokenGranter.java:72)
+	at org.springframework.security.oauth2.provider.token.AbstractTokenGranter.grant(AbstractTokenGranter.java:67)
+	at org.springframework.security.oauth2.provider.CompositeTokenGranter.grant(CompositeTokenGranter.java:38)
+	at org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer$4.grant(AuthorizationServerEndpointsConfigurer.java:583)
+	at org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(TokenEndpoint.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:155)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter.successfulAuthentication(ClientCredentialsTokenEndpointFilter.java:131)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:240)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: feign.FeignException$InternalServerError: [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:36:40.424+00:00","status":500,"error":"Internal Server Error","trace":"java.lang.Exception: 服务熔断\r\n\tat com.xiaoyu.user.feign.UserClient.userByUsername(UserClient.java:56)... (10811 bytes)]
+	at feign.FeignException.serverErrorStatus(FeignException.java:231)
+	at feign.FeignException.errorStatus(FeignException.java:180)
+	at feign.FeignException.errorStatus(FeignException.java:169)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at com.sun.proxy.$Proxy92.userByUsername(Unknown Source)
+	at com.xiaoyu.auth.service.UserServiceImpl.loadUserByUsername(UserServiceImpl.java:54)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 97 common frames omitted
+
+2020-09-30 10:36:40.431  WARN 71712 --- [http-nio-8000-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.InternalAuthenticationServiceException: [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:36:40.424+00:00","status":500,"error":"Internal Server Error","trace":"java.lang.Exception: 服务熔断\r\n\tat com.xiaoyu.user.feign.UserClient.userByUsername(UserClient.java:56)... (10811 bytes)]]
+2020-09-30 10:36:43.327  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:37:12.834  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:37:42.353  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:38:11.858  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:38:32.286 ERROR 71712 --- [http-nio-8000-exec-5] o.s.s.o.provider.endpoint.TokenEndpoint  : Handling error: InternalAuthenticationServiceException, [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:38:32.282+00:00","status":500,"error":"Internal Server Error","trace":"java.lang.Exception: 服务熔断\r\n\tat com.xiaoyu.user.feign.UserClient.userByUsername(UserClient.java:56)... (10811 bytes)]
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:38:32.282+00:00","status":500,"error":"Internal Server Error","trace":"java.lang.Exception: 服务熔断\r\n\tat com.xiaoyu.user.feign.UserClient.userByUsername(UserClient.java:56)... (10811 bytes)]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$AuthenticationManagerDelegator.authenticate(WebSecurityConfigurerAdapter.java:524)
+	at org.springframework.security.oauth2.provider.password.ResourceOwnerPasswordTokenGranter.getOAuth2Authentication(ResourceOwnerPasswordTokenGranter.java:71)
+	at org.springframework.security.oauth2.provider.token.AbstractTokenGranter.getAccessToken(AbstractTokenGranter.java:72)
+	at org.springframework.security.oauth2.provider.token.AbstractTokenGranter.grant(AbstractTokenGranter.java:67)
+	at org.springframework.security.oauth2.provider.CompositeTokenGranter.grant(CompositeTokenGranter.java:38)
+	at org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer$4.grant(AuthorizationServerEndpointsConfigurer.java:583)
+	at org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(TokenEndpoint.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:155)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter.successfulAuthentication(ClientCredentialsTokenEndpointFilter.java:131)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:240)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: feign.FeignException$InternalServerError: [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:38:32.282+00:00","status":500,"error":"Internal Server Error","trace":"java.lang.Exception: 服务熔断\r\n\tat com.xiaoyu.user.feign.UserClient.userByUsername(UserClient.java:56)... (10811 bytes)]
+	at feign.FeignException.serverErrorStatus(FeignException.java:231)
+	at feign.FeignException.errorStatus(FeignException.java:180)
+	at feign.FeignException.errorStatus(FeignException.java:169)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at com.sun.proxy.$Proxy92.userByUsername(Unknown Source)
+	at com.xiaoyu.auth.service.UserServiceImpl.loadUserByUsername(UserServiceImpl.java:54)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 97 common frames omitted
+
+2020-09-30 10:38:32.289  WARN 71712 --- [http-nio-8000-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.InternalAuthenticationServiceException: [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:38:32.282+00:00","status":500,"error":"Internal Server Error","trace":"java.lang.Exception: 服务熔断\r\n\tat com.xiaoyu.user.feign.UserClient.userByUsername(UserClient.java:56)... (10811 bytes)]]
+2020-09-30 10:38:34.630 ERROR 71712 --- [http-nio-8000-exec-3] o.s.s.o.provider.endpoint.TokenEndpoint  : Handling error: InternalAuthenticationServiceException, [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:38:34.626+00:00","status":500,"error":"Internal Server Error","trace":"java.lang.Exception: 服务熔断\r\n\tat com.xiaoyu.user.feign.UserClient.userByUsername(UserClient.java:56)... (10811 bytes)]
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:38:34.626+00:00","status":500,"error":"Internal Server Error","trace":"java.lang.Exception: 服务熔断\r\n\tat com.xiaoyu.user.feign.UserClient.userByUsername(UserClient.java:56)... (10811 bytes)]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$AuthenticationManagerDelegator.authenticate(WebSecurityConfigurerAdapter.java:524)
+	at org.springframework.security.oauth2.provider.password.ResourceOwnerPasswordTokenGranter.getOAuth2Authentication(ResourceOwnerPasswordTokenGranter.java:71)
+	at org.springframework.security.oauth2.provider.token.AbstractTokenGranter.getAccessToken(AbstractTokenGranter.java:72)
+	at org.springframework.security.oauth2.provider.token.AbstractTokenGranter.grant(AbstractTokenGranter.java:67)
+	at org.springframework.security.oauth2.provider.CompositeTokenGranter.grant(CompositeTokenGranter.java:38)
+	at org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer$4.grant(AuthorizationServerEndpointsConfigurer.java:583)
+	at org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(TokenEndpoint.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:155)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter.successfulAuthentication(ClientCredentialsTokenEndpointFilter.java:131)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:240)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: feign.FeignException$InternalServerError: [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:38:34.626+00:00","status":500,"error":"Internal Server Error","trace":"java.lang.Exception: 服务熔断\r\n\tat com.xiaoyu.user.feign.UserClient.userByUsername(UserClient.java:56)... (10811 bytes)]
+	at feign.FeignException.serverErrorStatus(FeignException.java:231)
+	at feign.FeignException.errorStatus(FeignException.java:180)
+	at feign.FeignException.errorStatus(FeignException.java:169)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at com.sun.proxy.$Proxy92.userByUsername(Unknown Source)
+	at com.xiaoyu.auth.service.UserServiceImpl.loadUserByUsername(UserServiceImpl.java:54)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 97 common frames omitted
+
+2020-09-30 10:38:34.632  WARN 71712 --- [http-nio-8000-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.InternalAuthenticationServiceException: [500] during [GET] to [http://user-service/user?username=karl] [IUserClient#userByUsername(String)]: [{"timestamp":"2020-09-30T02:38:34.626+00:00","status":500,"error":"Internal Server Error","trace":"java.lang.Exception: 服务熔断\r\n\tat com.xiaoyu.user.feign.UserClient.userByUsername(UserClient.java:56)... (10811 bytes)]]
+2020-09-30 10:38:41.363  INFO 71712 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848] c.a.n.client.config.impl.ClientWorker    : get changedGroupKeys:[]
+2020-09-30 10:38:59.639  INFO 71712 --- [Thread-47] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2020-09-30 10:39:00.034  INFO 71712 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-30 10:39:00.037  INFO 71712 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2020-09-30 10:39:00.038  INFO 71712 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@auth-service:192.168.2.212:8000 from beat map.
+2020-09-30 10:39:00.038  INFO 71712 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@auth-service with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.2.212","ipDeleteTimeout":30000,"metadata":{},"port":8000,"weight":1.0}
+2020-09-30 10:39:00.042  INFO 71712 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2020-09-30 10:39:00.042  INFO 71712 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-30 10:39:00.182  INFO 71712 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-09-30 10:39:00.185  INFO 71712 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

@@ -1,0 +1,6 @@
+com\xiaoyu\user\entity\SystemPermission.class
+com\xiaoyu\user\entity\SystemUserRole.class
+com\xiaoyu\user\entity\SystemUser.class
+com\xiaoyu\user\feign\IUserClient.class
+com\xiaoyu\user\entity\SystemRole.class
+com\xiaoyu\user\entity\SystemRolePermission.class
