@@ -17,7 +17,7 @@ import java.time.Duration;
  * </p>
  *
  * @author ZhangXianYu   Email: 1600501744@qq.com
- * @since 2020/9/17 0017 14:30
+ * @since 2020/9/17 14:30
  */
 @EnableCaching
 public class RedisCacheManagerConfig {

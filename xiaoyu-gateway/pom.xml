@@ -6,12 +6,12 @@
         <groupId>com.xiaoyu</groupId>
         <artifactId>XiaoYu</artifactId>
         <version>1.0.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>xiaoyu-gateway</artifactId>
     <version>1.0.1</version>
     <name>xiaoyu-gateway</name>
+    <packaging>jar</packaging>
     <description>XiaoYu 微服务网关</description>
 
     <properties>
@@ -45,14 +45,21 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
             <version>0.9.1</version>
+        </dependency>
+
+        <!-- spring boot admin 微服务系统监控中心-->
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+        </dependency>
+
+        <!-- knife4j 前端代码和后端代码，用于增强 -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
         </dependency>
 
         <dependency>

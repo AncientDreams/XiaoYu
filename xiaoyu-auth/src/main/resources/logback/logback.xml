@@ -37,12 +37,15 @@
         </encoder>
     </appender>
 
+    <!--nacos 心跳 INFO 屏蔽-->
+    <logger name="com.alibaba.nacos" level="OFF">
+        <appender-ref ref="error"/>
+    </logger>
+
+
     <root level="INFO">
         <appender-ref ref="console"/>
         <appender-ref ref="file"/>
     </root>
-
-    <!-- SQL 日志输出 -->
-    <logger name="com.xiaoyu.auth.mapper" level="DEBUG"/>
 
 </configuration>

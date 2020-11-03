@@ -12,6 +12,12 @@
         <option value="$PROJECT_DIR$/xiaoyu-user-service/pom.xml" />
         <option value="$PROJECT_DIR$/xiaoyu-service/xiaoyu-user-service/pom.xml" />
         <option value="$PROJECT_DIR$/xiaoyu-common/xiaoyu-common-security/pom.xml" />
+        <option value="$PROJECT_DIR$/xiaoyu-manage/xiaoyu-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/xiaoyu-manage/pom.xml" />
+        <option value="$PROJECT_DIR$/xiaoyu-manage/xxl-job-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/xiaoyu-manage/xxl-job-executor-sample-springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/xiaoyu-service/pom.xml" />
+        <option value="$PROJECT_DIR$/xiaoyu-service/xiaoyu-system-service/pom.xml" />
       </list>
     </option>
   </component>

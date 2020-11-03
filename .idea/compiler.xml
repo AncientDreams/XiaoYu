@@ -11,9 +11,25 @@
         <module name="xiaoyu-common-security" />
         <module name="xiaoyu-user-service" />
         <module name="xiaoyu-auth" />
+        <module name="xiaoyu-system-service" />
         <module name="xiaoyu-user-api" />
         <module name="xiaoyu-common-core" />
+        <module name="xxl-job-admin" />
+        <module name="xiaoyu-common-job" />
+        <module name="xiaoyu-admin" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="histrory" target="1.8" />
+      <module name="xiaoyu-common-seata" target="1.8" />
+      <module name="xxl-job-executor" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="histrory" options="" />
+      <module name="xiaoyu-admin" options="" />
+      <module name="xiaoyu-system-service" options="" />
+    </option>
   </component>
 </project>

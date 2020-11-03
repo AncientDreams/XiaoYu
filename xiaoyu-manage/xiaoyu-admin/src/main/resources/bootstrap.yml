@@ -1,0 +1,12 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: xiaoyu-admin
+  cloud:
+    #Nacos 配置中心 服务配置
+    nacos:
+      config:
+        server-addr: @nacos-ip@
+        file-extension: yaml

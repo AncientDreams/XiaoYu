@@ -57,21 +57,24 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+        </dependency>
+
+        <dependency>
             <artifactId>xiaoyu-user-api</artifactId>
             <groupId>com.xiaoyu</groupId>
             <version>${XiaoYu-version}</version>
         </dependency>
 
-
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>com.xiaoyu</groupId>
             <artifactId>xiaoyu-common-redis</artifactId>
-            <version>${XiaoYu-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
         </dependency>
 
         <dependency>

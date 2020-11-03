@@ -12,7 +12,7 @@
     <artifactId>xiaoyu-common-security</artifactId>
     <version>${common.version}</version>
     <packaging>jar</packaging>
-    <description>XiaoYu 微服务资源服务安全</description>
+    <description>XiaoYu 微服务资源服务安全，需渗入到每一个微服务保证安全</description>
 
     <dependencies>
         <dependency>

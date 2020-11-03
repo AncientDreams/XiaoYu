@@ -2,4 +2,5 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.xiaoyu.common.security.config.ResourceServerConfig,\
 com.xiaoyu.common.security.filter.AuthenticationFilter,\
 com.xiaoyu.common.security.handler.PermissionAuthorizeHandler,\
-com.xiaoyu.common.security.handler.GlobalExceptionHandler
+com.xiaoyu.common.security.handler.GlobalExceptionHandler,\
+com.xiaoyu.common.security.config.WhitelistPathConfig

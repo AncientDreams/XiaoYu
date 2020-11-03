@@ -4,7 +4,8 @@
 
 
     <select id="queryUserRole" resultType="java.lang.String">
-        select role.role_id from system_user users LEFT JOIN system_user_role userRole on  users.user_id = userRole.user_id
-LEFT JOIN system_role role on userRole.role_id = role.role_no where users.user_id = #{userId}
+        select role.role_id from system_user users LEFT JOIN system_user_role userRole on users.user_id =
+        userRole.user_id
+        LEFT JOIN system_role role on userRole.role_id = role.role_no where users.user_id = #{userId}
     </select>
 </mapper>

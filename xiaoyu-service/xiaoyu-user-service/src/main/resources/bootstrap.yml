@@ -1,5 +1,7 @@
 server:
   port: 8888
+  servlet:
+    context-path: /user
 
 spring:
   application:
@@ -10,15 +12,7 @@ spring:
       config:
         server-addr: ${spring.cloud.nacos.discovery.server-addr}
         file-extension: yaml
+        #共享公共配置文件 1.admin监控平台配置文件 2.服务开启job配置文件。 多个文件 ，分割
+        shared-configs: admin-service-config.yaml,seata.yaml #,xxl.job.executor.yaml
       discovery:
-        server-addr: localhost:8848
-        # feign 开启 sentinel 支持
-feign:
-  sentinel:
-    enabled: true
-
-  client:
-    config:
-      default:
-        connectTimeout: 5000  # 指定Feign连接提供者的超时时限
-        readTimeout: 5000    # 指定Feign从请求到获取提供者响应的超时时限
+        server-addr: @nacos-ip@

@@ -39,18 +39,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     //配置安全拦截机制
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-//        http.csrf().disable().authorizeRequests().
-//                antMatchers("/r/r1").hasAuthority("管理员")
-//                .antMatchers("/r/r2").hasAuthority("p2")
-//                //url匹配/r/**的资源，经过认证后才能访问。
-//                .antMatchers("/r/**").authenticated()
-//                //其他url完全开放。
-//                .anyRequest().permitAll().and()
-//                //支持form表单认证，认证成功后转向/login-success。
-//                .formLogin().loginPage("/login-view")
-//                .loginProcessingUrl("/login")
-//                .successForwardUrl("/login‐success").permitAll();
-
         http.csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/login*").permitAll()

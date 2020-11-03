@@ -1,17 +1,22 @@
 package com.xiaoyu.common.security.filter;
 
+import com.alibaba.fastjson.JSONObject;
 import com.xiaoyu.common.security.config.TokenConfig;
+import com.xiaoyu.common.security.config.WhitelistPathConfig;
 import com.xiaoyu.user.entity.SystemRole;
 import com.xiaoyu.user.entity.SystemUser;
 import com.xiaoyu.user.feign.IUserClient;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Import;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.stereotype.Component;
+import org.springframework.util.AntPathMatcher;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import javax.servlet.FilterChain;
@@ -19,6 +24,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Map;
 
@@ -34,15 +40,27 @@ import java.util.Map;
 @Component
 @Import(TokenConfig.class)
 @AllArgsConstructor
+@Slf4j
 public class AuthenticationFilter extends OncePerRequestFilter {
 
     private final TokenStore tokenStore;
 
     private final IUserClient iSystemUserService;
 
+    private final WhitelistPathConfig whitelistPathConfig;
+
     @SuppressWarnings("all")
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse httpServletResponse, FilterChain filterChain) throws IOException, ServletException {
+       String path = request.getRequestURI();
+        //白名单
+        AntPathMatcher pathMatcher = new AntPathMatcher();
+        for (String allowUrl : whitelistPathConfig.getUrls()) {
+            if (pathMatcher.match(allowUrl, path)) {
+                filterChain.doFilter(request, httpServletResponse);
+                return;
+            }
+        }
         //检查token令牌是否正确.
         OAuth2AccessToken oAuth2AccessToken;
         try {
@@ -64,9 +82,14 @@ public class AuthenticationFilter extends OncePerRequestFilter {
             authenticationToken.setDetails(systemUser);
             //将authenticationToken填充到安全上下文
             SecurityContextHolder.getContext().setAuthentication(authenticationToken);
+            filterChain.doFilter(request, httpServletResponse);
         } catch (Exception e) {
-            e.printStackTrace();
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("code", HttpStatus.FORBIDDEN.value());
+            jsonObject.put("meg","无权访问");
+            byte[] bytes = jsonObject.toString().getBytes(StandardCharsets.UTF_8);
+            httpServletResponse.getOutputStream().write(bytes);
+            log.error(e.getMessage(), e);
         }
-        filterChain.doFilter(request, httpServletResponse);
     }
 }

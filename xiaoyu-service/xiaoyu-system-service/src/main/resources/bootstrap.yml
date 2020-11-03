@@ -1,0 +1,18 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /system
+
+spring:
+  application:
+    name: system-service
+  cloud:
+    #Nacos 配置中心 服务配置
+    nacos:
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        file-extension: yaml
+        #共享公共配置文件 1.admin监控平台配置文件 2.服务开启job配置文件。 多个文件 ，分割
+        shared-configs: admin-service-config.yaml,seata.yaml #,xxl.job.executor.yaml
+      discovery:
+        server-addr: @nacos-ip@

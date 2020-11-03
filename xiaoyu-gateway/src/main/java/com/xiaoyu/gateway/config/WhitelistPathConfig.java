@@ -29,4 +29,11 @@ public class WhitelistPathConfig {
      * 白名单 Url
      */
     private List<String> urls = new ArrayList<>();
+
+    public WhitelistPathConfig() {
+        urls.add("/**/v2/api-docs");
+        urls.add("/**/doc.html");
+        urls.add("/**/webjars/**");
+        urls.add("/**/swagger-resources/**");
+    }
 }

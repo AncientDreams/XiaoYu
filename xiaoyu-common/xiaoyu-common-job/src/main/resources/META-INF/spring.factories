@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.xiaoyu.common.job.config.XxlJobConfig,\
+com.xiaoyu.common.job.props.XxlJobExecutorProperties

@@ -11,7 +11,8 @@ import java.util.List;
 
 /**
  * <p>
- * 用户服务远程调用异常熔断处理
+ * 用户服务远程调用异常统一处理，这里是指执行完业务异常后的返回消息处理，sentinel 熔断是异常到了一定的阈值
+ * 后，直接快速返回异常信息，并不会执行相关业务逻辑。
  * </p>
  *
  * @author ZhangXianYu   Email: 1600501744@qq.com
@@ -35,6 +36,11 @@ public class UserFallbackFactory implements FallbackFactory<IUserClient> {
 
             @Override
             public R<List<SystemRole>> queryUserRolesByUserId(String userName) {
+                return R.fail(throwable.getMessage());
+            }
+
+            @Override
+            public R updateUserEmail(String userName) {
                 return R.fail(throwable.getMessage());
             }
         };

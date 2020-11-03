@@ -21,13 +21,34 @@
         <dependency>
             <groupId>com.xiaoyu</groupId>
             <artifactId>xiaoyu-common-redis</artifactId>
-            <version>${XiaoYu-version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.xiaoyu</groupId>
             <artifactId>xiaoyu-user-api</artifactId>
             <version>${XiaoYu-version}</version>
+        </dependency>
+
+        <!--分布式事务 seata -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.seata</groupId>
+                    <artifactId>seata-spring-boot-starter</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>io.seata</groupId>
+            <artifactId>seata-spring-boot-starter</artifactId>
+        </dependency>
+        <!-- 分布式事务结束 -->
+
+        <dependency>
+            <groupId>com.xiaoyu</groupId>
+            <artifactId>xiaoyu-common-job</artifactId>
         </dependency>
 
         <dependency>

@@ -15,6 +15,7 @@
 
     <modules>
         <module>xiaoyu-user-service</module>
+        <module>xiaoyu-system-service</module>
     </modules>
 
     <dependencies>
@@ -53,17 +54,35 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.xiaoyu</groupId>
             <artifactId>xiaoyu-common-security</artifactId>
-            <version>${XiaoYu-version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
         </dependency>
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+        </dependency>
+
+        <!-- api 文档swagger2 -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+        </dependency>
+
     </dependencies>
 
 

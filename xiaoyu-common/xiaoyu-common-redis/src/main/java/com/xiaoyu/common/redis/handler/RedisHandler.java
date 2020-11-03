@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
  * </p>
  *
  * @author ZhangXianYu   Email: 1600501744@qq.com
- * @since 2020/9/17 0017 13:42
+ * @since 2020/9/17 13:42
  */
 @AllArgsConstructor
 public class RedisHandler {

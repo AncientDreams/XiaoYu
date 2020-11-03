@@ -1,3 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.xiaoyu.common.redis.RedisAutoConfiguration,\
-com.xiaoyu.common.redis.config.RedisConfig
+com.xiaoyu.common.redis.config.RedisConfig,\
+com.xiaoyu.common.redis.handler.LockHandler

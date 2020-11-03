@@ -35,13 +35,6 @@ import java.util.Collections;
 @EnableAuthorizationServer
 public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
 
-//    ClientDetailsServiceConfigurer：用AuthorizationServerEndpointsConfigurer来配置客户端详情服务（ClientDetailsService），
-//    客户端详情信息在 这里进行初始化，你能够把客户端详情信息写死在这里或者是通过数据库来存储调取详情信息。
-
-//    AuthorizationServerEndpointsConfigurer：用来配置令牌（token）的访问端点和  令牌服务(token services)。
-
-//    AuthorizationServerSecurityConfigurer：用来配置令牌端点的安全约束 .
-
     @Autowired
     private TokenStore tokenStore;
 
@@ -114,16 +107,6 @@ public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
                 .tokenServices(tokenService()).
                 //允许POST方式提交
                 allowedTokenEndpointRequestMethods(HttpMethod.POST);
-
-        /*
-         * pathMapping用来配置端点URL链接，有两个参数，都将以 "/" 字符为开始的字符串
-         *
-         * defaultPath：这个端点URL的默认链接
-         *
-         * customPath：你要进行替代的URL链接
-         */
-        //用来修改默认的 端点 url
-//        endpoints.pathMapping("/oauth/token", "/oauth/xwj");
     }
 
     @Bean

@@ -14,6 +14,8 @@ import java.lang.annotation.Target;
  * 注解的目的: 更加方便的通过Permission来控制权限
  * </p>
  *
+ * 注解处理类：{@link com.xiaoyu.common.security.handler.PermissionAuthorizeHandler}
+ *
  * @author ZhangXianYu   Email: 1600501744@qq.com
  * @since 2020/9/27 9:50
  */

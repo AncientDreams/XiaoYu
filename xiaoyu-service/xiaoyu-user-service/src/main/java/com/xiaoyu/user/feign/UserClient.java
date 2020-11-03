@@ -44,7 +44,7 @@ import java.util.List;
 @AllArgsConstructor
 public class UserClient implements IUserClient {
 
-    private ISystemUserService iSystemUserService;
+    private final ISystemUserService iSystemUserService;
 
     private final ISystemPermissionService iSystemPermissionService;
 
@@ -52,13 +52,13 @@ public class UserClient implements IUserClient {
 
     @Override
     @Cacheable(value = "userName", key = "#username")
-    public R<SystemUser> userByUsername(String username) throws Exception {
+    public R<SystemUser> userByUsername(String username) {
         return R.success(iSystemUserService.getOne(Wrappers.<SystemUser>lambdaQuery()
                 .select(SystemUser::getUserId, SystemUser::getUserName, SystemUser::getPassword).eq(SystemUser::getUserName, username)));
     }
 
     @Override
-    @Cacheable(value = "systemPermission",key = "#userName")
+    @Cacheable(value = "systemPermission", key = "#userName")
     public R<List<String>> getSystemPermissions(String userName) {
         return R.success(iSystemPermissionService.findByUerName(userName));
     }
@@ -67,6 +67,12 @@ public class UserClient implements IUserClient {
     @Cacheable(value = "userRoles", key = "#userName")
     public R<List<SystemRole>> queryUserRolesByUserId(String userName) {
         return R.success(iSystemRoleService.list());
+    }
+
+    @Override
+    public R updateUserEmail(String userName) throws Exception {
+        iSystemUserService.update(Wrappers.<SystemUser>lambdaUpdate().eq(SystemUser::getUserName,userName).set(SystemUser::getEmail,"test email"));
+        throw new Exception("抛出异常，测试分布式事务");
     }
 
 

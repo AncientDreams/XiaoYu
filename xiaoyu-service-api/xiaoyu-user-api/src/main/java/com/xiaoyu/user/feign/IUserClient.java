@@ -38,7 +38,7 @@ import java.util.List;
  * @since 2020/9/15 11:14
  */
 @FeignClient(
-        value = AppConstant.APPLICATION_USER_NAME,fallbackFactory = UserFallbackFactory.class
+        value = AppConstant.APPLICATION_USER_NAME, path = "/user", fallbackFactory = UserFallbackFactory.class
 )
 public interface IUserClient {
 
@@ -50,7 +50,7 @@ public interface IUserClient {
      * @return ResultBody<SystemUser>
      */
     @GetMapping("/user")
-    R<SystemUser> userByUsername(@RequestParam("username") String username) throws Exception;
+    R<SystemUser> userByUsername(@RequestParam("username") String username);
 
     /**
      * 根据账号获取用户所拥有权限信息
@@ -69,4 +69,13 @@ public interface IUserClient {
      */
     @GetMapping("/getRoles")
     R<List<SystemRole>> queryUserRolesByUserId(@RequestParam("userName") String userName);
+
+    /**
+     * xiufu
+     *
+     * @param userName 用户名称
+     * @return ResultBody<SystemUser>
+     */
+    @GetMapping("/updateUser")
+    R updateUserEmail(@RequestParam("userName") String userName) throws Exception;
 }

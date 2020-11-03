@@ -1,0 +1,7 @@
+
+此目录存放一些外部的启动包，拿到直接启动就行
+
+启动最难配置的就是 seata ，考虑到配置难度，在seata目录下有相关配置可以参考。
+
+nacos_config.zip中包含了 启动项目所需的nacos配置，其中分组SEATA_GROUP的配置都是 seata的配置，分组为
+DEFAULT_GROUP 的配置都是 系统配置，只需在nacos中导入即可
