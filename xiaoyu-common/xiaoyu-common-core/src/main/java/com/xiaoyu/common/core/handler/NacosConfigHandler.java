@@ -39,11 +39,13 @@ public class NacosConfigHandler implements ApplicationRunner {
             StringBuilder outLog = new StringBuilder("\n##############################   Nacos 配置参数打印开始   ##############################\n");
             String serverAddr = nacosConfigProperties.getServerAddr().split(":")[0];
             String applicationNameConfig = "spring.application.name";
+            String groupNameConfig = "spring.cloud.nacos.config.group";
             //指定Nacos 配置中心的主配置名称, 约定好名称:   ${spring.application.name}.yaml
             String applicationName = configurableEnvironment.getProperty(applicationNameConfig);
             String dataId = Objects.requireNonNull(applicationName).concat(".yaml");
-            //默认
-            String group = "DEFAULT_GROUP";
+
+            //分组名称
+            String group = configurableEnvironment.getProperty(groupNameConfig);
             Properties properties = new Properties();
             properties.put(PropertyKeyConst.SERVER_ADDR, serverAddr);
             ConfigService configService = NacosFactory.createConfigService(properties);
