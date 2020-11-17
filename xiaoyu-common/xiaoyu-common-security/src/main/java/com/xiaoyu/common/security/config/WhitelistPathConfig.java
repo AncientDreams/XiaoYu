@@ -35,5 +35,7 @@ public class WhitelistPathConfig {
         this.urls = urls;
         urls.add("/swagger-ui/**");
         urls.add("/actuator/**");
+        urls.add("/**/v2/api-docs");
+        urls.add("/v2/api-docs");
     }
 }

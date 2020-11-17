@@ -86,7 +86,7 @@ public class AuthenticationFilter extends OncePerRequestFilter {
         } catch (Exception e) {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("code", HttpStatus.FORBIDDEN.value());
-            jsonObject.put("meg","无权访问");
+            jsonObject.put("msg","Permission denied,Please authorize");
             byte[] bytes = jsonObject.toString().getBytes(StandardCharsets.UTF_8);
             httpServletResponse.getOutputStream().write(bytes);
             log.error(e.getMessage(), e);

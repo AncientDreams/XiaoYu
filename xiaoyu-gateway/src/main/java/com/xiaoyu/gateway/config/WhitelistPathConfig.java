@@ -1,6 +1,5 @@
 package com.xiaoyu.gateway.config;
 
-import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
@@ -17,7 +16,6 @@ import java.util.List;
  * @author ZhangXianYu   Email: 1600501744@qq.com
  * @since 2020/8/31 15:20
  */
-@Data
 @Component
 @RefreshScope
 @ConfigurationProperties(prefix = WhitelistPathConfig.PREFIX)
@@ -30,7 +28,12 @@ public class WhitelistPathConfig {
      */
     private List<String> urls = new ArrayList<>();
 
-    public WhitelistPathConfig() {
+    public List<String> getUrls() {
+        return urls;
+    }
+
+    public void setUrls(List<String> urls) {
+        this.urls = urls;
         urls.add("/**/v2/api-docs");
         urls.add("/**/doc.html");
         urls.add("/**/webjars/**");
