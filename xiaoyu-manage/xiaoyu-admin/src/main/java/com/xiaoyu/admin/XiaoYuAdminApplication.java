@@ -4,12 +4,17 @@ import de.codecentric.boot.admin.server.config.EnableAdminServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * 微服务健康监控
+ *
+ * @author zxy
+ */
 @SpringBootApplication
 @EnableAdminServer
-public class XiaoyuAdminApplication {
+public class XiaoYuAdminApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(XiaoyuAdminApplication.class, args);
+        SpringApplication.run(XiaoYuAdminApplication.class, args);
     }
 
 }
