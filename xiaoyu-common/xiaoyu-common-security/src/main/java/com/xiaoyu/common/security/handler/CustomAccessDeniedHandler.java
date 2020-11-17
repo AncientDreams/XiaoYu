@@ -26,7 +26,7 @@ public class CustomAccessDeniedHandler implements AccessDeniedHandler {
                        AccessDeniedException accessDeniedException) throws IOException {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("code",HttpStatus.FORBIDDEN.value());
-        jsonObject.put("meg","无权访问");
+        jsonObject.put("msg","无权访问");
         byte[] bytes = jsonObject.toString().getBytes(StandardCharsets.UTF_8);
         response.getOutputStream().write(bytes);
     }

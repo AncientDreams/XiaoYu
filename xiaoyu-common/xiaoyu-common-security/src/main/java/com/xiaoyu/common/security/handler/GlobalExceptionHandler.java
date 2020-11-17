@@ -24,7 +24,7 @@ public class GlobalExceptionHandler {
     public String exceptionHandler() {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("code", HttpStatus.FORBIDDEN.value());
-        jsonObject.put("meg", "无权访问");
+        jsonObject.put("msg", "Permission denied,Please authorize");
         return jsonObject.toJSONString();
     }
 
