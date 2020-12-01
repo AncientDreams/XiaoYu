@@ -30,9 +30,9 @@ import java.util.Objects;
 @Slf4j
 public class UserServiceImpl implements UserDetailsService {
 
-    private IUserClient iSystemUserService;
+    private final IUserClient iSystemUserService;
 
-    private RedisCacheManager redisCacheManager;
+    private final RedisCacheManager redisCacheManager;
 
     @SneakyThrows
     @Override

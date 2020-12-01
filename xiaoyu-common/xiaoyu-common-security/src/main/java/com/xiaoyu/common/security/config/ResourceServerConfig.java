@@ -28,9 +28,9 @@ import org.springframework.security.oauth2.provider.token.TokenStore;
 @Import({ResourceAuthExceptionEntryPoint.class})
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
-    private TokenStore tokenStore;
+    private final TokenStore tokenStore;
 
-    private ResourceAuthExceptionEntryPoint resourceAuthExceptionEntryPoint;
+    private final ResourceAuthExceptionEntryPoint resourceAuthExceptionEntryPoint;
 
     /**
      * 资源配置
