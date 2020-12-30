@@ -237,4 +237,13 @@ CREATE TABLE `undo_log`  (
   UNIQUE INDEX `ux_undo_log`(`xid`, `branch_id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 47 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
+INSERT INTO `system_user` VALUES (15, 'karl', '$2a$10$tBHq7s3QhotcUusmt36xtOtt7Sa6AB6GFLcGVW.AQ8TXlGgTxPZLK', '19FA67149F57447F16C7B36C8F0B1061', '凯', '398@qq.com', '17674703348', '0', 0);
+INSERT INTO `system_role` VALUES (1, 'role_admin', '管理员', '系统最高级管理员');
+INSERT INTO `system_role` VALUES (2, 'role_test', '测试', '测试人员');
+INSERT INTO `system_role` VALUES (3, 'role_service', '客服', '客服');
+INSERT INTO `system_role` VALUES (4, 'role_develop', '开发', '系统开发人员');
+INSERT INTO `system_role` VALUES (40, 'role_guest', '游客', '只能访问简单功能');
+
+INSERT INTO `oauth_client_details` VALUES ('c1', 'res1', '$2a$10$jHPWu2ScGNIPxw8M07Uw6umCcejbfJRS7w6Xpn8S/uCKxyQwCXHfC', 'ROLE_ADMIN,ROLE_USER,ROLE_API', 'client_credentials,password,authorization_code,implicit,refresh_token', 'http://www.baidu.com', NULL, 20000, 2592000, NULL, '2020-09-23 10:15:50', 0, 0, 'false');
+INSERT INTO `oauth_client_details` VALUES ('c2', 'res2', '$2a$10$NlBC84MVb7F95EXYTXwLneXgCca6/GipyWR5NHm8K0203bSQMLpvm', 'ROLE_API', 'client_credentials,password,authorization_code,implicit,refresh_token', 'http://www.baidu.com', NULL, 31536000, 2592000, NULL, '2020-09-14 16:50:25', 0, 0, 'false');
 SET FOREIGN_KEY_CHECKS = 1;

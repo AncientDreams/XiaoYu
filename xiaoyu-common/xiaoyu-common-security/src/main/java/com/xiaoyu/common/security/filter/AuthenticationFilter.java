@@ -52,7 +52,7 @@ public class AuthenticationFilter extends OncePerRequestFilter {
     @SuppressWarnings("all")
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse httpServletResponse, FilterChain filterChain) throws IOException, ServletException {
-       String path = request.getRequestURI();
+        String path = request.getRequestURI();
         //白名单
         AntPathMatcher pathMatcher = new AntPathMatcher();
         for (String allowUrl : whitelistPathConfig.getUrls()) {
@@ -61,10 +61,15 @@ public class AuthenticationFilter extends OncePerRequestFilter {
                 return;
             }
         }
-        //检查token令牌是否正确.
-        OAuth2AccessToken oAuth2AccessToken;
+        String token = request.getHeader("Authorization");
+        if (token == null) {
+            //放行非网关的请求
+            filterChain.doFilter(request, httpServletResponse);
+            return;
+        }
         try {
-            oAuth2AccessToken = tokenStore.readAccessToken(request.getHeader("Authorization"));
+            //检查从网关过来的请求，token令牌是否正确
+            OAuth2AccessToken oAuth2AccessToken = tokenStore.readAccessToken(request.getHeader("Authorization"));
             Map<String, Object> additionalInformation = oAuth2AccessToken.getAdditionalInformation();
             //取出用户名称
             String principal = additionalInformation.get("user_name").toString();
@@ -86,7 +91,7 @@ public class AuthenticationFilter extends OncePerRequestFilter {
         } catch (Exception e) {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("code", HttpStatus.FORBIDDEN.value());
-            jsonObject.put("msg","Permission denied,Please authorize");
+            jsonObject.put("msg", "Permission denied,Please authorize");
             byte[] bytes = jsonObject.toString().getBytes(StandardCharsets.UTF_8);
             httpServletResponse.getOutputStream().write(bytes);
             log.error(e.getMessage(), e);
