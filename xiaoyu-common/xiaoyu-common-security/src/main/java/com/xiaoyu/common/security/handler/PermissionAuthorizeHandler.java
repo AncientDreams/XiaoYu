@@ -72,7 +72,7 @@ public class PermissionAuthorizeHandler {
     }
 
     private String[] getUrl(Class<?> pointClass, Method method) throws Exception {
-        String url = null;
+        String url = "";
         if (!pointClass.isAnnotationPresent(RestController.class) && !pointClass.isAnnotationPresent(Controller.class)) {
             throw new Exception("注解@PermissionAuthorize 只能使用在 controller ");
         }
